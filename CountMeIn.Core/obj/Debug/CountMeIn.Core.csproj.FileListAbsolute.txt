@@ -1,0 +1,5 @@
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn.Core\bin\Debug\CountMeIn.Core.dll
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn.Core\bin\Debug\CountMeIn.Core.pdb
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn.Core\obj\Debug\CountMeIn.Core.csprojResolveAssemblyReference.cache
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn.Core\obj\Debug\CountMeIn.Core.dll
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn.Core\obj\Debug\CountMeIn.Core.pdb

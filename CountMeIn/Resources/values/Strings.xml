@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="Hello">Hello World, Click Me!</string>
+    <string name="ApplicationName">CountMeIn</string>
+  <string name="add_username_hint">Username/PhoneNo.</string>
+  <string name="add_username1_hint">Username</string>
+  <string name="add_username2_hint">PhoneNo.</string>
+  <string name="add_password_hint">Password</string>
+  <string name="add_reenter_password_hint">Reenter Password</string>
+ 
+</resources>
