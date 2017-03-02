@@ -7,7 +7,7 @@ using Android.Widget;
 
 namespace CountMeIn
 {
-    [Activity(Label = "Count-Me-In", MainLauncher = false, Icon = "@drawable/icon")]
+    [Activity(Label = "Count-Me-In", MainLauncher = true, Icon = "@drawable/icon")]
     public class LoginSignUPActivity : Activity
     {
         private Button btnSignIn;

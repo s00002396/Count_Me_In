@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" elementFormDefault="unqualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v23</xs:documentation>
-    <xs:documentation>01/03/2017 17:55:15</xs:documentation>
+    <xs:documentation>02/03/2017 13:48:31</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -3636,6 +3636,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -3682,6 +3683,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -4302,6 +4304,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -4842,6 +4845,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -5932,6 +5936,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -6232,6 +6237,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -10986,6 +10992,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -11032,6 +11039,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -11609,6 +11617,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -11655,6 +11664,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -11701,6 +11711,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -16819,6 +16830,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -16957,19 +16969,28 @@
             <xs:enumeration value="@+id/" />
             <xs:enumeration value="@+id/checkBox1" />
             <xs:enumeration value="@id/aboutButton" />
+            <xs:enumeration value="@id/addVenue" />
             <xs:enumeration value="@id/btnLogIn" />
             <xs:enumeration value="@id/btnSignIn" />
             <xs:enumeration value="@id/btnSignUp" />
-            <xs:enumeration value="@id/createInviteButton" />
+            <xs:enumeration value="@id/createEvent" />
+            <xs:enumeration value="@id/createEventButton" />
+            <xs:enumeration value="@id/datePicker" />
             <xs:enumeration value="@id/datePicker1" />
             <xs:enumeration value="@id/editText1" />
             <xs:enumeration value="@id/eventButton" />
             <xs:enumeration value="@id/groupButton" />
             <xs:enumeration value="@id/inviteButton" />
             <xs:enumeration value="@id/logoImageView" />
+            <xs:enumeration value="@id/relativeLayout1" />
+            <xs:enumeration value="@id/sendInvite" />
+            <xs:enumeration value="@id/spinner" />
             <xs:enumeration value="@id/textDate" />
             <xs:enumeration value="@id/textPassword" />
+            <xs:enumeration value="@id/textSubjet" />
             <xs:enumeration value="@id/textTime" />
+            <xs:enumeration value="@id/textVenue" />
+            <xs:enumeration value="@id/textVenueName" />
             <xs:enumeration value="@id/timePicker1" />
             <xs:enumeration value="@id/txtCreateAccount" />
             <xs:enumeration value="@id/txtOr" />
@@ -17310,6 +17331,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -18544,6 +18566,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -21032,6 +21055,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -21235,6 +21259,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -21495,6 +21520,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -22201,6 +22227,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -24132,6 +24159,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -26079,6 +26107,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -27077,6 +27106,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -30516,6 +30546,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -31797,6 +31828,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -32979,6 +33011,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -34664,6 +34697,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -34710,6 +34744,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -37857,6 +37892,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -37903,6 +37939,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -40055,6 +40092,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -40204,6 +40242,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />
@@ -41343,6 +41382,7 @@
             <xs:enumeration value="@string/add_username2_hint" />
             <xs:enumeration value="@string/ApplicationName" />
             <xs:enumeration value="@string/Hello" />
+            <xs:enumeration value="@string/planet_prompt" />
             <xs:enumeration value="@android:string/cancel" />
             <xs:enumeration value="@android:string/copy" />
             <xs:enumeration value="@android:string/copyUrl" />

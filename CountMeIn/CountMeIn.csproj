@@ -53,6 +53,7 @@
   <ItemGroup>
     <Compile Include="CreateAccountActivity.cs" />
     <Compile Include="CreateEventActivity.cs" />
+    <Compile Include="InviteGuestActivity.cs" />
     <Compile Include="LoginActivity.cs" />
     <Compile Include="LoginSignUPActivity.cs" />
     <Compile Include="MainActivity.cs" />
@@ -77,6 +78,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\CreateEvent.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\InviteGuests.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

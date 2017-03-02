@@ -29,10 +29,10 @@
         android:id="@+id/groupButton"
         android:layout_marginBottom="8.5dp" />
     <Button
-        android:text="Create Invite"
+        android:text="Create Event"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/createInviteButton"
+        android:id="@+id/createEventButton"
         android:layout_marginBottom="8.5dp" />
     <Button
         android:text="About"

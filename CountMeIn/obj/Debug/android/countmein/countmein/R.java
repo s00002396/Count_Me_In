@@ -8,6 +8,9 @@
 package countmein.countmein;
 
 public final class R {
+    public static final class array {
+        public static final int planets_array=0x7f050000;
+    }
     public static final class attr {
     }
     public static final class drawable {
@@ -18,31 +21,41 @@ public final class R {
         public static final int progressbarstyle=0x7f020004;
     }
     public static final class id {
-        public static final int aboutButton=0x7f050010;
-        public static final int btnLogIn=0x7f050006;
-        public static final int btnSignIn=0x7f050008;
-        public static final int btnSignUp=0x7f050002;
-        public static final int createInviteButton=0x7f05000f;
-        public static final int datePicker1=0x7f05000a;
-        public static final int editText1=0x7f050000;
-        public static final int eventButton=0x7f05000c;
-        public static final int groupButton=0x7f05000e;
-        public static final int inviteButton=0x7f05000d;
-        public static final int logoImageView=0x7f050005;
-        public static final int textDate=0x7f050004;
-        public static final int textPassword=0x7f050001;
-        public static final int textTime=0x7f050003;
-        public static final int timePicker1=0x7f05000b;
-        public static final int txtCreateAccount=0x7f050007;
-        public static final int txtOr=0x7f050009;
+        public static final int aboutButton=0x7f060019;
+        public static final int addVenue=0x7f060009;
+        public static final int btnLogIn=0x7f06000f;
+        public static final int btnSignIn=0x7f060011;
+        public static final int btnSignUp=0x7f060002;
+        public static final int createEvent=0x7f06000a;
+        public static final int createEventButton=0x7f060018;
+        public static final int datePicker=0x7f060007;
+        public static final int datePicker1=0x7f060013;
+        public static final int editText1=0x7f060000;
+        public static final int eventButton=0x7f060015;
+        public static final int groupButton=0x7f060017;
+        public static final int inviteButton=0x7f060016;
+        public static final int logoImageView=0x7f06000e;
+        public static final int relativeLayout1=0x7f060003;
+        public static final int sendInvite=0x7f06000d;
+        public static final int spinner=0x7f060008;
+        public static final int textDate=0x7f060004;
+        public static final int textPassword=0x7f060001;
+        public static final int textSubjet=0x7f060006;
+        public static final int textTime=0x7f060005;
+        public static final int textVenue=0x7f06000b;
+        public static final int textVenueName=0x7f06000c;
+        public static final int timePicker1=0x7f060014;
+        public static final int txtCreateAccount=0x7f060010;
+        public static final int txtOr=0x7f060012;
     }
     public static final class layout {
         public static final int createaccount=0x7f030000;
         public static final int createevent=0x7f030001;
-        public static final int login=0x7f030002;
-        public static final int loginsignup=0x7f030003;
-        public static final int main=0x7f030004;
-        public static final int mainmenu=0x7f030005;
+        public static final int inviteguests=0x7f030002;
+        public static final int login=0x7f030003;
+        public static final int loginsignup=0x7f030004;
+        public static final int main=0x7f030005;
+        public static final int mainmenu=0x7f030006;
     }
     public static final class string {
         public static final int ApplicationName=0x7f040001;
@@ -52,5 +65,6 @@ public final class R {
         public static final int add_username1_hint=0x7f040003;
         public static final int add_username2_hint=0x7f040004;
         public static final int add_username_hint=0x7f040002;
+        public static final int planet_prompt=0x7f040007;
     }
 }
