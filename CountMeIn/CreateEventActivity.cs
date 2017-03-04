@@ -12,21 +12,25 @@ using Android.Widget;
 
 namespace CountMeIn
 {
+    
     [Activity(Label = "Create an Event")]
     public class CreateEventActivity : Activity
     {
         private DatePicker datePicker;
         private Button btnChange;
         private TextView txtDate;
+        private TextView textDateClose;
+        private TextView textEnterTime;
+        private TextView textTimeClose;
         private Button btncreateEvent;
+        private Spinner spinner;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.CreateEvent);
-
-
+            
             FindViews();
 
             HandleEvents();
@@ -53,16 +57,63 @@ namespace CountMeIn
         private void FindViews()
         {
             btncreateEvent = FindViewById<Button>(Resource.Id.createEvent);
+            txtDate = FindViewById<TextView>(Resource.Id.textDate);
+            textDateClose = FindViewById<TextView>(Resource.Id.textDateClose);
+            textEnterTime = FindViewById<TextView>(Resource.Id.textEnterTime);
+            textTimeClose = FindViewById<TextView>(Resource.Id.textTimeClose);
+            spinner = FindViewById<Spinner>(Resource.Id.spinner);
         }
 
         private void HandleEvents()
         {
             btncreateEvent.Click += BtncreateEvent_Click;
+            txtDate.Click += TxtDate_Click;
+            textDateClose.Click += TextDateClose_Click;
+            textEnterTime.Click += TextEnterTime_Click;
+            textTimeClose.Click += TextTimeClose_Click;
+        }
+
+        private void TextTimeClose_Click(object sender, EventArgs e)
+        {
+            TimePickerFragment frag = TimePickerFragment.NewInstance(delegate (string time)
+            {
+                textTimeClose.Text = time;
+            });
+            frag.Show(FragmentManager, TimePickerFragment.TAG);
+        }
+
+        private void TextEnterTime_Click(object sender, EventArgs e)
+        {
+            TimePickerFragment frag = TimePickerFragment.NewInstance(delegate (string time)
+            {
+                textEnterTime.Text = time;
+            });
+            frag.Show(FragmentManager, TimePickerFragment.TAG);
+        }
+
+        private void TextDateClose_Click(object sender, EventArgs e)
+        {
+            DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
+            {
+                textDateClose.Text = time.ToLongDateString();
+            });
+            frag.Show(FragmentManager, DatePickerFragment.TAG);
+        }
+
+        private void TxtDate_Click(object sender, EventArgs e)
+        {
+            DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
+            {
+                txtDate.Text = time.ToLongDateString();
+            });
+            frag.Show(FragmentManager, DatePickerFragment.TAG);
         }
 
         private void BtncreateEvent_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(InviteGuestActivity));
+            intent.PutExtra("Date", txtDate.Text);
+            intent.PutExtra("Venue", spinner.SelectedItem.ToString());
             StartActivity(intent);
         }
 

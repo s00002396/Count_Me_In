@@ -57,6 +57,22 @@ namespace CountMeIn
 			}
 		}
 		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f060000
+			public const int theme_devicedefault_background = 2131099648;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
+			{
+			}
+		}
+		
 		public partial class Drawable
 		{
 			
@@ -88,83 +104,95 @@ namespace CountMeIn
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f060019
-			public const int aboutButton = 2131099673;
+			// aapt resource value: 0x7f08001d
+			public const int MyEditButton = 2131230749;
 			
-			// aapt resource value: 0x7f060009
-			public const int addVenue = 2131099657;
+			// aapt resource value: 0x7f08001c
+			public const int aboutButton = 2131230748;
 			
-			// aapt resource value: 0x7f06000f
-			public const int btnLogIn = 2131099663;
+			// aapt resource value: 0x7f08000d
+			public const int addVenue = 2131230733;
 			
-			// aapt resource value: 0x7f060011
-			public const int btnSignIn = 2131099665;
+			// aapt resource value: 0x7f080012
+			public const int btnLogIn = 2131230738;
 			
-			// aapt resource value: 0x7f060002
-			public const int btnSignUp = 2131099650;
+			// aapt resource value: 0x7f080014
+			public const int btnSignIn = 2131230740;
 			
-			// aapt resource value: 0x7f06000a
-			public const int createEvent = 2131099658;
+			// aapt resource value: 0x7f080002
+			public const int btnSignUp = 2131230722;
 			
-			// aapt resource value: 0x7f060018
-			public const int createEventButton = 2131099672;
+			// aapt resource value: 0x7f08000e
+			public const int createEvent = 2131230734;
 			
-			// aapt resource value: 0x7f060007
-			public const int datePicker = 2131099655;
+			// aapt resource value: 0x7f08001b
+			public const int createEventButton = 2131230747;
 			
-			// aapt resource value: 0x7f060013
-			public const int datePicker1 = 2131099667;
+			// aapt resource value: 0x7f080016
+			public const int datePicker1 = 2131230742;
 			
-			// aapt resource value: 0x7f060000
-			public const int editText1 = 2131099648;
+			// aapt resource value: 0x7f080000
+			public const int editText1 = 2131230720;
 			
-			// aapt resource value: 0x7f060015
-			public const int eventButton = 2131099669;
+			// aapt resource value: 0x7f080018
+			public const int eventButton = 2131230744;
 			
-			// aapt resource value: 0x7f060017
-			public const int groupButton = 2131099671;
+			// aapt resource value: 0x7f08001a
+			public const int groupButton = 2131230746;
 			
-			// aapt resource value: 0x7f060016
-			public const int inviteButton = 2131099670;
+			// aapt resource value: 0x7f080019
+			public const int inviteButton = 2131230745;
 			
-			// aapt resource value: 0x7f06000e
-			public const int logoImageView = 2131099662;
+			// aapt resource value: 0x7f080011
+			public const int logoImageView = 2131230737;
 			
-			// aapt resource value: 0x7f060003
-			public const int relativeLayout1 = 2131099651;
+			// aapt resource value: 0x7f080003
+			public const int relativeLayout1 = 2131230723;
 			
-			// aapt resource value: 0x7f06000d
-			public const int sendInvite = 2131099661;
+			// aapt resource value: 0x7f080010
+			public const int sendInvite = 2131230736;
 			
-			// aapt resource value: 0x7f060008
-			public const int spinner = 2131099656;
+			// aapt resource value: 0x7f08000c
+			public const int spinner = 2131230732;
 			
-			// aapt resource value: 0x7f060004
-			public const int textDate = 2131099652;
+			// aapt resource value: 0x7f080007
+			public const int textDate = 2131230727;
 			
-			// aapt resource value: 0x7f060001
-			public const int textPassword = 2131099649;
+			// aapt resource value: 0x7f080004
+			public const int textDate1 = 2131230724;
 			
-			// aapt resource value: 0x7f060006
-			public const int textSubjet = 2131099654;
+			// aapt resource value: 0x7f080008
+			public const int textDate2 = 2131230728;
 			
-			// aapt resource value: 0x7f060005
-			public const int textTime = 2131099653;
+			// aapt resource value: 0x7f080009
+			public const int textDateClose = 2131230729;
 			
-			// aapt resource value: 0x7f06000b
-			public const int textVenue = 2131099659;
+			// aapt resource value: 0x7f080006
+			public const int textEnterTime = 2131230726;
 			
-			// aapt resource value: 0x7f06000c
-			public const int textVenueName = 2131099660;
+			// aapt resource value: 0x7f080001
+			public const int textPassword = 2131230721;
 			
-			// aapt resource value: 0x7f060014
-			public const int timePicker1 = 2131099668;
+			// aapt resource value: 0x7f080005
+			public const int textTime = 2131230725;
 			
-			// aapt resource value: 0x7f060010
-			public const int txtCreateAccount = 2131099664;
+			// aapt resource value: 0x7f08000a
+			public const int textTimeClose = 2131230730;
 			
-			// aapt resource value: 0x7f060012
-			public const int txtOr = 2131099666;
+			// aapt resource value: 0x7f08000b
+			public const int textVenue = 2131230731;
+			
+			// aapt resource value: 0x7f08000f
+			public const int textVenueName = 2131230735;
+			
+			// aapt resource value: 0x7f080017
+			public const int timePicker1 = 2131230743;
+			
+			// aapt resource value: 0x7f080013
+			public const int txtCreateAccount = 2131230739;
+			
+			// aapt resource value: 0x7f080015
+			public const int txtOr = 2131230741;
 			
 			static Id()
 			{
@@ -199,6 +227,9 @@ namespace CountMeIn
 			
 			// aapt resource value: 0x7f030006
 			public const int MainMenu = 2130903046;
+			
+			// aapt resource value: 0x7f030007
+			public const int MyDate = 2130903047;
 			
 			static Layout()
 			{
@@ -243,6 +274,22 @@ namespace CountMeIn
 			}
 			
 			private String()
+			{
+			}
+		}
+		
+		public partial class Style
+		{
+			
+			// aapt resource value: 0x7f070000
+			public const int Theme_Custom = 2131165184;
+			
+			static Style()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Style()
 			{
 			}
 		}
