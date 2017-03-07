@@ -104,95 +104,113 @@ namespace CountMeIn
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f08001d
-			public const int MyEditButton = 2131230749;
+			// aapt resource value: 0x7f080023
+			public const int MyEditButton = 2131230755;
 			
-			// aapt resource value: 0x7f08001c
-			public const int aboutButton = 2131230748;
-			
-			// aapt resource value: 0x7f08000d
-			public const int addVenue = 2131230733;
+			// aapt resource value: 0x7f080021
+			public const int aboutButton = 2131230753;
 			
 			// aapt resource value: 0x7f080012
-			public const int btnLogIn = 2131230738;
-			
-			// aapt resource value: 0x7f080014
-			public const int btnSignIn = 2131230740;
-			
-			// aapt resource value: 0x7f080002
-			public const int btnSignUp = 2131230722;
-			
-			// aapt resource value: 0x7f08000e
-			public const int createEvent = 2131230734;
-			
-			// aapt resource value: 0x7f08001b
-			public const int createEventButton = 2131230747;
-			
-			// aapt resource value: 0x7f080016
-			public const int datePicker1 = 2131230742;
-			
-			// aapt resource value: 0x7f080000
-			public const int editText1 = 2131230720;
-			
-			// aapt resource value: 0x7f080018
-			public const int eventButton = 2131230744;
-			
-			// aapt resource value: 0x7f08001a
-			public const int groupButton = 2131230746;
-			
-			// aapt resource value: 0x7f080019
-			public const int inviteButton = 2131230745;
-			
-			// aapt resource value: 0x7f080011
-			public const int logoImageView = 2131230737;
-			
-			// aapt resource value: 0x7f080003
-			public const int relativeLayout1 = 2131230723;
-			
-			// aapt resource value: 0x7f080010
-			public const int sendInvite = 2131230736;
-			
-			// aapt resource value: 0x7f08000c
-			public const int spinner = 2131230732;
-			
-			// aapt resource value: 0x7f080007
-			public const int textDate = 2131230727;
-			
-			// aapt resource value: 0x7f080004
-			public const int textDate1 = 2131230724;
-			
-			// aapt resource value: 0x7f080008
-			public const int textDate2 = 2131230728;
-			
-			// aapt resource value: 0x7f080009
-			public const int textDateClose = 2131230729;
-			
-			// aapt resource value: 0x7f080006
-			public const int textEnterTime = 2131230726;
-			
-			// aapt resource value: 0x7f080001
-			public const int textPassword = 2131230721;
-			
-			// aapt resource value: 0x7f080005
-			public const int textTime = 2131230725;
-			
-			// aapt resource value: 0x7f08000a
-			public const int textTimeClose = 2131230730;
-			
-			// aapt resource value: 0x7f08000b
-			public const int textVenue = 2131230731;
-			
-			// aapt resource value: 0x7f08000f
-			public const int textVenueName = 2131230735;
+			public const int addVenue = 2131230738;
 			
 			// aapt resource value: 0x7f080017
-			public const int timePicker1 = 2131230743;
+			public const int btnLogIn = 2131230743;
+			
+			// aapt resource value: 0x7f080019
+			public const int btnSignIn = 2131230745;
+			
+			// aapt resource value: 0x7f080008
+			public const int btnSignUp = 2131230728;
 			
 			// aapt resource value: 0x7f080013
-			public const int txtCreateAccount = 2131230739;
+			public const int createEvent = 2131230739;
+			
+			// aapt resource value: 0x7f080020
+			public const int createEventButton = 2131230752;
+			
+			// aapt resource value: 0x7f080006
+			public const int createVenue = 2131230726;
+			
+			// aapt resource value: 0x7f08001b
+			public const int datePicker1 = 2131230747;
+			
+			// aapt resource value: 0x7f080004
+			public const int editText1 = 2131230724;
+			
+			// aapt resource value: 0x7f08001d
+			public const int eventButton = 2131230749;
+			
+			// aapt resource value: 0x7f08001f
+			public const int groupButton = 2131230751;
+			
+			// aapt resource value: 0x7f08001e
+			public const int inviteButton = 2131230750;
+			
+			// aapt resource value: 0x7f080016
+			public const int logoImageView = 2131230742;
+			
+			// aapt resource value: 0x7f080000
+			public const int relativeLayout1 = 2131230720;
 			
 			// aapt resource value: 0x7f080015
-			public const int txtOr = 2131230741;
+			public const int sendInvite = 2131230741;
+			
+			// aapt resource value: 0x7f080011
+			public const int spinner = 2131230737;
+			
+			// aapt resource value: 0x7f08000c
+			public const int textDate = 2131230732;
+			
+			// aapt resource value: 0x7f080009
+			public const int textDate1 = 2131230729;
+			
+			// aapt resource value: 0x7f08000d
+			public const int textDate2 = 2131230733;
+			
+			// aapt resource value: 0x7f08000e
+			public const int textDateClose = 2131230734;
+			
+			// aapt resource value: 0x7f08000b
+			public const int textEnterTime = 2131230731;
+			
+			// aapt resource value: 0x7f080002
+			public const int textEnterVenueName = 2131230722;
+			
+			// aapt resource value: 0x7f080014
+			public const int textLabel = 2131230740;
+			
+			// aapt resource value: 0x7f080007
+			public const int textPassword = 2131230727;
+			
+			// aapt resource value: 0x7f08000a
+			public const int textTime = 2131230730;
+			
+			// aapt resource value: 0x7f08000f
+			public const int textTimeClose = 2131230735;
+			
+			// aapt resource value: 0x7f080010
+			public const int textVenue = 2131230736;
+			
+			// aapt resource value: 0x7f080003
+			public const int textVenueAddress = 2131230723;
+			
+			// aapt resource value: 0x7f080001
+			public const int textVenueName = 2131230721;
+			
+			// aapt resource value: 0x7f080005
+			public const int textVenuePhone = 2131230725;
+			
+			// aapt resource value: 0x7f08001c
+			public const int timePicker1 = 2131230748;
+			
+			// aapt resource value: 0x7f080018
+			public const int txtCreateAccount = 2131230744;
+			
+			// aapt resource value: 0x7f08001a
+			public const int txtOr = 2131230746;
+			
+			// aapt resource value: 0x7f080022
+			public const int txtSysLog = 2131230754;
 			
 			static Id()
 			{
@@ -208,28 +226,37 @@ namespace CountMeIn
 		{
 			
 			// aapt resource value: 0x7f030000
-			public const int CreateAccount = 2130903040;
+			public const int AddVenue = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int CreateEvent = 2130903041;
+			public const int CreateAccount = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int InviteGuests = 2130903042;
+			public const int CreateEvent = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int Login = 2130903043;
+			public const int EventDetails = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int LoginSignUP = 2130903044;
+			public const int GroupDetails = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int Main = 2130903045;
+			public const int InviteGuests = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int MainMenu = 2130903046;
+			public const int Login = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int MyDate = 2130903047;
+			public const int LoginSignUP = 2130903047;
+			
+			// aapt resource value: 0x7f030008
+			public const int Main = 2130903048;
+			
+			// aapt resource value: 0x7f030009
+			public const int MainMenu = 2130903049;
+			
+			// aapt resource value: 0x7f03000a
+			public const int MyDate = 2130903050;
 			
 			static Layout()
 			{

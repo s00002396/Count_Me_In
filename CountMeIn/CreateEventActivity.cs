@@ -23,6 +23,7 @@ namespace CountMeIn
         private TextView textEnterTime;
         private TextView textTimeClose;
         private Button btncreateEvent;
+        private Button btnAddVenue;
         private Spinner spinner;
 
         protected override void OnCreate(Bundle savedInstanceState)
@@ -62,6 +63,7 @@ namespace CountMeIn
             textEnterTime = FindViewById<TextView>(Resource.Id.textEnterTime);
             textTimeClose = FindViewById<TextView>(Resource.Id.textTimeClose);
             spinner = FindViewById<Spinner>(Resource.Id.spinner);
+            btnAddVenue = FindViewById<Button>(Resource.Id.addVenue);
         }
 
         private void HandleEvents()
@@ -71,6 +73,13 @@ namespace CountMeIn
             textDateClose.Click += TextDateClose_Click;
             textEnterTime.Click += TextEnterTime_Click;
             textTimeClose.Click += TextTimeClose_Click;
+            btnAddVenue.Click += BtnAddVenue_Click;
+        }
+
+        private void BtnAddVenue_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(AddVenueActivity));            
+            StartActivity(intent);
         }
 
         private void TextTimeClose_Click(object sender, EventArgs e)

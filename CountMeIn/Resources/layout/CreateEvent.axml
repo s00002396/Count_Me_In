@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:minHeight="25px"
     android:minWidth="25px"
     android:layout_width="match_parent"
     android:layout_height="500.0dp"
-    android:background="#00A3E8"
+    android:background="#444B64"
     android:id="@+id/relativeLayout1"
-    xmlns:tools="http://schemas.android.com/tools"
     tools:gridSpec="1|8|#ff8080ff|K:#ee8700ff:16,l:72,l:16,r|S:#83ee00ff:16,0,l:16,56,l:16,0,r">
     <TextView
         android:id="@+id/textDate1"
         android:layout_width="180.0dp"
         android:layout_height="wrap_content"
-        android:background="#F8EFF8F3"
+        android:background="#4A506B"
         android:text="Event Date"
-        android:textColor="#333639"
+        android:textColor="#F4F6F7"
         android:padding="16.0dp"
         android:layout_marginRight="0.0dp"
         android:layout_marginLeft="0.0dp" />
@@ -25,8 +25,8 @@
         android:layout_marginLeft="1dp"
         android:layout_toRightOf="@+id/textDate1"
         android:text="Event Time"
-        android:textColor="#333639"
-        android:background="#F8EFF8F3"
+        android:textColor="#F4F6F7"
+        android:background="#4A506B"
         android:padding="16.0dp" />
     <TextView
         android:id="@+id/textEnterTime"
@@ -35,8 +35,8 @@
         android:layout_marginTop="66.0dp"
         android:text="Enter Time"
         android:layout_toRightOf="@+id/textDate"
-        android:textColor="#333639"
-        android:background="#F8EFF8F3"
+        android:textColor="#F4F6F7"
+        android:background="#4A506B"
         android:padding="10.0dp"
         android:paddingLeft="10.0dp"
         android:layout_marginRight="10.0dp" />
@@ -48,16 +48,16 @@
         android:layout_marginRight="5.0dp"
         android:layout_marginLeft="10.0dp"
         android:padding="10.0dp"
-        android:textColor="#333639"
-        android:background="#F8EFF8F3"
+        android:textColor="#F4F6F7"
+        android:background="#4A506B"
         android:layout_marginTop="66.0dp" />
     <TextView
         android:id="@+id/textDate2"
         android:layout_width="180.0dp"
         android:layout_height="wrap_content"
-        android:background="#F8EFF8F3"
+        android:background="#4A506B"
         android:text="Close Date"
-        android:textColor="#333639"
+        android:textColor="#F4F6F7"
         android:padding="16.0dp"
         android:layout_marginRight="0.0dp"
         android:layout_marginTop="116.0dp" />
@@ -68,8 +68,8 @@
         android:layout_marginLeft="1dp"
         android:layout_toRightOf="@+id/textDate2"
         android:text="Close Time"
-        android:textColor="#333639"
-        android:background="#F8EFF8F3"
+        android:textColor="#F4F6F7"
+        android:background="#4A506B"
         android:padding="16.0dp"
         android:layout_marginTop="116.0dp"
         android:layout_marginRight="0.0dp" />
@@ -81,8 +81,8 @@
         android:layout_marginRight="5.0dp"
         android:layout_marginLeft="10.0dp"
         android:padding="10.0dp"
-        android:textColor="#333639"
-        android:background="#F8EFF8F3"
+        android:textColor="#F4F6F7"
+        android:background="#4A506B"
         android:layout_marginTop="186.0dp" />
     <TextView
         android:id="@+id/textTimeClose"
@@ -91,8 +91,8 @@
         android:layout_marginTop="186.0dp"
         android:text="Enter Time"
         android:layout_toRightOf="@+id/textDateClose"
-        android:textColor="#333639"
-        android:background="#F8EFF8F3"
+        android:textColor="#F4F6F7"
+        android:background="#4A506B"
         android:padding="10.0dp"
         android:paddingLeft="10.0dp"
         android:layout_marginRight="10.0dp" />
@@ -100,9 +100,9 @@
         android:id="@+id/textVenue"
         android:layout_width="190.0dp"
         android:layout_height="wrap_content"
-        android:background="#F8EFF8F3"
+        android:background="#4A506B"
         android:text="Venue"
-        android:textColor="#333639"
+        android:textColor="#F4F6F7"
         android:padding="16.0dp"
         android:layout_marginRight="0.0dp"
         android:layout_marginTop="256.0dp" />

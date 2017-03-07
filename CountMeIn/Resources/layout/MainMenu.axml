@@ -40,4 +40,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/aboutButton"
         android:layout_marginBottom="8.5dp" />
+    <TextView
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtSysLog" />
 </LinearLayout>

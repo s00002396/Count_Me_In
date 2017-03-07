@@ -1,3 +1,7 @@
+CountMeIn.AddVenueActivity, CountMeIn;md50b100ff02de193c8ada20d64db42ab1f.AddVenueActivity
+CountMeIn.AddVenueActivity, CountMeIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50b100ff02de193c8ada20d64db42ab1f.AddVenueActivity
+CountMeIn.AddVenueActivity;md50b100ff02de193c8ada20d64db42ab1f.AddVenueActivity
+countmein.AddVenueActivity;md50b100ff02de193c8ada20d64db42ab1f.AddVenueActivity
 CountMeIn.CreateAccountActivity, CountMeIn;md50b100ff02de193c8ada20d64db42ab1f.CreateAccountActivity
 CountMeIn.CreateAccountActivity, CountMeIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50b100ff02de193c8ada20d64db42ab1f.CreateAccountActivity
 CountMeIn.CreateAccountActivity;md50b100ff02de193c8ada20d64db42ab1f.CreateAccountActivity

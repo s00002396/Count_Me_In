@@ -5,6 +5,7 @@
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="CountMeIn" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
+    <activity android:label="Add Venue" android:name="md50b100ff02de193c8ada20d64db42ab1f.AddVenueActivity" />
     <activity android:label="CreateAccountActivity" android:name="md50b100ff02de193c8ada20d64db42ab1f.CreateAccountActivity" />
     <activity android:label="Create an Event" android:name="md50b100ff02de193c8ada20d64db42ab1f.CreateEventActivity" />
     <activity android:label="Invite Guests" android:name="md50b100ff02de193c8ada20d64db42ab1f.InviteGuestActivity">
