@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace CountMeIn
 {
-    [Activity(Label = "PendingInvitesActivity")]
+    [Activity(Label = "Pending Invites")]
     public class PendingInvitesActivity : Activity
     {
         protected override void OnCreate(Bundle savedInstanceState)

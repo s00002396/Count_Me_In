@@ -157,5 +157,5 @@
         android:layout_height="51.0dp"
         android:layout_marginTop="426.0dp"
         android:text="Create Event"
-        android:layout_marginLeft="78.0dp"/>
+        android:layout_marginLeft="78.0dp" />
 </RelativeLayout>

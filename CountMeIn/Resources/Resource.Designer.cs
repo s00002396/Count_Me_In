@@ -140,14 +140,17 @@ namespace CountMeIn
 			// aapt resource value: 0x7f080004
 			public const int editText1 = 2131230724;
 			
+			// aapt resource value: 0x7f080024
+			public const int eventListView = 2131230756;
+			
 			// aapt resource value: 0x7f080016
 			public const int logoImageView = 2131230742;
 			
 			// aapt resource value: 0x7f08001e
 			public const int pendingInviteButton = 2131230750;
 			
-			// aapt resource value: 0x7f080024
-			public const int progressBar1 = 2131230756;
+			// aapt resource value: 0x7f080025
+			public const int progressBar1 = 2131230757;
 			
 			// aapt resource value: 0x7f080000
 			public const int relativeLayout1 = 2131230720;

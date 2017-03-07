@@ -20,7 +20,7 @@
     <activity android:icon="@drawable/icon" android:label="CountMeIn" android:name="md50b100ff02de193c8ada20d64db42ab1f.MainActivity" />
     <activity android:label="Main Menu" android:name="md50b100ff02de193c8ada20d64db42ab1f.MainMenuActivity" />
     <activity android:label="MyDateActivity" android:name="md50b100ff02de193c8ada20d64db42ab1f.MyDateActivity" />
-    <activity android:label="PendingInvitesActivity" android:name="md50b100ff02de193c8ada20d64db42ab1f.PendingInvitesActivity" />
+    <activity android:label="Pending Invites" android:name="md50b100ff02de193c8ada20d64db42ab1f.PendingInvitesActivity" />
     <activity android:label="UpComing Event" android:name="md50b100ff02de193c8ada20d64db42ab1f.UpComingEventActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="CountMeIn.CountMeIn.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->

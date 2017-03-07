@@ -42,6 +42,11 @@ namespace CountMeIn
 
         private void BtnCreateVenueButton_Click(object sender, EventArgs e)
         {
+            //var dialog = new AlertDialog.Builder(this);
+            //dialog.SetTitle("Congirmation");
+            //dialog.SetMessage("Venue was added");
+            //dialog.Show();
+           
             var intent = new Intent(this, typeof(CreateEventActivity));
             StartActivity(intent);
         }

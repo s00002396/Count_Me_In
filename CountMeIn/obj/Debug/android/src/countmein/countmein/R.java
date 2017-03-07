@@ -36,9 +36,10 @@ public final class R {
         public static final int createVenue=0x7f080006;
         public static final int datePicker1=0x7f08001b;
         public static final int editText1=0x7f080004;
+        public static final int eventListView=0x7f080024;
         public static final int logoImageView=0x7f080016;
         public static final int pendingInviteButton=0x7f08001e;
-        public static final int progressBar1=0x7f080024;
+        public static final int progressBar1=0x7f080025;
         public static final int relativeLayout1=0x7f080000;
         public static final int sendInvite=0x7f080015;
         public static final int spinner=0x7f080011;
