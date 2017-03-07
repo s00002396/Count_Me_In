@@ -59,6 +59,7 @@
     <Compile Include="AddVenueActivity.cs" />
     <Compile Include="CreateAccountActivity.cs" />
     <Compile Include="CreateEventActivity.cs" />
+    <Compile Include="CreateGroupActivity.cs" />
     <Compile Include="DatePickerFragment.cs" />
     <Compile Include="InviteGuestActivity.cs" />
     <Compile Include="LoginActivity.cs" />
@@ -67,11 +68,13 @@
     <Compile Include="MainMenuActivity.cs" />
     <Compile Include="MyDateActivity.cs" />
     <Compile Include="ORM\DBRepository.cs" />
+    <Compile Include="PendingInvitesActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ORM\SQLite.cs" />
     <Compile Include="ORM\SQLiteAsync.cs" />
     <Compile Include="TimePickerFragment.cs" />
+    <Compile Include="UpComingEventActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
@@ -106,6 +109,18 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\EventDetails.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\PendingInvites.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\CreateGroup.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\UpComingEvent.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Test.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

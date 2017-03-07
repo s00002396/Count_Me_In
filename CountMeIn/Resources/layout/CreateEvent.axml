@@ -13,44 +13,56 @@
         android:layout_width="180.0dp"
         android:layout_height="wrap_content"
         android:background="#4A506B"
+        android:textSize="20.0dp"
         android:text="Event Date"
         android:textColor="#F4F6F7"
-        android:padding="16.0dp"
         android:layout_marginRight="0.0dp"
-        android:layout_marginLeft="0.0dp" />
+        android:layout_marginLeft="0.0dp"
+        android:gravity="center_horizontal"
+        android:padding="16.0dp"
+        android:textStyle="bold" />
     <TextView
         android:id="@+id/textTime"
         android:layout_width="185dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="1dp"
+        android:layout_marginLeft="0.0dp"
         android:layout_toRightOf="@+id/textDate1"
         android:text="Event Time"
+        android:textSize="20.0dp"
         android:textColor="#F4F6F7"
         android:background="#4A506B"
-        android:padding="16.0dp" />
-    <TextView
+        android:padding="16.0dp"
+        android:gravity="center_horizontal"
+        android:textStyle="bold" />
+    <EditText
         android:id="@+id/textEnterTime"
         android:layout_width="185dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="66.0dp"
-        android:text="Enter Time"
+        android:hint="Enter Time"
         android:layout_toRightOf="@+id/textDate"
         android:textColor="#F4F6F7"
         android:background="#4A506B"
         android:padding="10.0dp"
         android:paddingLeft="10.0dp"
-        android:layout_marginRight="10.0dp" />
-    <TextView
+        android:focusable="false"
+        android:layout_marginRight="10.0dp"
+        android:gravity="center_horizontal"
+        android:textStyle="italic" />
+    <EditText
         android:id="@+id/textDate"
         android:layout_width="171.0dp"
-        android:layout_height="39.0dp"
-        android:text="Enter Date"
+        android:layout_height="wrap_content"
+        android:hint="Enter Date"
         android:layout_marginRight="5.0dp"
         android:layout_marginLeft="10.0dp"
         android:padding="10.0dp"
         android:textColor="#F4F6F7"
         android:background="#4A506B"
-        android:layout_marginTop="66.0dp" />
+        android:focusable="false"
+        android:layout_marginTop="66.0dp"
+        android:gravity="center_horizontal"
+        android:textStyle="italic" />
     <TextView
         android:id="@+id/textDate2"
         android:layout_width="180.0dp"
@@ -60,42 +72,54 @@
         android:textColor="#F4F6F7"
         android:padding="16.0dp"
         android:layout_marginRight="0.0dp"
-        android:layout_marginTop="116.0dp" />
+        android:layout_marginTop="116.0dp"
+        android:gravity="center_horizontal"
+        android:textSize="20.0dp"
+        android:textStyle="bold" />
     <TextView
         android:id="@+id/textTime"
         android:layout_width="185dp"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="1dp"
+        android:layout_marginLeft="0.0dp"
         android:layout_toRightOf="@+id/textDate2"
         android:text="Close Time"
         android:textColor="#F4F6F7"
         android:background="#4A506B"
         android:padding="16.0dp"
         android:layout_marginTop="116.0dp"
-        android:layout_marginRight="0.0dp" />
-    <TextView
+        android:layout_marginRight="0.0dp"
+        android:gravity="center_horizontal"
+        android:textSize="20.0dp"
+        android:textStyle="bold" />
+    <EditText
         android:id="@+id/textDateClose"
         android:layout_width="171.0dp"
-        android:layout_height="39.0dp"
-        android:text="Enter Date"
+        android:layout_height="wrap_content"
+        android:hint="Enter Date"
         android:layout_marginRight="5.0dp"
         android:layout_marginLeft="10.0dp"
         android:padding="10.0dp"
         android:textColor="#F4F6F7"
         android:background="#4A506B"
-        android:layout_marginTop="186.0dp" />
-    <TextView
+        android:layout_marginTop="186.0dp"
+        android:gravity="center_horizontal"
+        android:focusable="false"
+        android:textStyle="italic" />
+    <EditText
         android:id="@+id/textTimeClose"
         android:layout_width="185dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="186.0dp"
-        android:text="Enter Time"
+        android:hint="Enter Time"
         android:layout_toRightOf="@+id/textDateClose"
         android:textColor="#F4F6F7"
         android:background="#4A506B"
         android:padding="10.0dp"
         android:paddingLeft="10.0dp"
-        android:layout_marginRight="10.0dp" />
+        android:layout_marginRight="10.0dp"
+        android:gravity="center_horizontal"
+        android:focusable="false"
+        android:textStyle="italic" />
     <TextView
         android:id="@+id/textVenue"
         android:layout_width="190.0dp"
@@ -105,7 +129,10 @@
         android:textColor="#F4F6F7"
         android:padding="16.0dp"
         android:layout_marginRight="0.0dp"
-        android:layout_marginTop="256.0dp" />
+        android:layout_marginTop="256.0dp"
+        android:textSize="20.0dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal" />
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="match_parent"
@@ -114,7 +141,9 @@
         android:prompt="@string/planet_prompt"
         android:layout_toRightOf="@+id/textVenue"
         android:padding="10.0dp"
-        android:paddingLeft="10.0dp" />
+        android:paddingLeft="10.0dp"
+        android:foreground="#4A506B"
+        android:foregroundGravity="center_horizontal" />
     <Button
         android:id="@+id/addVenue"
         android:layout_width="200.0dp"
@@ -128,5 +157,5 @@
         android:layout_height="51.0dp"
         android:layout_marginTop="426.0dp"
         android:text="Create Event"
-        android:layout_marginLeft="78.0dp" />
+        android:layout_marginLeft="78.0dp"/>
 </RelativeLayout>

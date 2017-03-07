@@ -32,13 +32,13 @@ public final class R {
         public static final int btnSignUp=0x7f080008;
         public static final int createEvent=0x7f080013;
         public static final int createEventButton=0x7f080020;
+        public static final int createGroupButton=0x7f08001f;
         public static final int createVenue=0x7f080006;
         public static final int datePicker1=0x7f08001b;
         public static final int editText1=0x7f080004;
-        public static final int eventButton=0x7f08001d;
-        public static final int groupButton=0x7f08001f;
-        public static final int inviteButton=0x7f08001e;
         public static final int logoImageView=0x7f080016;
+        public static final int pendingInviteButton=0x7f08001e;
+        public static final int progressBar1=0x7f080024;
         public static final int relativeLayout1=0x7f080000;
         public static final int sendInvite=0x7f080015;
         public static final int spinner=0x7f080011;
@@ -60,19 +60,24 @@ public final class R {
         public static final int txtCreateAccount=0x7f080018;
         public static final int txtOr=0x7f08001a;
         public static final int txtSysLog=0x7f080022;
+        public static final int upcomingeventButton=0x7f08001d;
     }
     public static final class layout {
         public static final int addvenue=0x7f030000;
         public static final int createaccount=0x7f030001;
         public static final int createevent=0x7f030002;
-        public static final int eventdetails=0x7f030003;
-        public static final int groupdetails=0x7f030004;
-        public static final int inviteguests=0x7f030005;
-        public static final int login=0x7f030006;
-        public static final int loginsignup=0x7f030007;
-        public static final int main=0x7f030008;
-        public static final int mainmenu=0x7f030009;
-        public static final int mydate=0x7f03000a;
+        public static final int creategroup=0x7f030003;
+        public static final int eventdetails=0x7f030004;
+        public static final int groupdetails=0x7f030005;
+        public static final int inviteguests=0x7f030006;
+        public static final int login=0x7f030007;
+        public static final int loginsignup=0x7f030008;
+        public static final int main=0x7f030009;
+        public static final int mainmenu=0x7f03000a;
+        public static final int mydate=0x7f03000b;
+        public static final int pendinginvites=0x7f03000c;
+        public static final int test=0x7f03000d;
+        public static final int upcomingevent=0x7f03000e;
     }
     public static final class string {
         public static final int ApplicationName=0x7f040001;

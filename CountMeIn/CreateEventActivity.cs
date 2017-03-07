@@ -13,7 +13,7 @@ using Android.Widget;
 namespace CountMeIn
 {
     
-    [Activity(Label = "Create an Event")]
+    [Activity(Label = "Create an Event", MainLauncher = false)]
     public class CreateEventActivity : Activity
     {
         private DatePicker datePicker;

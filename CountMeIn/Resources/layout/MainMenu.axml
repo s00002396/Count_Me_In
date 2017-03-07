@@ -14,19 +14,19 @@
         android:text="UpComing Events"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/eventButton"
+        android:id="@+id/upcomingeventButton"
         android:layout_marginBottom="8.5dp" />
     <Button
         android:text="Pending Invites"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/inviteButton"
+        android:id="@+id/pendingInviteButton"
         android:layout_marginBottom="8.5dp" />
     <Button
         android:text="Create Group"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/groupButton"
+        android:id="@+id/createGroupButton"
         android:layout_marginBottom="8.5dp" />
     <Button
         android:text="Create Event"

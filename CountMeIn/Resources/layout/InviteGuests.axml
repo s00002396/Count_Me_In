@@ -54,13 +54,15 @@
         android:textColor="#F4F6F7"
         android:padding="16.0dp"
         android:layout_marginRight="0.0dp"
-        android:layout_marginTop="190.0dp" />
+        android:layout_marginTop="190.0dp"
+        android:gravity="center_horizontal" />
     <CheckBox
         android:layout_width="185dp"
         android:layout_height="wrap_content"
         android:text="Dominic"
-        android:layout_marginTop="230.0dp"
-        android:layout_marginLeft="78.0dp" />
+        android:layout_marginTop="250.0dp"
+        android:layout_marginLeft="78.0dp"
+        android:gravity="fill_vertical" />
     <Button
         android:id="@+id/sendInvite"
         android:layout_width="200.0dp"

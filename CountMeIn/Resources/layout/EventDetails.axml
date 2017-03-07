@@ -1,7 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minHeight="25px"
+    android:minWidth="25px"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-</LinearLayout>
+    android:layout_height="500.0dp"
+    android:background="#444B64"
+    android:id="@+id/relativeLayout1"
+    android:paddingTop="20.0dp">
+  <TextView
+      android:id="@+id/textDate"
+      android:layout_width="180.0dp"
+      android:layout_height="wrap_content"
+      android:background="#4A506B"
+      android:text="Event Date"
+      android:textColor="#F4F6F7"
+      android:padding="16.0dp"
+      android:layout_marginRight="0.0dp" />
+  <TextView
+      android:id="@+id/textTime"
+      android:layout_width="185dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="1dp"
+      android:layout_toRightOf="@+id/textDate"
+      android:textColor="#F4F6F7"
+      android:background="#4A506B"
+      android:padding="16.0dp" />
+  <TextView
+      android:id="@+id/textVenue"
+      android:layout_width="180.0dp"
+      android:layout_height="wrap_content"
+      android:background="#4A506B"
+      android:text="Event Venue"
+      android:textColor="#F4F6F7"
+      android:padding="16.0dp"
+      android:layout_marginTop="100.0dp"
+      android:layout_marginRight="0.0dp" />
+  <TextView
+      android:id="@+id/textVenueName"
+      android:layout_width="185dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="1dp"
+      android:layout_toRightOf="@+id/textVenue"
+      android:textColor="#F4F6F7"
+      android:background="#4A506B"
+      android:layout_marginTop="100.0dp"
+      android:padding="16.0dp" />
+  <TextView
+      android:id="@+id/textLabel"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="#4A506B"
+      android:text="Attending"
+      android:textColor="#F4F6F7"
+      android:padding="16.0dp"
+      android:layout_marginRight="0.0dp"
+      android:layout_marginTop="190.0dp"
+      android:gravity="center_horizontal" />
+  <CheckBox
+      android:layout_width="185dp"
+      android:layout_height="wrap_content"
+      android:text="Dominic"
+      android:layout_marginTop="250.0dp"
+      android:layout_marginLeft="78.0dp"
+      android:gravity="fill_vertical" />
+  <Button
+      android:id="@+id/sendInvite"
+      android:layout_width="200.0dp"
+      android:layout_height="51.0dp"
+      android:layout_marginTop="386.0dp"
+      android:text="Get Directions"
+      android:layout_marginLeft="78.0dp" />
+</RelativeLayout>
