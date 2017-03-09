@@ -12,6 +12,7 @@ using Android.Widget;
 using CountMeIn.ORM;
 using MySql.Data.MySqlClient;
 using System.Data;
+using System.Data.SqlClient;
 
 namespace CountMeIn
 {
@@ -78,34 +79,22 @@ namespace CountMeIn
 
         private void BtnCreateDB_Click(object sender, EventArgs e)
         {
-            MySql.Data.MySqlClient.MySqlConnection conn;
-            string myConnectionString;
+            SqlConnection sqlconn;
 
-            myConnectionString = "server=127.0.0.1;uid=root;" +
-    "pwd=Fld118yi;database=test;";
-
-
-
-            //MySqlConnection conn = new MySql.Data.MySqlClient.MySqlConnection();
-            //MySqlCommand cmd = new MySql.Data.MySqlClient.MySqlCommand();
-            //string SQL;
-            //conn.ConnectionString = "Server=127.0.0.1;Database=world;Uid=root;Pwd=Fld118yi";
-            //MySqlConnection con = new MySqlConnection("server=localhost;userid=root;database=world");
+            string connsqlstring = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=FYP_Project;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");           
+            sqlconn = new System.Data.SqlClient.SqlConnection(connsqlstring);           
             try
-            {
-                conn = new MySql.Data.MySqlClient.MySqlConnection();
-                conn.ConnectionString = myConnectionString;
-                conn.Open();
-
+            {                
+                sqlconn.Open();
+                txtSysLog.Text = "Success Finally";
             }
-            catch (MySqlException ex)
+            catch (Exception ex)
             {
-
                 txtSysLog.Text = ex.ToString();
             }
             finally
             {
-               // conn.Close();
+                sqlconn.Close();
             }
             //DBRepository dbr = new DBRepository();
             //var result = dbr.CreateDB();

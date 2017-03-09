@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>07/03/2017 21:45:46</xs:documentation>
+    <xs:documentation>09/03/2017 17:57:29</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -17234,11 +17234,15 @@
             <xs:enumeration value="@id/datePicker1" />
             <xs:enumeration value="@id/editText1" />
             <xs:enumeration value="@id/eventListView" />
+            <xs:enumeration value="@id/loginPassword" />
+            <xs:enumeration value="@id/loginUserName" />
             <xs:enumeration value="@id/logoImageView" />
             <xs:enumeration value="@id/MyEditButton" />
             <xs:enumeration value="@id/pendingInviteButton" />
+            <xs:enumeration value="@id/phoneNo" />
             <xs:enumeration value="@id/progressBar1" />
             <xs:enumeration value="@id/relativeLayout1" />
+            <xs:enumeration value="@id/renterPwd" />
             <xs:enumeration value="@id/sendInvite" />
             <xs:enumeration value="@id/spinner" />
             <xs:enumeration value="@id/textDate" />
@@ -17260,6 +17264,7 @@
             <xs:enumeration value="@id/txtOr" />
             <xs:enumeration value="@id/txtSysLog" />
             <xs:enumeration value="@id/upcomingeventButton" />
+            <xs:enumeration value="@id/username" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
