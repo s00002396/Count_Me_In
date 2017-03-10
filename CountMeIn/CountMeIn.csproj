@@ -62,6 +62,8 @@
     <Compile Include="CreateEventActivity.cs" />
     <Compile Include="CreateGroupActivity.cs" />
     <Compile Include="DatePickerFragment.cs" />
+    <Compile Include="EventDetailsActivity.cs" />
+    <Compile Include="GroupDetailsActivity.cs" />
     <Compile Include="InviteGuestActivity.cs" />
     <Compile Include="LoginActivity.cs" />
     <Compile Include="LoginSignUPActivity.cs" />
@@ -78,6 +80,7 @@
     <Compile Include="ORM\SQLite.cs" />
     <Compile Include="ORM\SQLiteAsync.cs" />
     <Compile Include="Service\EventDataService.cs" />
+    <Compile Include="TestCreateEventActivity.cs" />
     <Compile Include="TimePickerFragment.cs" />
     <Compile Include="UpComingEventActivity.cs" />
   </ItemGroup>
@@ -128,6 +131,9 @@
     <AndroidResource Include="Resources\layout\Test.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\TestCreateEvent.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
@@ -159,6 +165,21 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\values\theme.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\button_round.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\Calendar.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\clock2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\EditTextBorder.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\logo3.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

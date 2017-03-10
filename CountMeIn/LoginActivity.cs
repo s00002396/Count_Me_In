@@ -14,7 +14,7 @@ using System.Data;
 
 namespace CountMeIn
 {
-    [Activity(Label = "Login", MainLauncher = false)]
+    [Activity(Label = "Login", MainLauncher = false, Icon = "@drawable/logo")]
     public class LoginActivity : Activity
     {
         private Button btnLogIn;
@@ -67,9 +67,9 @@ namespace CountMeIn
                     string userName = (string)reader["Username"];
                     string phone = (string)reader["PhoneNo"];
                     string password = (string)reader["Password"];
-                    //var test = x.GetSqlValues(0);
                     if (((userName == username.Text || phone == username.Text)) && password == pword.Text)
                     {
+                        //sqlconn.Close();
                         var intent = new Intent(this, typeof(MainMenuActivity));
                         StartActivity(intent);                        
                     }
@@ -78,7 +78,6 @@ namespace CountMeIn
                         Toast.MakeText(this, "Invalid username or password", ToastLength.Long).Show();
                     }
                 }
-                //txtSysLog.Text = "Success Finally";
             }
             catch (Exception ex)
             {

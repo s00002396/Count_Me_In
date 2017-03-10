@@ -38,7 +38,7 @@ namespace CountMeIn
         private void FindViews()
         {
             btnSignUp = FindViewById<Button>(Resource.Id.btnSignUp);
-            txtSysLog = FindViewById<TextView>(Resource.Id.txtSysLog);
+            //txtSysLog = FindViewById<TextView>(Resource.Id.txtSysLog);
             userName = FindViewById<EditText>(Resource.Id.username);
             phoneNumber = FindViewById<EditText>(Resource.Id.phoneNo);
             password = FindViewById<EditText>(Resource.Id.textPassword);
@@ -72,7 +72,7 @@ namespace CountMeIn
             }
             catch (Exception ex)
             {
-                txtSysLog.Text = ex.ToString();
+                //txtSysLog.Text = ex.ToString();
             }
             finally
             {

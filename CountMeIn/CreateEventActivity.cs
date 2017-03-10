@@ -9,6 +9,8 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace CountMeIn
 {
@@ -18,6 +20,12 @@ namespace CountMeIn
     {
         private DatePicker datePicker;
         private Button btnChange;
+
+        private TextView eventDate;
+        private TextView eventTime;
+        private TextView closeDate;
+        private TextView closeTime;
+
         private TextView txtDate;
         private TextView textDateClose;
         private TextView textEnterTime;
@@ -34,34 +42,51 @@ namespace CountMeIn
             
             FindViews();
 
-            HandleEvents();
+            HandleEvents();            
+            SqlConnection sqlconn;
+            var adapter2 = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
+            sqlconn = new System.Data.SqlClient.SqlConnection(adapter2);
+            try
+            {
+                sqlconn.Open();
+                SqlDataReader reader;
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandText = "SELECT Venue_Name FROM Venue_Table ";
+                cmd.CommandType = CommandType.Text;
+                cmd.Connection = sqlconn;
 
+                reader = cmd.ExecuteReader();
+                List<String> mylist = new List<String>(); 
 
-            Spinner spinner = FindViewById<Spinner>(Resource.Id.spinner);
-
-            //spinner.ItemSelected += new EventHandler<AdapterView.ItemSelectedEventArgs>(spinner_ItemSelected);
-            var adapter = ArrayAdapter.CreateFromResource(
-                    this, Resource.Array.planets_array, Android.Resource.Layout.SimpleSpinnerItem);
-
-            adapter.SetDropDownViewResource(Android.Resource.Layout.SimpleSpinnerDropDownItem);
-            spinner.Adapter = adapter;
-
-            // datePicker = FindViewById<DatePicker>(Resource.Id.datePicker);
-            //btnChange = FindViewById<Button>(Resource.Id.change_date_button);
-            //txtDate = FindViewById<TextView>(Resource.Id.txtViewDate);
-
-            //txtDate.Text = (getDate());
-            //btnChange.Click += BtnChange_Click;
-
+                while (reader.Read())
+                {
+                    string venueName = (string)reader["Venue_Name"];
+                    mylist.Add(venueName);
+                }
+                spinner.Adapter=new ArrayAdapter<String>(this,Android.Resource.Layout.SimpleSpinnerDropDownItem, mylist);
+                }
+            catch (Exception ex)
+            {
+                //txtSysLog.Text = ex.ToString();
+            }
+            finally
+            {
+                sqlconn.Close();
+            }
         }
 
         private void FindViews()
         {
+            eventDate = FindViewById<TextView>(Resource.Id.eventDate);
+            eventTime = FindViewById<TextView>(Resource.Id.eventTime);
+            closeDate = FindViewById<TextView>(Resource.Id.dateClose);
+            closeTime = FindViewById<TextView>(Resource.Id.closeTime);
+
             btncreateEvent = FindViewById<Button>(Resource.Id.createEvent);
-            txtDate = FindViewById<TextView>(Resource.Id.textDate);
-            textDateClose = FindViewById<TextView>(Resource.Id.textDateClose);
-            textEnterTime = FindViewById<TextView>(Resource.Id.textEnterTime);
-            textTimeClose = FindViewById<TextView>(Resource.Id.textTimeClose);
+            txtDate = FindViewById<Button>(Resource.Id.eventButton);
+            textDateClose = FindViewById<Button>(Resource.Id.eventButton2);
+            textEnterTime = FindViewById<Button>(Resource.Id.timeButton);
+            textTimeClose = FindViewById<Button>(Resource.Id.timeButton2);
             spinner = FindViewById<Spinner>(Resource.Id.spinner);
             btnAddVenue = FindViewById<Button>(Resource.Id.addVenue);
         }
@@ -86,7 +111,7 @@ namespace CountMeIn
         {
             TimePickerFragment frag = TimePickerFragment.NewInstance(delegate (string time)
             {
-                textTimeClose.Text = time;
+                closeTime.Text = time;
             });
             frag.Show(FragmentManager, TimePickerFragment.TAG);
         }
@@ -95,7 +120,7 @@ namespace CountMeIn
         {
             TimePickerFragment frag = TimePickerFragment.NewInstance(delegate (string time)
             {
-                textEnterTime.Text = time;
+                eventTime.Text = time;
             });
             frag.Show(FragmentManager, TimePickerFragment.TAG);
         }
@@ -104,7 +129,7 @@ namespace CountMeIn
         {
             DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
             {
-                textDateClose.Text = time.ToLongDateString();
+                closeDate.Text = time.ToLongDateString();
             });
             frag.Show(FragmentManager, DatePickerFragment.TAG);
         }
@@ -113,7 +138,7 @@ namespace CountMeIn
         {
             DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
             {
-                txtDate.Text = time.ToLongDateString();
+                eventDate.Text = time.ToLongDateString();
             });
             frag.Show(FragmentManager, DatePickerFragment.TAG);
         }
@@ -121,7 +146,7 @@ namespace CountMeIn
         private void BtncreateEvent_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(InviteGuestActivity));
-            intent.PutExtra("Date", txtDate.Text);
+            intent.PutExtra("Date", eventDate.Text);
             intent.PutExtra("Venue", spinner.SelectedItem.ToString());
             StartActivity(intent);
         }
@@ -130,7 +155,7 @@ namespace CountMeIn
         {
             Spinner spinner = (Spinner)sender;
 
-            string toast = string.Format("The planet is {0}", spinner.GetItemAtPosition(e.Position));
+            string toast = string.Format("The selected item is {0}", spinner.GetItemAtPosition(e.Position));
             Toast.MakeText(this, toast, ToastLength.Long).Show();
         }
 

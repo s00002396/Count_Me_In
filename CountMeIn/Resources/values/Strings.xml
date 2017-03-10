@@ -8,7 +8,7 @@
   <string name="add_password_hint">Password</string>
   <string name="add_reenter_password_hint">Reenter Password</string>
 
-  <string name="planet_prompt">Choose a planet</string>
+  <string name="planet_prompt">Choose a restaurant</string>
   <string-array name="planets_array">
     <item>Bistro Bianconi</item>
     <item>Yeats Tavern</item>

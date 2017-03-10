@@ -12,7 +12,7 @@ using Android.Widget;
 
 namespace CountMeIn
 {
-    [Activity(Label = "Invite Guests", MainLauncher = false)]
+    [Activity(Label = "Invite Guests")]
     public class InviteGuestActivity : Activity
     {
         private TextView txtDate;
