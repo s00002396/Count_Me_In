@@ -67,7 +67,11 @@ namespace CountMeIn
                 cmd.Parameters.AddWithValue("@pass", password.Text);
                 cmd.Parameters.AddWithValue("@reenterpwd", reenterPwd.Text);
                 cmd.ExecuteNonQuery();
-               
+                Toast.MakeText(this, "Sign Up Complete", ToastLength.Long).Show();
+                var intent = new Intent(this, typeof(LoginActivity));
+
+                StartActivity(intent);
+
                 //txtSysLog.Text = "Success Finally";
             }
             catch (Exception ex)

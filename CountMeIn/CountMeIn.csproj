@@ -64,6 +64,7 @@
     <Compile Include="DatePickerFragment.cs" />
     <Compile Include="EventDetailsActivity.cs" />
     <Compile Include="GroupDetailsActivity.cs" />
+    <Compile Include="GuestInviteActivity.cs" />
     <Compile Include="InviteGuestActivity.cs" />
     <Compile Include="LoginActivity.cs" />
     <Compile Include="LoginSignUPActivity.cs" />
@@ -81,6 +82,7 @@
     <Compile Include="ORM\SQLiteAsync.cs" />
     <Compile Include="Service\EventDataService.cs" />
     <Compile Include="TestCreateEventActivity.cs" />
+    <Compile Include="TestingMainMenuActivity.cs" />
     <Compile Include="TimePickerFragment.cs" />
     <Compile Include="UpComingEventActivity.cs" />
   </ItemGroup>
@@ -134,6 +136,15 @@
     <AndroidResource Include="Resources\layout\TestCreateEvent.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\TestingMainMenu.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\UpComingEventRowView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\GuestInvite.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Main.axml">
@@ -180,6 +191,24 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\logo3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\event.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\group2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\createEvebts.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\invite.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\calendar3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\clock3.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

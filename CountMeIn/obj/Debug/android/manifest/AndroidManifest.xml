@@ -11,7 +11,8 @@
     <activity android:label="Create Group" android:name="md50b100ff02de193c8ada20d64db42ab1f.CreateGroupActivity" />
     <activity android:label="Event Details" android:name="md50b100ff02de193c8ada20d64db42ab1f.EventDetailsActivity" />
     <activity android:label="Group Details" android:name="md50b100ff02de193c8ada20d64db42ab1f.GroupDetailsActivity" />
-    <activity android:label="Invite Guests" android:name="md50b100ff02de193c8ada20d64db42ab1f.InviteGuestActivity" />
+    <activity android:label="Invite Guests" android:name="md50b100ff02de193c8ada20d64db42ab1f.GuestInviteActivity" />
+    <activity android:label="Choose Venue" android:name="md50b100ff02de193c8ada20d64db42ab1f.InviteGuestActivity" />
     <activity android:icon="@drawable/logo" android:label="Login" android:name="md50b100ff02de193c8ada20d64db42ab1f.LoginActivity" />
     <activity android:icon="@drawable/logo" android:label="Count-Me-In" android:name="md50b100ff02de193c8ada20d64db42ab1f.LoginSignUPActivity">
       <intent-filter>
@@ -24,6 +25,7 @@
     <activity android:label="MyDateActivity" android:name="md50b100ff02de193c8ada20d64db42ab1f.MyDateActivity" />
     <activity android:label="Pending Invites" android:name="md50b100ff02de193c8ada20d64db42ab1f.PendingInvitesActivity" />
     <activity android:label="Create an Event" android:name="md50b100ff02de193c8ada20d64db42ab1f.TestCreateEventActivity" />
+    <activity android:label="TestingMainMenu" android:name="md50b100ff02de193c8ada20d64db42ab1f.TestingMainMenuActivity" />
     <activity android:label="UpComing Event" android:name="md50b100ff02de193c8ada20d64db42ab1f.UpComingEventActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="CountMeIn.CountMeIn.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->

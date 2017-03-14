@@ -71,5 +71,14 @@ C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\c
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\clock2.png
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\edittextborder.xml
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\logo3.png
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\layout\testingmainmenu.xml
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\event.png
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\group2.png
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\createevebts.png
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\invite.png
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\layout\upcomingeventrowview.xml
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\clock3.png
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\calendar3.png
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\layout\guestinvite.xml
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\CountMeIn.dll.mdb
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\bin\Debug\CountMeIn.dll.mdb

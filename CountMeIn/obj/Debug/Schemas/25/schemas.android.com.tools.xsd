@@ -2,7 +2,7 @@
 <xs:schema xmlns:tools="http://schemas.android.com/tools" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/tools" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>10/03/2017 16:22:32</xs:documentation>
+    <xs:documentation>14/03/2017 17:52:44</xs:documentation>
   </xs:annotation>
   <xs:attribute name="layout">
     <xs:annotation>
@@ -18,6 +18,7 @@
             <xs:enumeration value="@layout/creategroup" />
             <xs:enumeration value="@layout/eventdetails" />
             <xs:enumeration value="@layout/groupdetails" />
+            <xs:enumeration value="@layout/guestinvite" />
             <xs:enumeration value="@layout/inviteguests" />
             <xs:enumeration value="@layout/login" />
             <xs:enumeration value="@layout/loginsignup" />
@@ -27,7 +28,9 @@
             <xs:enumeration value="@layout/pendinginvites" />
             <xs:enumeration value="@layout/test" />
             <xs:enumeration value="@layout/testcreateevent" />
+            <xs:enumeration value="@layout/testingmainmenu" />
             <xs:enumeration value="@layout/upcomingevent" />
+            <xs:enumeration value="@layout/upcomingeventrowview" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
             <xs:enumeration value="@android:layout/expandable_list_content" />
@@ -82,6 +85,7 @@
             <xs:enumeration value="@layout/creategroup" />
             <xs:enumeration value="@layout/eventdetails" />
             <xs:enumeration value="@layout/groupdetails" />
+            <xs:enumeration value="@layout/guestinvite" />
             <xs:enumeration value="@layout/inviteguests" />
             <xs:enumeration value="@layout/login" />
             <xs:enumeration value="@layout/loginsignup" />
@@ -91,7 +95,9 @@
             <xs:enumeration value="@layout/pendinginvites" />
             <xs:enumeration value="@layout/test" />
             <xs:enumeration value="@layout/testcreateevent" />
+            <xs:enumeration value="@layout/testingmainmenu" />
             <xs:enumeration value="@layout/upcomingevent" />
+            <xs:enumeration value="@layout/upcomingeventrowview" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
             <xs:enumeration value="@android:layout/expandable_list_content" />
@@ -146,6 +152,7 @@
             <xs:enumeration value="@layout/creategroup" />
             <xs:enumeration value="@layout/eventdetails" />
             <xs:enumeration value="@layout/groupdetails" />
+            <xs:enumeration value="@layout/guestinvite" />
             <xs:enumeration value="@layout/inviteguests" />
             <xs:enumeration value="@layout/login" />
             <xs:enumeration value="@layout/loginsignup" />
@@ -155,7 +162,9 @@
             <xs:enumeration value="@layout/pendinginvites" />
             <xs:enumeration value="@layout/test" />
             <xs:enumeration value="@layout/testcreateevent" />
+            <xs:enumeration value="@layout/testingmainmenu" />
             <xs:enumeration value="@layout/upcomingevent" />
+            <xs:enumeration value="@layout/upcomingeventrowview" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
             <xs:enumeration value="@android:layout/expandable_list_content" />
@@ -210,6 +219,7 @@
             <xs:enumeration value="@layout/creategroup" />
             <xs:enumeration value="@layout/eventdetails" />
             <xs:enumeration value="@layout/groupdetails" />
+            <xs:enumeration value="@layout/guestinvite" />
             <xs:enumeration value="@layout/inviteguests" />
             <xs:enumeration value="@layout/login" />
             <xs:enumeration value="@layout/loginsignup" />
@@ -219,7 +229,9 @@
             <xs:enumeration value="@layout/pendinginvites" />
             <xs:enumeration value="@layout/test" />
             <xs:enumeration value="@layout/testcreateevent" />
+            <xs:enumeration value="@layout/testingmainmenu" />
             <xs:enumeration value="@layout/upcomingevent" />
+            <xs:enumeration value="@layout/upcomingeventrowview" />
             <xs:enumeration value="@android:layout/activity_list_item" />
             <xs:enumeration value="@android:layout/browser_link_context_header" />
             <xs:enumeration value="@android:layout/expandable_list_content" />

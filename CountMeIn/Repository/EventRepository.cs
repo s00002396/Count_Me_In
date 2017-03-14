@@ -25,9 +25,9 @@ namespace CountMeIn.Repository
                 {
                     EventId=1,
                     EventName = "Work Party",
-                    EventDate="17/03/17",
-                    EventTime="20:00",
-                    EventLocation="Bills House"
+                    EventDate="25/03/17",
+                    EventTime="19:00",
+                    EventLocation="The Glasshouse"
 
                 },
                 new Event()
@@ -35,14 +35,14 @@ namespace CountMeIn.Repository
                     EventId=2,
                     EventName = "Family Dinner",
                     EventDate="17/03/17",
-                    EventTime="20:00",
-                    EventLocation="Bills House"
+                    EventTime="16:30",
+                    EventLocation="Yeats Tavern"
                 },
                 new Event()
                 {
                     EventId=3,
                     EventName = "Poker Nite!",
-                    EventDate="17/03/17",
+                    EventDate="02/04/17",
                     EventTime="20:00",
                     EventLocation="Bills House"
                 }
@@ -55,25 +55,33 @@ namespace CountMeIn.Repository
                 {
                     EventId=4,
                     EventName = "Movie Night",
-                   EventDate="17/03/17",
-                    EventTime="20:00",
-                    EventLocation="Bills House"
+                   EventDate="10/04/17",
+                    EventTime="21:00",
+                    EventLocation="Omniplex"
                 },
                 new Event()
                 {
                     EventId=5,
                     EventName = "School Reunion",
-                   EventDate="17/03/17",
-                    EventTime="20:00",
-                    EventLocation="Bills House"
+                   EventDate="20/05/17",
+                    EventTime="20:50",
+                    EventLocation="The Hall"
                 },
                 new Event()
                 {
                     EventId=6,
                     EventName = "Going away party",
-                    EventDate="17/03/17",
-                    EventTime="20:00",
-                    EventLocation="Bills House"
+                    EventDate="21/03/17",
+                    EventTime="17:30",
+                    EventLocation="Laura's House"
+                },
+                new Event()
+                {
+                    EventId=7,
+                    EventName = "Graduation",
+                    EventDate="25/05/17",
+                    EventTime="17:30",
+                    EventLocation="The Pub?"
                 }
             }
         }

@@ -56,7 +56,13 @@ namespace CountMeIn
 
                 SqlDataReader reader;
                 SqlCommand cmd = new SqlCommand();
+                //cmd.Parameters.Add("@data", SqlDbType.VarChar).Value = username.Text;
+                //cmd.CommandText = "Username,PhoneNo,Password FROM Member_Table WHERE Member_Id LIKE {0}" + 101;
+                //cmd.Parameters.AddWithValue("@namelist", 101);
+                //cmd.Parameters.AddWithValue("someID", 101);
+                //cmd.CommandText = "SELECT Username,PhoneNo,Password FROM Member_Table WHERE Username = " + username.Text;
                 cmd.CommandText = "SELECT Username,PhoneNo,Password FROM Member_Table WHERE Member_Id LIKE 101";
+                //cmd.CommandText = "SELECT Username,PhoneNo,Password FROM Member_Table";
                 cmd.CommandType = CommandType.Text;
                 cmd.Connection = sqlconn;
 
@@ -71,7 +77,7 @@ namespace CountMeIn
                     {
                         //sqlconn.Close();
                         var intent = new Intent(this, typeof(MainMenuActivity));
-                        StartActivity(intent);                        
+                        StartActivity(intent);                                               
                     }
                     else
                     {
@@ -81,7 +87,7 @@ namespace CountMeIn
             }
             catch (Exception ex)
             {
-                //txtSysLog.Text = ex.ToString();
+                Toast.MakeText(this, "Error", ToastLength.Long).Show();
             }
             finally
             {

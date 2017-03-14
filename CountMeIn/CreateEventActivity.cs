@@ -63,7 +63,7 @@ namespace CountMeIn
                     string venueName = (string)reader["Venue_Name"];
                     mylist.Add(venueName);
                 }
-                spinner.Adapter=new ArrayAdapter<String>(this,Android.Resource.Layout.SimpleSpinnerDropDownItem, mylist);
+                spinner.Adapter=new ArrayAdapter<string>(this,Android.Resource.Layout.SimpleSpinnerDropDownItem, mylist);
                 }
             catch (Exception ex)
             {
@@ -79,6 +79,7 @@ namespace CountMeIn
         {
             eventDate = FindViewById<TextView>(Resource.Id.eventDate);
             eventTime = FindViewById<TextView>(Resource.Id.eventTime);
+
             closeDate = FindViewById<TextView>(Resource.Id.dateClose);
             closeTime = FindViewById<TextView>(Resource.Id.closeTime);
 
@@ -98,14 +99,14 @@ namespace CountMeIn
             textDateClose.Click += TextDateClose_Click;
             textEnterTime.Click += TextEnterTime_Click;
             textTimeClose.Click += TextTimeClose_Click;
-            btnAddVenue.Click += BtnAddVenue_Click;
+            //btnAddVenue.Click += BtnAddVenue_Click;
         }
 
-        private void BtnAddVenue_Click(object sender, EventArgs e)
-        {
-            var intent = new Intent(this, typeof(AddVenueActivity));            
-            StartActivity(intent);
-        }
+        //private void BtnAddVenue_Click(object sender, EventArgs e)
+        //{
+        //    var intent = new Intent(this, typeof(AddVenueActivity));            
+        //    StartActivity(intent);
+        //}
 
         private void TextTimeClose_Click(object sender, EventArgs e)
         {
@@ -147,7 +148,7 @@ namespace CountMeIn
         {
             var intent = new Intent(this, typeof(InviteGuestActivity));
             intent.PutExtra("Date", eventDate.Text);
-            intent.PutExtra("Venue", spinner.SelectedItem.ToString());
+            intent.PutExtra("Time", eventTime.Text);
             StartActivity(intent);
         }
 

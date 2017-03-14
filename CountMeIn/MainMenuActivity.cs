@@ -37,18 +37,23 @@ namespace CountMeIn
             btnCreateGroup = FindViewById<Button>(Resource.Id.createGroupButton);
             btnCreateEvent = FindViewById<Button>(Resource.Id.createEventButton);
 
-            btnCreateDB = FindViewById<Button>(Resource.Id.aboutButton);
-            txtSysLog = FindViewById<TextView>(Resource.Id.txtSysLog);
+            //btnCreateDB = FindViewById<Button>(Resource.Id.aboutButton);
+            //txtSysLog = FindViewById<TextView>(Resource.Id.txtSysLog);
         }
 
         private void HandleEvents()
         {
-            btnUpComingevent.Click += BtnUpComingevent_Click;
-            btnCreateEvent.Click += BtnCreateEventButton_Click;
+            btnUpComingevent.Click += BtnUpComingevent_Click;            
             btnPendingInvite.Click += BtnPendingInvite_Click;
             btnCreateGroup.Click += BtnCreateGroup_Click;
+            btnCreateEvent.Click += BtnCreateEvent_Click;
+            //btnCreateDB.Click += BtnCreateDB_Click;
+        }
 
-            btnCreateDB.Click += BtnCreateDB_Click;
+        private void BtnCreateEvent_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(CreateEventActivity));
+            StartActivity(intent);
         }
 
         private void BtnUpComingevent_Click(object sender, EventArgs e)
@@ -78,11 +83,11 @@ namespace CountMeIn
             try
             {                
                 sqlconn.Open();
-                txtSysLog.Text = "Success Finally";
+                //txtSysLog.Text = "Success Finally";
             }
             catch (Exception ex)
             {
-                txtSysLog.Text = ex.ToString();
+                //txtSysLog.Text = ex.ToString();
             }
             finally
             {

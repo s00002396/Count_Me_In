@@ -1,0 +1,24 @@
+<RelativeLayout android:minHeight="25px" android:minWidth="25px" android:layout_width="match_parent" android:layout_height="500.0dp" android:background="#ffffff" android:id="@+id/relativeLayout1" android:paddingTop="20.0dp" xmlns:android="http://schemas.android.com/apk/res/android"><!--<TextView
+      android:id="@+id/textDate"
+      android:layout_width="180.0dp"
+      android:layout_height="wrap_content"
+      android:text="Group Name"
+      android:textColor="#3399CC"
+      android:background="#FEFEFA"
+      android:textSize="20.0dp"
+      android:textStyle="bold"
+      android:padding="16.0dp"
+      android:layout_marginRight="0.0dp" />
+  <EditText
+      android:id="@+id/textTime"
+      android:layout_width="185dp"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="1dp"
+      android:layout_toRightOf="@+id/textDate"
+      android:textColor="#3399CC"
+      android:background="@drawable/EditTextBorder"
+      android:hint="Enter group name"
+      android:textSize="20.0dp"
+      android:textStyle="bold"
+      android:layout_marginRight="5dp"
+      android:padding="16.0dp" />--><TextView android:id="@+id/textLabel" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Add Names" android:textColor="#3399CC" android:background="#FEFEFA" android:textSize="20.0dp" android:textStyle="bold" android:padding="16.0dp" android:layout_marginRight="0.0dp" android:layout_marginTop="5.0dp" android:gravity="center_horizontal" /><CheckBox android:layout_width="185dp" android:layout_height="wrap_content" android:text="Bob" android:textColor="#3399CC" android:layout_marginTop="80.0dp" android:layout_marginLeft="78.0dp" android:gravity="fill_vertical" /><CheckBox android:layout_width="185dp" android:layout_height="wrap_content" android:text="Mary" android:textColor="#3399CC" android:layout_marginTop="120.0dp" android:layout_marginLeft="78.0dp" android:gravity="fill_vertical" /><CheckBox android:layout_width="185dp" android:layout_height="wrap_content" android:text="Bill" android:textColor="#3399CC" android:layout_marginTop="200.0dp" android:layout_marginLeft="78.0dp" android:gravity="fill_vertical" /><CheckBox android:layout_width="185dp" android:layout_height="wrap_content" android:text="Bort" android:textColor="#3399CC" android:layout_marginTop="240.0dp" android:layout_marginLeft="78.0dp" android:gravity="fill_vertical" /><CheckBox android:layout_width="185dp" android:layout_height="wrap_content" android:text="Sammy" android:textColor="#3399CC" android:layout_marginTop="280.0dp" android:layout_marginLeft="78.0dp" android:gravity="fill_vertical" /><CheckBox android:layout_width="185dp" android:layout_height="wrap_content" android:text="Jo" android:textColor="#3399CC" android:layout_marginTop="160.0dp" android:layout_marginLeft="78.0dp" android:gravity="fill_vertical" /><Button android:id="@+id/createInvite" android:layout_width="200.0dp" android:layout_height="51.0dp" android:layout_marginTop="386.0dp" android:text="Send Invite" android:layout_marginLeft="78.0dp" android:background="@drawable/button_round" android:textColor="#FFFFFF" /></RelativeLayout>

@@ -20,6 +20,7 @@ namespace CountMeIn
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.PendingInvites);
+            Toast.MakeText(this, "No Pending Invites ", ToastLength.Long).Show();
         }
     }
 }

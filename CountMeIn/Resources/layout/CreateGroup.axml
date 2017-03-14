@@ -11,7 +11,6 @@
         android:id="@+id/textDate"
         android:layout_width="180.0dp"
         android:layout_height="wrap_content"
-        
         android:text="Group Name"
         android:textColor="#3399CC"
         android:background="#FEFEFA"
@@ -25,18 +24,19 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="1dp"
         android:layout_toRightOf="@+id/textDate"
-        android:textColor="#3399CC"
+        android:textColor="#FE0000"
         android:background="@drawable/EditTextBorder"
+        android:hint="Enter group name"
         android:textSize="20.0dp"
         android:textStyle="bold"
         android:layout_marginRight="5dp"
-        android:padding="16.0dp" />
+        android:padding="16.0dp"
+        android:textColorHint="#FE0000" />
     <TextView
         android:id="@+id/textLabel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        
-        android:text="Add Names"
+        android:text="Add Guests"
         android:textColor="#3399CC"
         android:background="#FEFEFA"
         android:textSize="20.0dp"
@@ -48,18 +48,58 @@
     <CheckBox
         android:layout_width="185dp"
         android:layout_height="wrap_content"
-        android:text="Dominic"
+        android:text="Bob"
         android:textColor="#3399CC"
         android:layout_marginTop="160.0dp"
         android:layout_marginLeft="78.0dp"
         android:gravity="fill_vertical" />
+    <CheckBox
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:text="Mary"
+        android:textColor="#3399CC"
+        android:layout_marginTop="200.0dp"
+        android:layout_marginLeft="78.0dp"
+        android:gravity="fill_vertical" />
+    <CheckBox
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:text="Bill"
+        android:textColor="#3399CC"
+        android:layout_marginTop="250.0dp"
+        android:layout_marginLeft="78.0dp"
+        android:gravity="fill_vertical" />
+    <CheckBox
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:text="Bort"
+        android:textColor="#3399CC"
+        android:layout_marginTop="300.0dp"
+        android:layout_marginLeft="78.0dp"
+        android:gravity="fill_vertical" />
+    <CheckBox
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:text="Sammy"
+        android:textColor="#3399CC"
+        android:layout_marginTop="350.0dp"
+        android:layout_marginLeft="78.0dp"
+        android:gravity="fill_vertical" />
+    <CheckBox
+        android:layout_width="185dp"
+        android:layout_height="wrap_content"
+        android:text="Jo"
+        android:textColor="#3399CC"
+        android:layout_marginTop="400.0dp"
+        android:layout_marginLeft="78.0dp"
+        android:gravity="fill_vertical" />
     <Button
-        android:id="@+id/sendInvite"
+        android:id="@+id/createGroup"
         android:layout_width="200.0dp"
         android:layout_height="51.0dp"
         android:layout_marginTop="386.0dp"
         android:text="Create"
         android:layout_marginLeft="78.0dp"
         android:background="@drawable/button_round"
-        android:textColor="#FFFFFF"/>
+        android:textColor="#FFFFFF" />
 </RelativeLayout>
