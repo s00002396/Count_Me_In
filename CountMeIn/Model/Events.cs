@@ -15,10 +15,17 @@ namespace CountMeIn.Model
     public class Event
     {
         public int EventId { get; set; }
-        public string EventName { get; set; }
         public string EventDate { get; set; }
-        public string EventTime { get; set; }
-        public string EventLocation { get; set; }
+        public string EventName { get; set; }
+        public string GroupName { get; set; }
+        public string Time { get; set; }
 
+    }
+    class Person
+    {
+        public string EventDate { get; set; }
+        public string EventName { get; set; }
+        public string GroupName { get; set; }
+        public string Time { get; set; }
     }
 }

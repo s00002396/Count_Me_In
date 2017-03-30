@@ -21,6 +21,11 @@ namespace CountMeIn
         private DatePicker datePicker;
         private Button btnChange;
 
+        private Button timeButton;
+        private Button eventButton;
+        private Button eventButton2;
+        private Button timeButton2;
+
         private TextView eventDate;
         private TextView eventTime;
         private TextView closeDate;
@@ -90,6 +95,11 @@ namespace CountMeIn
             textTimeClose = FindViewById<Button>(Resource.Id.timeButton2);
             spinner = FindViewById<Spinner>(Resource.Id.spinner);
             btnAddVenue = FindViewById<Button>(Resource.Id.addVenue);
+
+            eventButton = FindViewById<Button>(Resource.Id.eventButton);
+            timeButton = FindViewById<Button>(Resource.Id.timeButton);
+            eventButton2 = FindViewById<Button>(Resource.Id.eventButton2);
+            timeButton2 = FindViewById<Button>(Resource.Id.timeButton2);
         }
 
         private void HandleEvents()
@@ -112,7 +122,8 @@ namespace CountMeIn
         {
             TimePickerFragment frag = TimePickerFragment.NewInstance(delegate (string time)
             {
-                closeTime.Text = time;
+                //closeTime.Text = time;
+                timeButton2.Text = time;
             });
             frag.Show(FragmentManager, TimePickerFragment.TAG);
         }
@@ -121,7 +132,8 @@ namespace CountMeIn
         {
             TimePickerFragment frag = TimePickerFragment.NewInstance(delegate (string time)
             {
-                eventTime.Text = time;
+                //eventTime.Text = time;
+                timeButton.Text = time;
             });
             frag.Show(FragmentManager, TimePickerFragment.TAG);
         }
@@ -130,7 +142,7 @@ namespace CountMeIn
         {
             DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
             {
-                closeDate.Text = time.ToLongDateString();
+                eventButton2.Text = time.ToShortDateString();
             });
             frag.Show(FragmentManager, DatePickerFragment.TAG);
         }
@@ -139,7 +151,7 @@ namespace CountMeIn
         {
             DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
             {
-                eventDate.Text = time.ToLongDateString();
+                eventButton.Text = time.ToShortDateString();
             });
             frag.Show(FragmentManager, DatePickerFragment.TAG);
         }

@@ -74,6 +74,7 @@
     <Compile Include="Model\Events.cs" />
     <Compile Include="MyDateActivity.cs" />
     <Compile Include="ORM\DBRepository.cs" />
+    <Compile Include="PendingEventActivity.cs" />
     <Compile Include="PendingInvitesActivity.cs" />
     <Compile Include="Repository\EventRepository.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
@@ -85,6 +86,7 @@
     <Compile Include="TestingMainMenuActivity.cs" />
     <Compile Include="TimePickerFragment.cs" />
     <Compile Include="UpComingEventActivity.cs" />
+    <Compile Include="UpComingRowActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
@@ -143,6 +145,12 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\GuestInvite.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\PendingEventView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\PendingEventRow.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

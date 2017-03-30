@@ -38,9 +38,20 @@ namespace CountMeIn
 
         private void BtnInvite_Click(object sender, EventArgs e)
         {
-            Toast.MakeText(this, "Invite Sent ", ToastLength.Long).Show();
-            var intent = new Intent(this, typeof(MainMenuActivity));
-            StartActivity(intent);
+            Notification.Builder builder = new Notification.Builder(this)
+            .SetContentTitle("Count-Me-In")
+            .SetContentText("You have a new invite")
+            .SetSmallIcon(Resource.Drawable.Icon);
+
+            Notification notification = builder.Build();
+            NotificationManager notificationManager = GetSystemService(Context.NotificationService) as NotificationManager;
+
+            const int notificationId = 0;
+            notificationManager.Notify(notificationId, notification);
+
+            //Toast.MakeText(this, "Invite Sent ", ToastLength.Long).Show();
+            //var intent = new Intent(this, typeof(MainMenuActivity));
+            //StartActivity(intent);
         }
     }
 }

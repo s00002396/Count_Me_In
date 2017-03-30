@@ -10,47 +10,53 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using CountMeIn.Model;
+using CountMeIn;
 
-namespace CountMeIn.Adapters
+namespace ListViewEvents
 {
-    public class EventListAdapter : BaseAdapter<Event>
+    class MyListViewAdapter : BaseAdapter<Person>
     {
-        List<Event> items;
-        Activity context;
+        private List<Person> mItems;
+        private Context mContext;
 
-        public EventListAdapter(Activity context, List<Event> items):base()
+        public MyListViewAdapter(Context context, List<Person> items)
         {
-            this.context = context;
-            this.items = items;
-        }
-        public override Event this[int position]
-        {
-            get{return items[position];}
+            mItems = items;
+            mContext = context;
         }
         public override int Count
         {
-            get{return items.Count;}
+            get { return mItems.Count; }
         }
         public override long GetItemId(int position)
         {
-           return position;
+            return position;
+        }
+        public override Person this[int position]
+        {
+            get { return mItems[position]; }
         }
         public override View GetView(int position, View convertView, ViewGroup parent)
         {
-            var item = items[position];
+            View row = convertView;
 
-            if (convertView == null)
+            if (row == null)
             {
-                convertView = context.LayoutInflater.Inflate(Resource.Layout.UpComingEventRowView, null);
+                row = LayoutInflater.From(mContext).Inflate(Resource.Layout.UpComingEventRowView, null, false);
             }
+            TextView eventDate = row.FindViewById<TextView>(Resource.Id.eventDateView);
+            eventDate.Text = mItems[position].EventDate;
 
-            convertView.FindViewById<TextView>(Resource.Id.hotDogImageView).Text = item.EventDate;
-            convertView.FindViewById<TextView>(Resource.Id.hotDogNameTextView).Text = item.EventName;
-            convertView.FindViewById<TextView>(Resource.Id.shortDescriptionTextView).Text = item.EventLocation;
-            convertView.FindViewById<TextView>(Resource.Id.priceTextView).Text = "Time " + item.EventTime;
-            //convertView.FindViewById<ImageView>(Resource.Id.hotDogImageView).SetImageBitmap(imageBitmap);
+            TextView groupName = row.FindViewById<TextView>(Resource.Id.groupNameView);
+            groupName.Text = mItems[position].GroupName;
 
-            return convertView;
+            TextView eventName = row.FindViewById<TextView>(Resource.Id.eventNameView);
+            eventName.Text = mItems[position].EventName;
+
+            TextView eventTime = row.FindViewById<TextView>(Resource.Id.timeView);
+            eventTime.Text = mItems[position].Time;
+
+            return row;
         }
     }
 }
