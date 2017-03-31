@@ -52,7 +52,28 @@ namespace CountMeIn
                 SqlDataReader reader;
                 SqlCommand cmd = new SqlCommand();
 
-                cmd.CommandText = "SELECT * FROM Invite_Table WHERE Going like 0";
+                #region Existing COde
+                //cmd.CommandText = "SELECT * FROM Invite_Table WHERE Going like 0";
+                //cmd.CommandType = CommandType.Text;
+                //cmd.Connection = sqlconn;
+
+                //reader = cmd.ExecuteReader();
+
+                //while (reader.Read())
+                //{
+                //    string inviteDate = (string)reader["Invite_Date"];
+                //    string venueName = (string)reader["Venue_Name"];
+                //    string groupName = (string)reader["Group_Name"];
+                //    string time = (string)reader["Time"];
+
+                //    mListView = FindViewById<ListView>(Resource.Id.eventListView);
+
+                //    mItems.Add(new Person() { EventDate = inviteDate, GroupName = groupName, EventName = venueName, Time = time });
+                //}
+                #endregion
+                cmd.CommandText = "select * from Event_Table inner join Event_Member_Table  on Event_Table.Event_Id like Event_Member_Table.Event_Id where Event_Member_Table.Member_Id like @M_ID and Event_Member_Table.Going like 0";
+                cmd.Parameters.AddWithValue("@M_ID", 101);
+                // cmd.Parameters.AddWithValue("@M_ID", Globals.s_Name);
                 cmd.CommandType = CommandType.Text;
                 cmd.Connection = sqlconn;
 
@@ -60,10 +81,10 @@ namespace CountMeIn
 
                 while (reader.Read())
                 {
-                    string inviteDate = (string)reader["Invite_Date"];
-                    string venueName = (string)reader["Venue_Name"];
-                    string groupName = (string)reader["Group_Name"];
-                    string time = (string)reader["Time"];
+                    string inviteDate = (string)reader["Event_Date"];
+                    string venueName = (string)reader["Event_Name"];
+                    string groupName = (string)reader["Venue_Name"];
+                    string time = (string)reader["Event_Time"];
 
                     mListView = FindViewById<ListView>(Resource.Id.eventListView);
 
@@ -79,7 +100,6 @@ namespace CountMeIn
                 sqlconn.Close();
             }
         }
-
         private void FindViews()
         {
             eventListView = FindViewById<ListView>(Resource.Id.eventListView);

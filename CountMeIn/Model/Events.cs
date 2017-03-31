@@ -28,4 +28,9 @@ namespace CountMeIn.Model
         public string GroupName { get; set; }
         public string Time { get; set; }
     }
+    public static class Globals
+    {
+        public static int s_Name = 0; // Modifiable in Code
+        //public const int; // VALUE = 10; // Unmodifiable
+    }
 }

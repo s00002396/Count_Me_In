@@ -14,88 +14,26 @@ using System.Data;
 
 namespace CountMeIn
 {
-    
     [Activity(Label = "Create an Event", MainLauncher = false)]
     public class CreateEventActivity : Activity
     {
-        private DatePicker datePicker;
-        private Button btnChange;
-
         private Button timeButton;
         private Button eventButton;
         private Button eventButton2;
         private Button timeButton2;
-
-        private TextView eventDate;
-        private TextView eventTime;
-        private TextView closeDate;
-        private TextView closeTime;
-
-        private TextView txtDate;
-        private TextView textDateClose;
-        private TextView textEnterTime;
-        private TextView textTimeClose;
         private Button btncreateEvent;
-        private Button btnAddVenue;
-        private Spinner spinner;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
             SetContentView(Resource.Layout.CreateEvent);
-            
             FindViews();
-
-            HandleEvents();            
-            SqlConnection sqlconn;
-            var adapter2 = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
-            sqlconn = new System.Data.SqlClient.SqlConnection(adapter2);
-            try
-            {
-                sqlconn.Open();
-                SqlDataReader reader;
-                SqlCommand cmd = new SqlCommand();
-                cmd.CommandText = "SELECT Venue_Name FROM Venue_Table ";
-                cmd.CommandType = CommandType.Text;
-                cmd.Connection = sqlconn;
-
-                reader = cmd.ExecuteReader();
-                List<String> mylist = new List<String>(); 
-
-                while (reader.Read())
-                {
-                    string venueName = (string)reader["Venue_Name"];
-                    mylist.Add(venueName);
-                }
-                spinner.Adapter=new ArrayAdapter<string>(this,Android.Resource.Layout.SimpleSpinnerDropDownItem, mylist);
-                }
-            catch (Exception ex)
-            {
-                //txtSysLog.Text = ex.ToString();
-            }
-            finally
-            {
-                sqlconn.Close();
-            }
+            HandleEvents();
         }
 
         private void FindViews()
         {
-            eventDate = FindViewById<TextView>(Resource.Id.eventDate);
-            eventTime = FindViewById<TextView>(Resource.Id.eventTime);
-
-            closeDate = FindViewById<TextView>(Resource.Id.dateClose);
-            closeTime = FindViewById<TextView>(Resource.Id.closeTime);
-
             btncreateEvent = FindViewById<Button>(Resource.Id.createEvent);
-            txtDate = FindViewById<Button>(Resource.Id.eventButton);
-            textDateClose = FindViewById<Button>(Resource.Id.eventButton2);
-            textEnterTime = FindViewById<Button>(Resource.Id.timeButton);
-            textTimeClose = FindViewById<Button>(Resource.Id.timeButton2);
-            spinner = FindViewById<Spinner>(Resource.Id.spinner);
-            btnAddVenue = FindViewById<Button>(Resource.Id.addVenue);
-
             eventButton = FindViewById<Button>(Resource.Id.eventButton);
             timeButton = FindViewById<Button>(Resource.Id.timeButton);
             eventButton2 = FindViewById<Button>(Resource.Id.eventButton2);
@@ -104,50 +42,15 @@ namespace CountMeIn
 
         private void HandleEvents()
         {
+            eventButton.Click += EventButton_Click;
+            timeButton.Click += TimeButton_Click;
+            eventButton2.Click += EventButton2_Click;
+            timeButton2.Click += TimeButton2_Click;
             btncreateEvent.Click += BtncreateEvent_Click;
-            txtDate.Click += TxtDate_Click;
-            textDateClose.Click += TextDateClose_Click;
-            textEnterTime.Click += TextEnterTime_Click;
-            textTimeClose.Click += TextTimeClose_Click;
-            //btnAddVenue.Click += BtnAddVenue_Click;
         }
 
-        //private void BtnAddVenue_Click(object sender, EventArgs e)
-        //{
-        //    var intent = new Intent(this, typeof(AddVenueActivity));            
-        //    StartActivity(intent);
-        //}
-
-        private void TextTimeClose_Click(object sender, EventArgs e)
-        {
-            TimePickerFragment frag = TimePickerFragment.NewInstance(delegate (string time)
-            {
-                //closeTime.Text = time;
-                timeButton2.Text = time;
-            });
-            frag.Show(FragmentManager, TimePickerFragment.TAG);
-        }
-
-        private void TextEnterTime_Click(object sender, EventArgs e)
-        {
-            TimePickerFragment frag = TimePickerFragment.NewInstance(delegate (string time)
-            {
-                //eventTime.Text = time;
-                timeButton.Text = time;
-            });
-            frag.Show(FragmentManager, TimePickerFragment.TAG);
-        }
-
-        private void TextDateClose_Click(object sender, EventArgs e)
-        {
-            DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
-            {
-                eventButton2.Text = time.ToShortDateString();
-            });
-            frag.Show(FragmentManager, DatePickerFragment.TAG);
-        }
-
-        private void TxtDate_Click(object sender, EventArgs e)
+        //****************Event Date****************************
+        private void EventButton_Click(object sender, EventArgs e)
         {
             DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
             {
@@ -155,34 +58,42 @@ namespace CountMeIn
             });
             frag.Show(FragmentManager, DatePickerFragment.TAG);
         }
-
+        //****************Event Time****************************
+        private void TimeButton_Click(object sender, EventArgs e)
+        {
+            TimePickerFragment frag = TimePickerFragment.NewInstance(delegate (string time)
+            {
+                timeButton.Text = time;
+            });
+            frag.Show(FragmentManager, TimePickerFragment.TAG);
+        }
+        //****************RSVP Date****************************
+        private void EventButton2_Click(object sender, EventArgs e)
+        {
+            DatePickerFragment frag = DatePickerFragment.NewInstance(delegate (DateTime time)
+            {
+                eventButton2.Text = time.ToShortDateString();
+            });
+            frag.Show(FragmentManager, DatePickerFragment.TAG);
+        }
+        //****************RSVP Time****************************
+        private void TimeButton2_Click(object sender, EventArgs e)
+        {
+            TimePickerFragment frag = TimePickerFragment.NewInstance(delegate (string time)
+            {
+                timeButton2.Text = time;
+            });
+            frag.Show(FragmentManager, TimePickerFragment.TAG);
+        }
+        //****************Create Event****************************
         private void BtncreateEvent_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(InviteGuestActivity));
-            intent.PutExtra("Date", eventDate.Text);
-            intent.PutExtra("Time", eventTime.Text);
+            intent.PutExtra("Date", eventButton.Text);
+            intent.PutExtra("Time", timeButton.Text);
+            intent.PutExtra("Close_Date", eventButton2.Text);
+            intent.PutExtra("Close_Time", timeButton2.Text);
             StartActivity(intent);
         }
-
-        private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
-        {
-            Spinner spinner = (Spinner)sender;
-
-            string toast = string.Format("The selected item is {0}", spinner.GetItemAtPosition(e.Position));
-            Toast.MakeText(this, toast, ToastLength.Long).Show();
-        }
-
-        //private void BtnChange_Click(object sender, EventArgs e)
-        //{
-        //    txtDate.Text = getDate();
-        //}
-
-        //private string getDate()
-        //{
-        //    StringBuilder strCurrentDate = new StringBuilder();
-        //    int month = datePicker.Month + 1;
-        //    strCurrentDate.Append("Date : " + month + "/" + datePicker.DayOfMonth + "/" + datePicker.Year);
-        //    return strCurrentDate.ToString();
-        //}
     }
 }

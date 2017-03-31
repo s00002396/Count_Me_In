@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using System.Data.SqlClient;
 using System.Data;
+using CountMeIn.Model;
 
 namespace CountMeIn
 {
@@ -56,8 +57,15 @@ namespace CountMeIn
 
                 SqlDataReader reader;
                 SqlCommand cmd = new SqlCommand();
+
                 
-                cmd.CommandText = "SELECT Username,PhoneNo,Password FROM Member_Table WHERE Member_Id LIKE 101";
+
+                cmd.CommandText = "SELECT Member_Id,Username,PhoneNo,Password FROM Member_Table WHERE Member_Id LIKE @PhoneNumber";
+                //Make them enter phone number not username and get the phoneNumber from textbox
+                //and put into @PhoneNumber.
+                cmd.Parameters.AddWithValue("@PhoneNumber", 101);
+               
+
                 cmd.CommandType = CommandType.Text;
                 cmd.Connection = sqlconn;
 
@@ -65,11 +73,13 @@ namespace CountMeIn
                
                 while (reader.Read())
                 {
+                    int memberId = (int)reader["Member_Id"];
                     string userName = (string)reader["Username"];
                     string phone = (string)reader["PhoneNo"];
                     string password = (string)reader["Password"];
                     if (((userName == username.Text || phone == username.Text)) && password == pword.Text)
-                    {                       
+                    {
+                        Globals.s_Name = memberId;
                         var intent = new Intent(this, typeof(MainMenuActivity));
                         StartActivity(intent);                                               
                     }

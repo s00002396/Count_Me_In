@@ -14,35 +14,63 @@ using System.Data;
 
 namespace CountMeIn
 {
-    [Activity(Label = "Choose Venue")]
+    [Activity(Label = "Choose Venue", MainLauncher = false)]
     public class InviteGuestActivity : Activity
     {
         private TextView txtDate;
         private TextView txtTime;
+        private EditText txtEventName;
         private Spinner spinner;
         private Button chooseGuests;
         private Button btnSendInvite;
+        SqlConnection sqlconn;
+        string venue;
+        string date;
+        string time;
+        string closeDate;
+        string closeTime;
+        string newID;
+        string insertedID;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+            //SqlConnection sqlconn;
+            var adapter2 = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
+            sqlconn = new System.Data.SqlClient.SqlConnection(adapter2);
 
-            string date = Intent.GetStringExtra("Date") ?? "Data not available";
-            string text = Intent.GetStringExtra("Time") ?? "Data not available";
+            date = Intent.GetStringExtra("Date") ?? "Data not available";
+            time = Intent.GetStringExtra("Time") ?? "Data not available";
+            closeDate = Intent.GetStringExtra("Close_Date") ?? "Data not available";
+            closeTime = Intent.GetStringExtra("Close_Time") ?? "Data not available";
+
             SetContentView(Resource.Layout.InviteGuests);
 
             FindViews();
-            //btnSendInvite.FindViewById<Button>(Resource.Id.sendInvite);
             HandleEvents();
-            //Intent intent = getIntent();
-
-            //spinner = FindViewById<TextView>(Resource.Id.textVenueName);
 
             txtDate.Text = date;
-            txtTime.Text = text;
-            SqlConnection sqlconn;
-            var adapter2 = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
-            sqlconn = new System.Data.SqlClient.SqlConnection(adapter2);
+            txtTime.Text = time;
+        }
+
+        private void FindViews()
+        {
+            chooseGuests = FindViewById<Button>(Resource.Id.sendInvite);
+            txtDate = FindViewById<TextView>(Resource.Id.textDate);
+            txtTime = FindViewById<TextView>(Resource.Id.textTime);
+            spinner = FindViewById<Spinner>(Resource.Id.spinner);
+            txtEventName = FindViewById<EditText>(Resource.Id.txtEventName);
+        }
+        private void HandleEvents()
+        {
+            chooseGuests.Click += ChooseGuests_Click;
+            //btnSendInvite.Click += SendInvite_Click;
+            spinner.ItemSelected += Spinner_ItemSelected;
+
+            #region SqlConnection (Get the Venue)
+            //SqlConnection sqlconn;
+            //var adapter2 = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
+            //sqlconn = new System.Data.SqlClient.SqlConnection(adapter2);
             try
             {
                 sqlconn.Open();
@@ -71,39 +99,69 @@ namespace CountMeIn
             {
                 sqlconn.Close();
             }
+            #endregion
         }
 
-        private void FindViews()
+        private void Spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
         {
-            chooseGuests = FindViewById<Button>(Resource.Id.sendInvite);
-            txtDate = FindViewById<TextView>(Resource.Id.textDate);
-            txtTime = FindViewById<TextView>(Resource.Id.textTime);
-            spinner = FindViewById<Spinner>(Resource.Id.spinner);
-        }
-        private void HandleEvents()
-        {
-            chooseGuests.Click += ChooseGuests_Click;
-            //btnSendInvite.Click += SendInvite_Click;
+            venue = string.Format("{0}", spinner.GetItemAtPosition(e.Position));//get the selected venue            
         }
 
+        //****************Choose Guest SAVE???****************************
         private void ChooseGuests_Click(object sender, EventArgs e)
         {
+            //string insertedID;
+            #region sql
+            sqlconn.Open();
+            try
+            {
+                //string insertedID = "";
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = sqlconn;
+                //cmd.CommandText = "INSERT INTO Invite_Table(Invite_Date, Venue_Name, Group_Name,Time,Going)   VALUES(@param1,@param2,@param3,@param4,@param5)";
+
+                cmd.CommandText = "INSERT INTO Event_Table(Event_Name, Event_Date, Event_Time,Venue_Name,Close_Date, Close_Time)   VALUES(@param1,@param2,@param3,@param4,@param5,@param6) SELECT SCOPE_IDENTITY()";
+
+                cmd.Parameters.AddWithValue("@param1", txtEventName.Text);
+                cmd.Parameters.AddWithValue("@param2", date);//Venue Name  
+                cmd.Parameters.AddWithValue("@param3", time);//Group Name Dont Have yet
+                cmd.Parameters.AddWithValue("@param4", venue);//Time
+                cmd.Parameters.AddWithValue("@param5", closeDate);//Not going by default
+                cmd.Parameters.AddWithValue("@param6", closeTime);
+
+                //cmd.ExecuteNonQuery();
+                sqlconn.Close();
+
+                sqlconn.Open();
+                SqlDataReader reader = cmd.ExecuteReader();
+                reader.Read();
+                insertedID = reader[0].ToString();
+
+            }
+            catch (Exception ex)
+            {
+                string toast = string.Format("Somethinf went wrong  {0}", ex);
+                Toast.MakeText(this, toast, ToastLength.Long).Show();
+            }
+            finally
+            {
+                //var dd = insertedID;
+                sqlconn.Close();
+            }
+            #endregion
+
             var intent = new Intent(this, typeof(GuestInviteActivity));
+            intent.PutExtra("New_ID", insertedID);
             StartActivity(intent);
         }
 
-        private void SendInvite_Click(object sender, EventArgs e)
-        {
-            var intent = new Intent(this, typeof(GuestInviteActivity));
-            StartActivity(intent);
-        }
 
-        private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
-        {
-            Spinner spinner = (Spinner)sender;
+        //private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
+        //{
+        //    spinner = (Spinner)sender;
 
-            string toast = string.Format("The selected item is {0}", spinner.GetItemAtPosition(e.Position));
-            Toast.MakeText(this, toast, ToastLength.Long).Show();
-        }
+        //    string toast = string.Format("The selected item is {0}", spinner.GetItemAtPosition(e.Position));
+        //    Toast.MakeText(this, toast, ToastLength.Long).Show();
+        //}
     }
 }
