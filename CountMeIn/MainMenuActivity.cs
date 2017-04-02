@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 
 namespace CountMeIn
 {
-    [Activity(Label = "Main Menu", MainLauncher = false)]
+    [Activity(Label = "Main Menu", MainLauncher = true)]
     public class MainMenuActivity : Activity
     {
         private Button btnUpComingevent;        

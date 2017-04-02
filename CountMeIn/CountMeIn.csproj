@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapters\EventListAdapter.cs" />
+    <Compile Include="Adapters\GuestInviteAdapter.cs" />
     <Compile Include="Adapters\PendingEventListAdapter.cs" />
     <Compile Include="AddVenueActivity.cs" />
     <Compile Include="CreateAccountActivity.cs" />
@@ -152,6 +153,9 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\PendingEventRow.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\GuestInviteRow.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

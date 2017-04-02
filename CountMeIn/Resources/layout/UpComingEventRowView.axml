@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/mainScrollView"
     android:layout_width="fill_parent"
     android:layout_height="match_parent"
     android:background="#f4f0ef"
     android:minWidth="25px"
-    android:minHeight="25px">
-    <LinearLayout
+    android:minHeight="25px">-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:padding="8dp"
@@ -24,9 +24,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="10dip">
-            <ScrollView
+            <!--<ScrollView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent">-->
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
                         android:textStyle="bold"
                         android:gravity="right" />
                 </RelativeLayout>
-            </ScrollView>
+            <!--</ScrollView>-->
         </LinearLayout>
     </LinearLayout>
-</ScrollView>
+<!--</ScrollView>-->

@@ -51,7 +51,9 @@ namespace CountMeIn
 
         private void PendingEventListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
-            Toast.MakeText(this, "Error" + mItems[e.Position].EventId, ToastLength.Long).Show();
+            Toast.MakeText(this, "User ID " + mItems[e.Position].EventId, ToastLength.Long).Show();
+            var intent = new Intent(this, typeof(PendingInvitesActivity));
+            StartActivity(intent);
             Console.WriteLine(mItems[e.Position].EventDate);
         }
 

@@ -82,5 +82,6 @@ C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\c
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\layout\guestinvite.xml
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\layout\pendingeventview.xml
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\layout\pendingeventrow.xml
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\layout\guestinviterow.xml
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\CountMeIn.dll.mdb
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\bin\Debug\CountMeIn.dll.mdb

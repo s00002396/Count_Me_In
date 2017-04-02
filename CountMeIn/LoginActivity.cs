@@ -21,6 +21,7 @@ namespace CountMeIn
         private Button btnLogIn;
         private EditText username;
         private EditText pword;
+        private bool flag = false;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -80,10 +81,11 @@ namespace CountMeIn
                     if (((userName == username.Text || phone == username.Text)) && password == pword.Text)
                     {
                         Globals.s_Name = memberId;
+                        flag = true;
                         var intent = new Intent(this, typeof(MainMenuActivity));
                         StartActivity(intent);                                               
                     }
-                    else
+                    if(flag==false)
                     {
                         Toast.MakeText(this, "Invalid username or password", ToastLength.Long).Show();
                     }

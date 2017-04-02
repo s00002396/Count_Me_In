@@ -43,28 +43,20 @@ namespace CountMeIn
             eventListView.Adapter = adapter;
 
             eventListView.ItemClick += EventListView_ItemClick;
-            eventListView.ItemLongClick += EventListView_ItemLongClick;
+            
             //eventListView.ItemClick += EventListView_ItemClick;
-        }
-
-        private void EventListView_ItemLongClick(object sender, AdapterView.ItemLongClickEventArgs e)
-        {
-            System.Console.WriteLine(mItems[e.Position].EventDate);
-        }
+        }        
 
         private void EventListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
-            System.Console.WriteLine(mItems[e.Position].EventDate);
+            Toast.MakeText(this, "User ID " + mItems[e.Position].EventId, ToastLength.Long).Show();
+
         }
 
         private void FindViews()
         {
             eventListView = FindViewById<ListView>(Resource.Id.eventListView);
-        }
-
-        
-
-        
+        }       
 
         private void HandleEvents()
         {
@@ -108,6 +100,7 @@ namespace CountMeIn
 
                 while (reader.Read())
                 {
+                    int eventId = (int)reader["Event_Id"];
                     string inviteDate = (string)reader["Event_Date"];
                     string venueName = (string)reader["Event_Name"];
                     string groupName = (string)reader["Venue_Name"];
@@ -115,7 +108,7 @@ namespace CountMeIn
 
                     //mListView = FindViewById<ListView>(Resource.Id.eventListView);
 
-                    mItems.Add(new Person() { EventDate = inviteDate, GroupName = groupName, EventName = venueName, Time = time });
+                    mItems.Add(new Person() { EventId = eventId, EventDate = inviteDate, GroupName = groupName, EventName = venueName, Time = time });
                 }
             }
             catch (Exception ex)

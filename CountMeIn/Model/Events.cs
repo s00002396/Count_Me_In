@@ -29,6 +29,15 @@ namespace CountMeIn.Model
         public string GroupName { get; set; }
         public string Time { get; set; }
     }
+    public class Member
+    {
+        public int Member_Id { get; set; }
+        public string Member_Name { get; set; }
+        public string Member_Phone { get; set; }
+        public string UserName { get; set; }
+        public string GroupName { get; set; }
+
+    }
     public static class Globals
     {
         public static int s_Name = 0; // Modifiable in Code
