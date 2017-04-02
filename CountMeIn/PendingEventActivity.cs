@@ -15,13 +15,14 @@ using CountMeIn.Service;
 using System.Data.SqlClient;
 using System.Data;
 using ListViewEvents;
+using CountMeIn.Adapters;
 
 namespace CountMeIn
 {
-    [Activity(Label = "Pending Invites", MainLauncher = false)]
+    [Activity(Label = "Pending Invites", MainLauncher = true)]
     public class PendingEventActivity : Activity
     {
-        private ListView eventListView;
+        private ListView pendingEventListView;
 
         private List<Person> mItems;
         private ListView mListView;
@@ -34,10 +35,29 @@ namespace CountMeIn
 
             mItems = new List<Person>();
 
+            //mItems.Add(new Person() { EventDate = "Joe", GroupName = "Smith", EventName = "071557412", Time = "+" });
+            //mItems.Add(new Person() { EventDate = "Tom", GroupName = "Tom", EventName = "35", Time = "Male" });
+            //mItems.Add(new Person() { EventDate = "Sally", GroupName = "Susan", EventName = "88", Time = "Female" });
+
             HandleEvents();
 
-            MyListViewAdapter adapter = new MyListViewAdapter(this, mItems);
-            eventListView.Adapter = adapter;
+            MyPendingEventListAdapter adapter = new MyPendingEventListAdapter(this, mItems);
+
+            pendingEventListView.Adapter = adapter;
+
+            pendingEventListView.ItemLongClick += EventListView_ItemLongClick;
+            pendingEventListView.ItemClick += PendingEventListView_ItemClick;
+        }
+
+        private void PendingEventListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            Toast.MakeText(this, "Error" + mItems[e.Position].EventId, ToastLength.Long).Show();
+            Console.WriteLine(mItems[e.Position].EventDate);
+        }
+
+        private void EventListView_ItemLongClick(object sender, AdapterView.ItemLongClickEventArgs e)
+        {
+            System.Console.WriteLine(mItems[e.Position].EventDate);
         }
 
         private void HandleEvents()
@@ -81,6 +101,7 @@ namespace CountMeIn
 
                 while (reader.Read())
                 {
+                    int eventId = (int)reader["Event_Id"];
                     string inviteDate = (string)reader["Event_Date"];
                     string venueName = (string)reader["Event_Name"];
                     string groupName = (string)reader["Venue_Name"];
@@ -88,7 +109,7 @@ namespace CountMeIn
 
                     mListView = FindViewById<ListView>(Resource.Id.eventListView);
 
-                    mItems.Add(new Person() { EventDate = inviteDate, GroupName = groupName, EventName = venueName, Time = time });
+                    mItems.Add(new Person() {EventId = eventId, EventDate = inviteDate, GroupName = groupName, EventName = venueName, Time = time });
                 }
             }
             catch (Exception ex)
@@ -102,7 +123,7 @@ namespace CountMeIn
         }
         private void FindViews()
         {
-            eventListView = FindViewById<ListView>(Resource.Id.eventListView);
+            pendingEventListView = FindViewById<ListView>(Resource.Id.pendingEventListView);
         }
     }
 }

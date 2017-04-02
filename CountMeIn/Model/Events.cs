@@ -21,8 +21,9 @@ namespace CountMeIn.Model
         public string Time { get; set; }
 
     }
-    class Person
+    public class Person
     {
+        public int EventId { get; set; }
         public string EventDate { get; set; }
         public string EventName { get; set; }
         public string GroupName { get; set; }

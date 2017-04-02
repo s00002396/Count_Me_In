@@ -36,7 +36,7 @@ public final class R {
     }
     public static final class id {
         public static final int MyEditButton=0x7f08002f;
-        public static final int addVenue=0x7f080037;
+        public static final int addVenue=0x7f080035;
         public static final int btnLogIn=0x7f080025;
         public static final int btnSignIn=0x7f080027;
         public static final int btnSignUp=0x7f08000b;
@@ -54,19 +54,19 @@ public final class R {
         public static final int eventButton2=0x7f080012;
         public static final int eventDate=0x7f080010;
         public static final int eventDate1=0x7f08000e;
-        public static final int eventDateView=0x7f080031;
-        public static final int eventListView=0x7f080035;
-        public static final int eventNameView=0x7f080032;
+        public static final int eventDateView=0x7f080030;
+        public static final int eventListView=0x7f080036;
+        public static final int eventNameView=0x7f080031;
         public static final int eventTime=0x7f080011;
         public static final int eventTime1=0x7f08000f;
-        public static final int groupNameView=0x7f080033;
+        public static final int groupNameView=0x7f080032;
         public static final int loginPassword=0x7f080024;
         public static final int loginUserName=0x7f080023;
         public static final int logoImageView=0x7f080022;
-        public static final int mainScrollView=0x7f080030;
+        public static final int mainScrollView=0x7f080037;
+        public static final int pendingEventListView=0x7f080034;
         public static final int pendingInviteButton=0x7f08002c;
         public static final int phoneNo=0x7f080008;
-        public static final int progressBar1=0x7f080036;
         public static final int relativeLayout1=0x7f080000;
         public static final int renterPwd=0x7f08000a;
         public static final int sendInvite=0x7f08001c;
@@ -85,7 +85,7 @@ public final class R {
         public static final int timeButton=0x7f08000d;
         public static final int timeButton2=0x7f080013;
         public static final int timePicker1=0x7f08002a;
-        public static final int timeView=0x7f080034;
+        public static final int timeView=0x7f080033;
         public static final int txtCreateAccount=0x7f080026;
         public static final int txtEventName=0x7f080020;
         public static final int txtOr=0x7f080028;

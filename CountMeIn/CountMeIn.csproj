@@ -57,6 +57,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Adapters\EventListAdapter.cs" />
+    <Compile Include="Adapters\PendingEventListAdapter.cs" />
     <Compile Include="AddVenueActivity.cs" />
     <Compile Include="CreateAccountActivity.cs" />
     <Compile Include="CreateEventActivity.cs" />

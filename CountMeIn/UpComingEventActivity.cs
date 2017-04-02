@@ -18,18 +18,20 @@ using ListViewEvents;
 
 namespace CountMeIn
 {
-    [Activity(Label = "UpComing Event", MainLauncher = true)]
+    [Activity(Label = "UpComing Event", MainLauncher = false)]
     public class UpComingEventActivity : Activity
     {
         private ListView eventListView;
-
+        //string FirstName = "Bobby";
         private List<Person> mItems;
-        private ListView mListView;
+        //private ListView mListView;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
+
             SetContentView(Resource.Layout.UpComingEvent);
+
             FindViews();
             var m_ID = Globals.s_Name;
 
@@ -39,7 +41,30 @@ namespace CountMeIn
 
             MyListViewAdapter adapter = new MyListViewAdapter(this, mItems);
             eventListView.Adapter = adapter;
+
+            eventListView.ItemClick += EventListView_ItemClick;
+            eventListView.ItemLongClick += EventListView_ItemLongClick;
+            //eventListView.ItemClick += EventListView_ItemClick;
         }
+
+        private void EventListView_ItemLongClick(object sender, AdapterView.ItemLongClickEventArgs e)
+        {
+            System.Console.WriteLine(mItems[e.Position].EventDate);
+        }
+
+        private void EventListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
+        {
+            System.Console.WriteLine(mItems[e.Position].EventDate);
+        }
+
+        private void FindViews()
+        {
+            eventListView = FindViewById<ListView>(Resource.Id.eventListView);
+        }
+
+        
+
+        
 
         private void HandleEvents()
         {
@@ -88,7 +113,7 @@ namespace CountMeIn
                     string groupName = (string)reader["Venue_Name"];
                     string time = (string)reader["Event_Time"];
 
-                    mListView = FindViewById<ListView>(Resource.Id.eventListView);
+                    //mListView = FindViewById<ListView>(Resource.Id.eventListView);
 
                     mItems.Add(new Person() { EventDate = inviteDate, GroupName = groupName, EventName = venueName, Time = time });
                 }
@@ -101,11 +126,7 @@ namespace CountMeIn
             {
                 sqlconn.Close();
             }
-        }
-
-        private void FindViews()
-        {
-            eventListView = FindViewById<ListView>(Resource.Id.eventListView);
-        }
+            //eventListView.ItemClick += EventListView_ItemClick;
+        }        
     }
 }
