@@ -17,11 +17,12 @@ using CountMeIn.Adapters;
 
 namespace CountMeIn
 {
-    [Activity(Label = "Invite Guests", MainLauncher = true)]
+    [Activity(Label = "Invite Guests", MainLauncher = false)]
     public class GuestInviteActivity : Activity
     {
         private ListView guestListView;
-
+        private List<int> invitedGuestID;
+        SqlConnection sqlconn;
         private List<Member> mItems;
         private ListView mListView;
         string new_ID;
@@ -30,10 +31,16 @@ namespace CountMeIn
         {
             base.OnCreate(savedInstanceState);
 
+            #region sql Connection
+            string connsqlstring = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
+            sqlconn = new System.Data.SqlClient.SqlConnection(connsqlstring);
+            #endregion
+
             new_ID = Intent.GetStringExtra("New_ID") ?? "Data not available";
 
             SetContentView(Resource.Layout.GuestInvite);
             FindViews();
+            invitedGuestID = new List<int>();
             mItems = new List<Member>();
             HandleEvents();
 
@@ -44,21 +51,21 @@ namespace CountMeIn
 
         private void EventListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
+            //add Member_Id to a list then use foreach in finish button to update Member_Event_Table in db.
+            var gg = mItems[e.Position].Member_Id;
             Toast.MakeText(this, "User ID " + mItems[e.Position].Member_Id, ToastLength.Long).Show();
+            
+            invitedGuestID.Add(mItems[e.Position].Member_Id);            
         }
 
         private void FindViews()
         {
-            //btnInvite = FindViewById<Button>(Resource.Id.createInvite);
+            btnInvite = FindViewById<Button>(Resource.Id.createInvite);
             guestListView = FindViewById<ListView>(Resource.Id.guestListView);
         }
 
         private void HandleEvents()
         {
-            SqlConnection sqlconn;
-
-            string connsqlstring = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
-            sqlconn = new System.Data.SqlClient.SqlConnection(connsqlstring);
             try
             {
                 sqlconn.Open();
@@ -93,25 +100,55 @@ namespace CountMeIn
             {
                 sqlconn.Close();
             }
-            //btnInvite.Click += BtnInvite_Click;
+            btnInvite.Click += BtnInvite_Click;
         }
 
-        //private void BtnInvite_Click(object sender, EventArgs e)
-        //{
-        //    Notification.Builder builder = new Notification.Builder(this)
-        //    .SetContentTitle("Count-Me-In")
-        //    .SetContentText("You have a new invite")
-        //    .SetSmallIcon(Resource.Drawable.Icon);
+        private void BtnInvite_Click(object sender, EventArgs e)
+        {
+            #region sql
+            sqlconn.Open();
+            try
+            {                
+                SqlCommand cmd = new SqlCommand();
+                
+                int i = 20;
+                foreach (var item in invitedGuestID)
+                {
+                    
+                    cmd.Connection = sqlconn;
+                    cmd.CommandText = "INSERT INTO Event_Member_Table(Member_Id, Event_Id, Going)   VALUES(@paramA" + i+ ",@paramB"+ i+",@paramC"+ i+")";
 
-        //    Notification notification = builder.Build();
-        //    NotificationManager notificationManager = GetSystemService(Context.NotificationService) as NotificationManager;
+                    cmd.Parameters.AddWithValue("@paramA" + i, Convert.ToInt32(item));//MemberID
+                    cmd.Parameters.AddWithValue("@paramB" +i, new_ID);//EventID  
+                    cmd.Parameters.AddWithValue("@paramC" + i, 0);//Not going by default.
+                    cmd.ExecuteNonQuery();
+                    i++;
+                } 
+            }
+            catch (Exception ex)
+            {
+                string toast = string.Format("Something went wrong  {0}", ex);
+                Toast.MakeText(this, toast, ToastLength.Long).Show();
+            }
+            finally
+            {
+                sqlconn.Close();
+            }
+            #endregion
 
-        //    const int notificationId = 0;
-        //    notificationManager.Notify(notificationId, notification);
+            Notification.Builder builder = new Notification.Builder(this)
+            .SetContentTitle("Count-Me-In")
+            .SetContentText("You have a new invite")
+            .SetSmallIcon(Resource.Drawable.Icon);
 
-        //    //Toast.MakeText(this, "Invite Sent ", ToastLength.Long).Show();
-        //    //var intent = new Intent(this, typeof(MainMenuActivity));
-        //    //StartActivity(intent);
-        //}
+            Notification notification = builder.Build();
+            NotificationManager notificationManager = GetSystemService(Context.NotificationService) as NotificationManager;
+
+            const int notificationId = 0;
+            notificationManager.Notify(notificationId, notification);
+            
+            var intent = new Intent(this, typeof(MainMenuActivity));
+            StartActivity(intent);
+        }
     }
 }

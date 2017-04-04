@@ -36,8 +36,8 @@ namespace CountMeIn
         {
             base.OnCreate(savedInstanceState);
             //SqlConnection sqlconn;
-            var adapter2 = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
-            sqlconn = new System.Data.SqlClient.SqlConnection(adapter2);
+            var connsqlstring = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
+            sqlconn = new System.Data.SqlClient.SqlConnection(connsqlstring);
 
             date = Intent.GetStringExtra("Date") ?? "Data not available";
             time = Intent.GetStringExtra("Time") ?? "Data not available";
@@ -67,10 +67,7 @@ namespace CountMeIn
             //btnSendInvite.Click += SendInvite_Click;
             spinner.ItemSelected += Spinner_ItemSelected;
 
-            #region SqlConnection (Get the Venue)
-            //SqlConnection sqlconn;
-            //var adapter2 = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
-            //sqlconn = new System.Data.SqlClient.SqlConnection(adapter2);
+            #region SqlConnection (Get the Venue)            
             try
             {
                 sqlconn.Open();
@@ -109,17 +106,14 @@ namespace CountMeIn
 
         //****************Choose Guest SAVE???****************************
         private void ChooseGuests_Click(object sender, EventArgs e)
-        {
-            //string insertedID;
+        {            
             #region sql
             sqlconn.Open();
             try
             {
-                //string insertedID = "";
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = sqlconn;
-                //cmd.CommandText = "INSERT INTO Invite_Table(Invite_Date, Venue_Name, Group_Name,Time,Going)   VALUES(@param1,@param2,@param3,@param4,@param5)";
-
+                
                 cmd.CommandText = "INSERT INTO Event_Table(Event_Name, Event_Date, Event_Time,Venue_Name,Close_Date, Close_Time)   VALUES(@param1,@param2,@param3,@param4,@param5,@param6) SELECT SCOPE_IDENTITY()";
 
                 cmd.Parameters.AddWithValue("@param1", txtEventName.Text);
@@ -140,7 +134,7 @@ namespace CountMeIn
             }
             catch (Exception ex)
             {
-                string toast = string.Format("Somethinf went wrong  {0}", ex);
+                string toast = string.Format("Something went wrong  {0}", ex);
                 Toast.MakeText(this, toast, ToastLength.Long).Show();
             }
             finally
@@ -154,14 +148,5 @@ namespace CountMeIn
             intent.PutExtra("New_ID", insertedID);
             StartActivity(intent);
         }
-
-
-        //private void spinner_ItemSelected(object sender, AdapterView.ItemSelectedEventArgs e)
-        //{
-        //    spinner = (Spinner)sender;
-
-        //    string toast = string.Format("The selected item is {0}", spinner.GetItemAtPosition(e.Position));
-        //    Toast.MakeText(this, toast, ToastLength.Long).Show();
-        //}
     }
 }

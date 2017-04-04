@@ -33,11 +33,11 @@ namespace CountMeIn
             SetContentView(Resource.Layout.PendingEventView);
             FindViews();
 
-            mItems = new List<Person>();
-
-            //mItems.Add(new Person() { EventDate = "Joe", GroupName = "Smith", EventName = "071557412", Time = "+" });
-            //mItems.Add(new Person() { EventDate = "Tom", GroupName = "Tom", EventName = "35", Time = "Male" });
-            //mItems.Add(new Person() { EventDate = "Sally", GroupName = "Susan", EventName = "88", Time = "Female" });
+            /********Get the Mobile Number**********/
+            Android.Telephony.TelephonyManager tMgr = (Android.Telephony.TelephonyManager)this.GetSystemService(Android.Content.Context.TelephonyService);
+            string mPhoneNumber = tMgr.Line1Number;
+            /****************************************/
+            mItems = new List<Person>();            
 
             HandleEvents();
 
@@ -51,10 +51,17 @@ namespace CountMeIn
 
         private void PendingEventListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
-            Toast.MakeText(this, "User ID " + mItems[e.Position].EventId, ToastLength.Long).Show();
+            //Toast.MakeText(this, "User ID " + mItems[e.Position].EventId, ToastLength.Long).Show();
             var intent = new Intent(this, typeof(PendingInvitesActivity));
+
+            intent.PutExtra("Event Date", mItems[e.Position].EventDate);
+            intent.PutExtra("Event Venue", mItems[e.Position].EventName);
+            intent.PutExtra("Event_Id", mItems[e.Position].EventId.ToString());
+            //intent.PutExtra("Member_Id", mItems[e.Position].mem.ToString());
+            //intent.PutExtra("Close_Time", timeButton2.Text);
+
             StartActivity(intent);
-            Console.WriteLine(mItems[e.Position].EventDate);
+            //Console.WriteLine(mItems[e.Position].EventDate);
         }
 
         private void EventListView_ItemLongClick(object sender, AdapterView.ItemLongClickEventArgs e)
@@ -73,26 +80,7 @@ namespace CountMeIn
 
                 SqlDataReader reader;
                 SqlCommand cmd = new SqlCommand();
-
-                #region Existing COde
-                //cmd.CommandText = "SELECT * FROM Invite_Table WHERE Going like 0";
-                //cmd.CommandType = CommandType.Text;
-                //cmd.Connection = sqlconn;
-
-                //reader = cmd.ExecuteReader();
-
-                //while (reader.Read())
-                //{
-                //    string inviteDate = (string)reader["Invite_Date"];
-                //    string venueName = (string)reader["Venue_Name"];
-                //    string groupName = (string)reader["Group_Name"];
-                //    string time = (string)reader["Time"];
-
-                //    mListView = FindViewById<ListView>(Resource.Id.eventListView);
-
-                //    mItems.Add(new Person() { EventDate = inviteDate, GroupName = groupName, EventName = venueName, Time = time });
-                //}
-                #endregion
+                
                 cmd.CommandText = "select * from Event_Table inner join Event_Member_Table  on Event_Table.Event_Id like Event_Member_Table.Event_Id where Event_Member_Table.Member_Id like @M_ID and Event_Member_Table.Going like 0";
                 cmd.Parameters.AddWithValue("@M_ID", 101);
                 // cmd.Parameters.AddWithValue("@M_ID", Globals.s_Name);
@@ -104,6 +92,7 @@ namespace CountMeIn
                 while (reader.Read())
                 {
                     int eventId = (int)reader["Event_Id"];
+                    //int memberId = (int)reader["Member_Id"];
                     string inviteDate = (string)reader["Event_Date"];
                     string venueName = (string)reader["Event_Name"];
                     string groupName = (string)reader["Venue_Name"];

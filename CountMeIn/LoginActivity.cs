@@ -28,7 +28,8 @@ namespace CountMeIn
             base.OnCreate(savedInstanceState);
 
             SetContentView(Resource.Layout.Login);
-
+            Android.Telephony.TelephonyManager tMgr = (Android.Telephony.TelephonyManager)this.GetSystemService(Android.Content.Context.TelephonyService);
+            string mPhoneNumber = tMgr.Line1Number;
             FindViews();
 
             HandleEvents();
@@ -58,8 +59,6 @@ namespace CountMeIn
 
                 SqlDataReader reader;
                 SqlCommand cmd = new SqlCommand();
-
-                
 
                 cmd.CommandText = "SELECT Member_Id,Username,PhoneNo,Password FROM Member_Table WHERE Member_Id LIKE @PhoneNumber";
                 //Make them enter phone number not username and get the phoneNumber from textbox
