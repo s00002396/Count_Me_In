@@ -15,7 +15,7 @@ using CountMeIn.Model;
 
 namespace CountMeIn
 {
-    [Activity(Label = "Login", MainLauncher = true, Icon = "@drawable/logo")]
+    [Activity(Label = "Login", MainLauncher = false, Icon = "@drawable/logo")]
     public class LoginActivity : Activity
     {
         private Button btnLogIn;

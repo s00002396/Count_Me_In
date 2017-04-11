@@ -17,8 +17,8 @@ namespace CountMeIn
     [Activity(Label = "Create an Event", MainLauncher = false)]
     public class TestCreateEventActivity : Activity
     {
-        private DatePicker datePicker;
-        private Button btnChange;
+        //private DatePicker datePicker;
+        //private Button btnChange;
 
         private TextView eventDate;
         private TextView eventTime;
@@ -66,7 +66,7 @@ namespace CountMeIn
             }
             catch (Exception ex)
             {
-                //txtSysLog.Text = ex.ToString();
+                Toast.MakeText(this, "Error" + ex, ToastLength.Long).Show();
             }
             finally
             {

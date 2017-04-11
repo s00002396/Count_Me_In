@@ -40,8 +40,6 @@ namespace CountMeIn
             eventID = Intent.GetStringExtra("Event_Id") ?? "Data not available";
             eventDate = Intent.GetStringExtra("Event Date") ?? "Data not available";
             eventName = Intent.GetStringExtra("Event Venue") ?? "Data not available";
-            //eventID = Intent.GetStringExtra("Event_Id") ?? "Data not available";
-            //Toast.MakeText(this, "No Pending Invites ", ToastLength.Long).Show();
             FindViews();
             var test = Globals.myID;
             mItems = new List<Member>();

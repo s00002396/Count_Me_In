@@ -7,12 +7,12 @@ using System.Data.SqlClient;
 
 namespace CountMeIn
 {
-    [Activity(Label = "Main Menu", MainLauncher = false)]
+    [Activity(Label = "Main Menu", MainLauncher = true)]
     public class MainMenuActivity : Activity
     {
         private Button btnUpComingevent;        
         private Button btnPendingInvite;
-        private Button btnCreateGroup;
+        private Button btnCreateVenue;
         private Button btnCreateEvent;
         private Button btnlogOut;
 
@@ -27,7 +27,7 @@ namespace CountMeIn
         {
             btnUpComingevent = FindViewById<Button>(Resource.Id.upcomingeventButton);
             btnPendingInvite = FindViewById<Button>(Resource.Id.pendingInviteButton);
-            btnCreateGroup = FindViewById<Button>(Resource.Id.createGroupButton);
+            btnCreateVenue = FindViewById<Button>(Resource.Id.createVenueButton);
             btnCreateEvent = FindViewById<Button>(Resource.Id.createEventButton);
             btnlogOut = FindViewById<Button>(Resource.Id.logOut);
         }
@@ -35,7 +35,7 @@ namespace CountMeIn
         {
             btnUpComingevent.Click += BtnUpComingevent_Click;            
             btnPendingInvite.Click += BtnPendingInvite_Click;
-            btnCreateGroup.Click += BtnCreateGroup_Click;
+            btnCreateVenue.Click += BtnCreateVenue_Click;
             btnCreateEvent.Click += BtnCreateEvent_Click;
             btnlogOut.Click += BtnlogOut_Click;          
         }
@@ -56,7 +56,7 @@ namespace CountMeIn
             var intent = new Intent(this, typeof(UpComingEventActivity));
             StartActivity(intent);
         }
-        private void BtnCreateGroup_Click(object sender, EventArgs e)
+        private void BtnCreateVenue_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(CreateGroupActivity));
             StartActivity(intent);

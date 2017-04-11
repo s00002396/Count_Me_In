@@ -23,14 +23,14 @@ namespace CountMeIn
         private EditText txtEventName;
         private Spinner spinner;
         private Button chooseGuests;
-        private Button btnSendInvite;
+        //private Button btnSendInvite;
         //SqlConnection sqlconn;
         string venue;
         string date;
         string time;
         string closeDate;
         string closeTime;
-        string newID;
+        //string newID;
         string insertedID;
 
         protected override void OnCreate(Bundle savedInstanceState)

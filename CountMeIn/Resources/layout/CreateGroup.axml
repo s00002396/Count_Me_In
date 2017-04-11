@@ -8,35 +8,36 @@
     android:id="@+id/relativeLayout1"
     android:paddingTop="20.0dp">
     <TextView
-        android:id="@+id/textDate"
-        android:layout_width="180.0dp"
+        android:id="@+id/venuName"
+        android:layout_width="167.5dp"
         android:layout_height="wrap_content"
-        android:text="Group Name"
+        android:text="Venu Name"
         android:textColor="#3399CC"
         android:background="#FEFEFA"
         android:textSize="20.0dp"
         android:textStyle="bold"
         android:padding="16.0dp"
-        android:layout_marginRight="0.0dp" />
+        android:layout_marginLeft="15.0dp" />
     <EditText
-        android:id="@+id/textTime"
+        android:inputType="textVisiblePassword"
+        android:id="@+id/textVenueName"
         android:layout_width="185dp"
         android:layout_height="wrap_content"
         android:layout_marginLeft="1dp"
-        android:layout_toRightOf="@+id/textDate"
+        android:layout_toRightOf="@+id/venuName"
         android:textColor="#FE0000"
         android:background="@drawable/EditTextBorder"
-        android:hint="Enter group name"
-        android:textSize="20.0dp"
+        android:hint="Enter Venue Name"
+        android:textSize="16.0dp"
         android:textStyle="bold"
         android:layout_marginRight="5dp"
         android:padding="16.0dp"
-        android:textColorHint="#FE0000" />
+        android:textColorHint="#C1C1C1" />
     <TextView
-        android:id="@+id/textLabel"
-        android:layout_width="match_parent"
+        android:id="@+id/venueAddress"
+        android:layout_width="180.0dp"
         android:layout_height="wrap_content"
-        android:text="Add Guests"
+        android:text="Venu Address"
         android:textColor="#3399CC"
         android:background="#FEFEFA"
         android:textSize="20.0dp"
@@ -45,54 +46,51 @@
         android:layout_marginRight="0.0dp"
         android:layout_marginTop="100.0dp"
         android:gravity="center_horizontal" />
-    <CheckBox
+    <EditText
+        android:inputType="textMultiLine"
+        android:id="@+id/textVenuAddress"
         android:layout_width="185dp"
         android:layout_height="wrap_content"
-        android:text="Bob"
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@+id/venueAddress"
+        android:textColor="#FE0000"
+        android:background="@drawable/EditTextBorder"
+        android:hint="Enter Venue Address"
+        android:textSize="16.0dp"
+        android:textStyle="bold"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="100.0dp"
+        android:padding="16.0dp"
+        android:textColorHint="#C1C1C1" />
+    <TextView
+        android:id="@+id/venuePhone"
+        android:layout_width="180.0dp"
+        android:layout_height="wrap_content"
+        android:text="Phone Number"
         android:textColor="#3399CC"
-        android:layout_marginTop="160.0dp"
-        android:layout_marginLeft="78.0dp"
-        android:gravity="fill_vertical" />
-    <CheckBox
+        android:background="#FEFEFA"
+        android:textSize="20.0dp"
+        android:textStyle="bold"
+        android:padding="16.0dp"
+        android:layout_marginRight="0.0dp"
+        android:layout_marginTop="210.0dp"
+        android:gravity="center_horizontal" />
+    <EditText
+        android:inputType="phone"
+        android:id="@+id/textVenuPhone"
         android:layout_width="185dp"
         android:layout_height="wrap_content"
-        android:text="Mary"
-        android:textColor="#3399CC"
-        android:layout_marginTop="200.0dp"
-        android:layout_marginLeft="78.0dp"
-        android:gravity="fill_vertical" />
-    <CheckBox
-        android:layout_width="185dp"
-        android:layout_height="wrap_content"
-        android:text="Bill"
-        android:textColor="#3399CC"
-        android:layout_marginTop="250.0dp"
-        android:layout_marginLeft="78.0dp"
-        android:gravity="fill_vertical" />
-    <CheckBox
-        android:layout_width="185dp"
-        android:layout_height="wrap_content"
-        android:text="Bort"
-        android:textColor="#3399CC"
-        android:layout_marginTop="300.0dp"
-        android:layout_marginLeft="78.0dp"
-        android:gravity="fill_vertical" />
-    <CheckBox
-        android:layout_width="185dp"
-        android:layout_height="wrap_content"
-        android:text="Sammy"
-        android:textColor="#3399CC"
-        android:layout_marginTop="350.0dp"
-        android:layout_marginLeft="78.0dp"
-        android:gravity="fill_vertical" />
-    <CheckBox
-        android:layout_width="185dp"
-        android:layout_height="wrap_content"
-        android:text="Jo"
-        android:textColor="#3399CC"
-        android:layout_marginTop="400.0dp"
-        android:layout_marginLeft="78.0dp"
-        android:gravity="fill_vertical" />
+        android:layout_marginLeft="1dp"
+        android:layout_toRightOf="@+id/venuePhone"
+        android:textColor="#FE0000"
+        android:background="@drawable/EditTextBorder"
+        android:hint="Enter Phone No."
+        android:textSize="16.0dp"
+        android:textStyle="bold"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="210.0dp"
+        android:padding="16.0dp"
+        android:textColorHint="#C1C1C1" />
     <Button
         android:id="@+id/createGroup"
         android:layout_width="200.0dp"

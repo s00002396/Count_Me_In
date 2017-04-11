@@ -52,17 +52,17 @@
     <Button
         android:layout_marginTop="285.0dp"
         android:layout_marginLeft="35.0dp"
-        android:drawableLeft="@drawable/group2"
+        android:drawableLeft="@drawable/venue1"
         android:layout_width="110.0dp"
         android:layout_height="110.0dp"
-        android:id="@+id/createGroupButton" />
+        android:id="@+id/createVenueButton" />
     <Button
         android:layout_marginTop="285.0dp"
         android:layout_marginLeft="65.0dp"
         android:drawableLeft="@drawable/createEvebts"
         android:layout_width="110.0dp"
         android:layout_height="110.0dp"
-        android:layout_toRightOf="@+id/createGroupButton"
+        android:layout_toRightOf="@+id/createVenueButton"
         android:id="@+id/createEventButton" />
     <TextView
         android:layout_marginTop="395.0dp"
@@ -72,7 +72,7 @@
         android:textColor="#3399CC"
         android:background="#FFFFFF"
         android:textSize="18.0dp"
-        android:text="Create Group"
+        android:text="Create Venue"
         android:layout_marginRight="0.0dp"
         android:layout_marginLeft="0.0dp"
         android:gravity="center_horizontal"
@@ -92,12 +92,11 @@
         android:padding="6.0dp"
         android:gravity="center_horizontal"
         android:textStyle="bold" />
-  <Button
-    android:id="@+id/logOut"
-    android:layout_marginTop="495.0dp"
-    android:layout_width="95dp"
-    android:layout_height="35.0dp"
-    android:layout_marginLeft="220dp"
-    android:text="Log Out"
-    />
+    <Button
+        android:id="@+id/logOut"
+        android:layout_marginTop="495.0dp"
+        android:layout_width="95dp"
+        android:layout_height="35.0dp"
+        android:layout_marginLeft="220dp"
+        android:text="Log Out" />
 </RelativeLayout>

@@ -2,7 +2,7 @@
 <xs:schema xmlns:android="http://schemas.android.com/apk/res/android" attributeFormDefault="qualified" targetNamespace="http://schemas.android.com/apk/res/android" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:annotation>
     <xs:documentation>v25</xs:documentation>
-    <xs:documentation>11/04/2017 15:39:03</xs:documentation>
+    <xs:documentation>11/04/2017 20:09:09</xs:documentation>
   </xs:annotation>
   <xs:attribute name="accessibilityLiveRegion">
     <xs:annotation>
@@ -795,6 +795,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -1446,6 +1448,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -2139,6 +2143,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -2519,6 +2525,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -2848,6 +2856,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -3488,6 +3498,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -3832,6 +3844,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4180,6 +4194,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4477,6 +4493,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -4745,6 +4763,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5457,6 +5477,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -5893,6 +5915,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -6299,6 +6323,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -6799,6 +6825,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -7129,6 +7157,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -7459,6 +7489,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -7829,6 +7861,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -8159,6 +8193,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -8601,6 +8637,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -8986,6 +9024,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -9279,6 +9319,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -9730,6 +9772,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -10154,6 +10198,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -10696,6 +10742,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -11177,6 +11225,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -11681,6 +11731,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -12328,6 +12380,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12578,6 +12632,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -12828,6 +12884,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13078,6 +13136,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13328,6 +13388,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13578,6 +13640,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -13828,6 +13892,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14078,6 +14144,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14524,6 +14592,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -14801,6 +14871,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15051,6 +15123,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15301,6 +15375,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15551,6 +15627,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -15841,6 +15919,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16092,6 +16172,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -16421,6 +16503,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -16711,6 +16795,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17054,6 +17140,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17304,6 +17392,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -17773,6 +17863,7 @@
             <xs:enumeration value="@id/createGroupButton" />
             <xs:enumeration value="@id/createInvite" />
             <xs:enumeration value="@id/createVenue" />
+            <xs:enumeration value="@id/createVenueButton" />
             <xs:enumeration value="@id/dateClose" />
             <xs:enumeration value="@id/datePicker1" />
             <xs:enumeration value="@id/editText1" />
@@ -17806,10 +17897,12 @@
             <xs:enumeration value="@id/textPassword" />
             <xs:enumeration value="@id/textTime" />
             <xs:enumeration value="@id/textTime1" />
+            <xs:enumeration value="@id/textVenuAddress" />
             <xs:enumeration value="@id/textVenue" />
             <xs:enumeration value="@id/textVenueAddress" />
             <xs:enumeration value="@id/textVenueName" />
             <xs:enumeration value="@id/textVenuePhone" />
+            <xs:enumeration value="@id/textVenuPhone" />
             <xs:enumeration value="@id/timeButton" />
             <xs:enumeration value="@id/timeButton2" />
             <xs:enumeration value="@id/timePicker1" />
@@ -17822,6 +17915,9 @@
             <xs:enumeration value="@id/txtOr" />
             <xs:enumeration value="@id/upcomingeventButton" />
             <xs:enumeration value="@id/username" />
+            <xs:enumeration value="@id/venueAddress" />
+            <xs:enumeration value="@id/venuePhone" />
+            <xs:enumeration value="@id/venuName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
@@ -17917,6 +18013,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18283,6 +18381,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -18628,6 +18728,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19208,6 +19310,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19550,6 +19654,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -19960,6 +20066,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -20330,6 +20438,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -20596,6 +20706,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -20840,6 +20952,7 @@
             <xs:enumeration value="@id/createGroupButton" />
             <xs:enumeration value="@id/createInvite" />
             <xs:enumeration value="@id/createVenue" />
+            <xs:enumeration value="@id/createVenueButton" />
             <xs:enumeration value="@id/dateClose" />
             <xs:enumeration value="@id/datePicker1" />
             <xs:enumeration value="@id/editText1" />
@@ -20873,10 +20986,12 @@
             <xs:enumeration value="@id/textPassword" />
             <xs:enumeration value="@id/textTime" />
             <xs:enumeration value="@id/textTime1" />
+            <xs:enumeration value="@id/textVenuAddress" />
             <xs:enumeration value="@id/textVenue" />
             <xs:enumeration value="@id/textVenueAddress" />
             <xs:enumeration value="@id/textVenueName" />
             <xs:enumeration value="@id/textVenuePhone" />
+            <xs:enumeration value="@id/textVenuPhone" />
             <xs:enumeration value="@id/timeButton" />
             <xs:enumeration value="@id/timeButton2" />
             <xs:enumeration value="@id/timePicker1" />
@@ -20889,6 +21004,9 @@
             <xs:enumeration value="@id/txtOr" />
             <xs:enumeration value="@id/upcomingeventButton" />
             <xs:enumeration value="@id/username" />
+            <xs:enumeration value="@id/venueAddress" />
+            <xs:enumeration value="@id/venuePhone" />
+            <xs:enumeration value="@id/venuName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
@@ -20978,6 +21096,7 @@
             <xs:enumeration value="@id/createGroupButton" />
             <xs:enumeration value="@id/createInvite" />
             <xs:enumeration value="@id/createVenue" />
+            <xs:enumeration value="@id/createVenueButton" />
             <xs:enumeration value="@id/dateClose" />
             <xs:enumeration value="@id/datePicker1" />
             <xs:enumeration value="@id/editText1" />
@@ -21011,10 +21130,12 @@
             <xs:enumeration value="@id/textPassword" />
             <xs:enumeration value="@id/textTime" />
             <xs:enumeration value="@id/textTime1" />
+            <xs:enumeration value="@id/textVenuAddress" />
             <xs:enumeration value="@id/textVenue" />
             <xs:enumeration value="@id/textVenueAddress" />
             <xs:enumeration value="@id/textVenueName" />
             <xs:enumeration value="@id/textVenuePhone" />
+            <xs:enumeration value="@id/textVenuPhone" />
             <xs:enumeration value="@id/timeButton" />
             <xs:enumeration value="@id/timeButton2" />
             <xs:enumeration value="@id/timePicker1" />
@@ -21027,6 +21148,9 @@
             <xs:enumeration value="@id/txtOr" />
             <xs:enumeration value="@id/upcomingeventButton" />
             <xs:enumeration value="@id/username" />
+            <xs:enumeration value="@id/venueAddress" />
+            <xs:enumeration value="@id/venuePhone" />
+            <xs:enumeration value="@id/venuName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
@@ -21116,6 +21240,7 @@
             <xs:enumeration value="@id/createGroupButton" />
             <xs:enumeration value="@id/createInvite" />
             <xs:enumeration value="@id/createVenue" />
+            <xs:enumeration value="@id/createVenueButton" />
             <xs:enumeration value="@id/dateClose" />
             <xs:enumeration value="@id/datePicker1" />
             <xs:enumeration value="@id/editText1" />
@@ -21149,10 +21274,12 @@
             <xs:enumeration value="@id/textPassword" />
             <xs:enumeration value="@id/textTime" />
             <xs:enumeration value="@id/textTime1" />
+            <xs:enumeration value="@id/textVenuAddress" />
             <xs:enumeration value="@id/textVenue" />
             <xs:enumeration value="@id/textVenueAddress" />
             <xs:enumeration value="@id/textVenueName" />
             <xs:enumeration value="@id/textVenuePhone" />
+            <xs:enumeration value="@id/textVenuPhone" />
             <xs:enumeration value="@id/timeButton" />
             <xs:enumeration value="@id/timeButton2" />
             <xs:enumeration value="@id/timePicker1" />
@@ -21165,6 +21292,9 @@
             <xs:enumeration value="@id/txtOr" />
             <xs:enumeration value="@id/upcomingeventButton" />
             <xs:enumeration value="@id/username" />
+            <xs:enumeration value="@id/venueAddress" />
+            <xs:enumeration value="@id/venuePhone" />
+            <xs:enumeration value="@id/venuName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
@@ -21254,6 +21384,7 @@
             <xs:enumeration value="@id/createGroupButton" />
             <xs:enumeration value="@id/createInvite" />
             <xs:enumeration value="@id/createVenue" />
+            <xs:enumeration value="@id/createVenueButton" />
             <xs:enumeration value="@id/dateClose" />
             <xs:enumeration value="@id/datePicker1" />
             <xs:enumeration value="@id/editText1" />
@@ -21287,10 +21418,12 @@
             <xs:enumeration value="@id/textPassword" />
             <xs:enumeration value="@id/textTime" />
             <xs:enumeration value="@id/textTime1" />
+            <xs:enumeration value="@id/textVenuAddress" />
             <xs:enumeration value="@id/textVenue" />
             <xs:enumeration value="@id/textVenueAddress" />
             <xs:enumeration value="@id/textVenueName" />
             <xs:enumeration value="@id/textVenuePhone" />
+            <xs:enumeration value="@id/textVenuPhone" />
             <xs:enumeration value="@id/timeButton" />
             <xs:enumeration value="@id/timeButton2" />
             <xs:enumeration value="@id/timePicker1" />
@@ -21303,6 +21436,9 @@
             <xs:enumeration value="@id/txtOr" />
             <xs:enumeration value="@id/upcomingeventButton" />
             <xs:enumeration value="@id/username" />
+            <xs:enumeration value="@id/venueAddress" />
+            <xs:enumeration value="@id/venuePhone" />
+            <xs:enumeration value="@id/venuName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
@@ -21392,6 +21528,7 @@
             <xs:enumeration value="@id/createGroupButton" />
             <xs:enumeration value="@id/createInvite" />
             <xs:enumeration value="@id/createVenue" />
+            <xs:enumeration value="@id/createVenueButton" />
             <xs:enumeration value="@id/dateClose" />
             <xs:enumeration value="@id/datePicker1" />
             <xs:enumeration value="@id/editText1" />
@@ -21425,10 +21562,12 @@
             <xs:enumeration value="@id/textPassword" />
             <xs:enumeration value="@id/textTime" />
             <xs:enumeration value="@id/textTime1" />
+            <xs:enumeration value="@id/textVenuAddress" />
             <xs:enumeration value="@id/textVenue" />
             <xs:enumeration value="@id/textVenueAddress" />
             <xs:enumeration value="@id/textVenueName" />
             <xs:enumeration value="@id/textVenuePhone" />
+            <xs:enumeration value="@id/textVenuPhone" />
             <xs:enumeration value="@id/timeButton" />
             <xs:enumeration value="@id/timeButton2" />
             <xs:enumeration value="@id/timePicker1" />
@@ -21441,6 +21580,9 @@
             <xs:enumeration value="@id/txtOr" />
             <xs:enumeration value="@id/upcomingeventButton" />
             <xs:enumeration value="@id/username" />
+            <xs:enumeration value="@id/venueAddress" />
+            <xs:enumeration value="@id/venuePhone" />
+            <xs:enumeration value="@id/venuName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
@@ -21770,6 +21912,7 @@
             <xs:enumeration value="@id/createGroupButton" />
             <xs:enumeration value="@id/createInvite" />
             <xs:enumeration value="@id/createVenue" />
+            <xs:enumeration value="@id/createVenueButton" />
             <xs:enumeration value="@id/dateClose" />
             <xs:enumeration value="@id/datePicker1" />
             <xs:enumeration value="@id/editText1" />
@@ -21803,10 +21946,12 @@
             <xs:enumeration value="@id/textPassword" />
             <xs:enumeration value="@id/textTime" />
             <xs:enumeration value="@id/textTime1" />
+            <xs:enumeration value="@id/textVenuAddress" />
             <xs:enumeration value="@id/textVenue" />
             <xs:enumeration value="@id/textVenueAddress" />
             <xs:enumeration value="@id/textVenueName" />
             <xs:enumeration value="@id/textVenuePhone" />
+            <xs:enumeration value="@id/textVenuPhone" />
             <xs:enumeration value="@id/timeButton" />
             <xs:enumeration value="@id/timeButton2" />
             <xs:enumeration value="@id/timePicker1" />
@@ -21819,6 +21964,9 @@
             <xs:enumeration value="@id/txtOr" />
             <xs:enumeration value="@id/upcomingeventButton" />
             <xs:enumeration value="@id/username" />
+            <xs:enumeration value="@id/venueAddress" />
+            <xs:enumeration value="@id/venuePhone" />
+            <xs:enumeration value="@id/venuName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
@@ -21908,6 +22056,7 @@
             <xs:enumeration value="@id/createGroupButton" />
             <xs:enumeration value="@id/createInvite" />
             <xs:enumeration value="@id/createVenue" />
+            <xs:enumeration value="@id/createVenueButton" />
             <xs:enumeration value="@id/dateClose" />
             <xs:enumeration value="@id/datePicker1" />
             <xs:enumeration value="@id/editText1" />
@@ -21941,10 +22090,12 @@
             <xs:enumeration value="@id/textPassword" />
             <xs:enumeration value="@id/textTime" />
             <xs:enumeration value="@id/textTime1" />
+            <xs:enumeration value="@id/textVenuAddress" />
             <xs:enumeration value="@id/textVenue" />
             <xs:enumeration value="@id/textVenueAddress" />
             <xs:enumeration value="@id/textVenueName" />
             <xs:enumeration value="@id/textVenuePhone" />
+            <xs:enumeration value="@id/textVenuPhone" />
             <xs:enumeration value="@id/timeButton" />
             <xs:enumeration value="@id/timeButton2" />
             <xs:enumeration value="@id/timePicker1" />
@@ -21957,6 +22108,9 @@
             <xs:enumeration value="@id/txtOr" />
             <xs:enumeration value="@id/upcomingeventButton" />
             <xs:enumeration value="@id/username" />
+            <xs:enumeration value="@id/venueAddress" />
+            <xs:enumeration value="@id/venuePhone" />
+            <xs:enumeration value="@id/venuName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
@@ -22046,6 +22200,7 @@
             <xs:enumeration value="@id/createGroupButton" />
             <xs:enumeration value="@id/createInvite" />
             <xs:enumeration value="@id/createVenue" />
+            <xs:enumeration value="@id/createVenueButton" />
             <xs:enumeration value="@id/dateClose" />
             <xs:enumeration value="@id/datePicker1" />
             <xs:enumeration value="@id/editText1" />
@@ -22079,10 +22234,12 @@
             <xs:enumeration value="@id/textPassword" />
             <xs:enumeration value="@id/textTime" />
             <xs:enumeration value="@id/textTime1" />
+            <xs:enumeration value="@id/textVenuAddress" />
             <xs:enumeration value="@id/textVenue" />
             <xs:enumeration value="@id/textVenueAddress" />
             <xs:enumeration value="@id/textVenueName" />
             <xs:enumeration value="@id/textVenuePhone" />
+            <xs:enumeration value="@id/textVenuPhone" />
             <xs:enumeration value="@id/timeButton" />
             <xs:enumeration value="@id/timeButton2" />
             <xs:enumeration value="@id/timePicker1" />
@@ -22095,6 +22252,9 @@
             <xs:enumeration value="@id/txtOr" />
             <xs:enumeration value="@id/upcomingeventButton" />
             <xs:enumeration value="@id/username" />
+            <xs:enumeration value="@id/venueAddress" />
+            <xs:enumeration value="@id/venuePhone" />
+            <xs:enumeration value="@id/venuName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
@@ -22224,6 +22384,7 @@
             <xs:enumeration value="@id/createGroupButton" />
             <xs:enumeration value="@id/createInvite" />
             <xs:enumeration value="@id/createVenue" />
+            <xs:enumeration value="@id/createVenueButton" />
             <xs:enumeration value="@id/dateClose" />
             <xs:enumeration value="@id/datePicker1" />
             <xs:enumeration value="@id/editText1" />
@@ -22257,10 +22418,12 @@
             <xs:enumeration value="@id/textPassword" />
             <xs:enumeration value="@id/textTime" />
             <xs:enumeration value="@id/textTime1" />
+            <xs:enumeration value="@id/textVenuAddress" />
             <xs:enumeration value="@id/textVenue" />
             <xs:enumeration value="@id/textVenueAddress" />
             <xs:enumeration value="@id/textVenueName" />
             <xs:enumeration value="@id/textVenuePhone" />
+            <xs:enumeration value="@id/textVenuPhone" />
             <xs:enumeration value="@id/timeButton" />
             <xs:enumeration value="@id/timeButton2" />
             <xs:enumeration value="@id/timePicker1" />
@@ -22273,6 +22436,9 @@
             <xs:enumeration value="@id/txtOr" />
             <xs:enumeration value="@id/upcomingeventButton" />
             <xs:enumeration value="@id/username" />
+            <xs:enumeration value="@id/venueAddress" />
+            <xs:enumeration value="@id/venuePhone" />
+            <xs:enumeration value="@id/venuName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
@@ -22804,6 +22970,7 @@
             <xs:enumeration value="@id/createGroupButton" />
             <xs:enumeration value="@id/createInvite" />
             <xs:enumeration value="@id/createVenue" />
+            <xs:enumeration value="@id/createVenueButton" />
             <xs:enumeration value="@id/dateClose" />
             <xs:enumeration value="@id/datePicker1" />
             <xs:enumeration value="@id/editText1" />
@@ -22837,10 +23004,12 @@
             <xs:enumeration value="@id/textPassword" />
             <xs:enumeration value="@id/textTime" />
             <xs:enumeration value="@id/textTime1" />
+            <xs:enumeration value="@id/textVenuAddress" />
             <xs:enumeration value="@id/textVenue" />
             <xs:enumeration value="@id/textVenueAddress" />
             <xs:enumeration value="@id/textVenueName" />
             <xs:enumeration value="@id/textVenuePhone" />
+            <xs:enumeration value="@id/textVenuPhone" />
             <xs:enumeration value="@id/timeButton" />
             <xs:enumeration value="@id/timeButton2" />
             <xs:enumeration value="@id/timePicker1" />
@@ -22853,6 +23022,9 @@
             <xs:enumeration value="@id/txtOr" />
             <xs:enumeration value="@id/upcomingeventButton" />
             <xs:enumeration value="@id/username" />
+            <xs:enumeration value="@id/venueAddress" />
+            <xs:enumeration value="@id/venuePhone" />
+            <xs:enumeration value="@id/venuName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
@@ -22942,6 +23114,7 @@
             <xs:enumeration value="@id/createGroupButton" />
             <xs:enumeration value="@id/createInvite" />
             <xs:enumeration value="@id/createVenue" />
+            <xs:enumeration value="@id/createVenueButton" />
             <xs:enumeration value="@id/dateClose" />
             <xs:enumeration value="@id/datePicker1" />
             <xs:enumeration value="@id/editText1" />
@@ -22975,10 +23148,12 @@
             <xs:enumeration value="@id/textPassword" />
             <xs:enumeration value="@id/textTime" />
             <xs:enumeration value="@id/textTime1" />
+            <xs:enumeration value="@id/textVenuAddress" />
             <xs:enumeration value="@id/textVenue" />
             <xs:enumeration value="@id/textVenueAddress" />
             <xs:enumeration value="@id/textVenueName" />
             <xs:enumeration value="@id/textVenuePhone" />
+            <xs:enumeration value="@id/textVenuPhone" />
             <xs:enumeration value="@id/timeButton" />
             <xs:enumeration value="@id/timeButton2" />
             <xs:enumeration value="@id/timePicker1" />
@@ -22991,6 +23166,9 @@
             <xs:enumeration value="@id/txtOr" />
             <xs:enumeration value="@id/upcomingeventButton" />
             <xs:enumeration value="@id/username" />
+            <xs:enumeration value="@id/venueAddress" />
+            <xs:enumeration value="@id/venuePhone" />
+            <xs:enumeration value="@id/venuName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
@@ -23080,6 +23258,7 @@
             <xs:enumeration value="@id/createGroupButton" />
             <xs:enumeration value="@id/createInvite" />
             <xs:enumeration value="@id/createVenue" />
+            <xs:enumeration value="@id/createVenueButton" />
             <xs:enumeration value="@id/dateClose" />
             <xs:enumeration value="@id/datePicker1" />
             <xs:enumeration value="@id/editText1" />
@@ -23113,10 +23292,12 @@
             <xs:enumeration value="@id/textPassword" />
             <xs:enumeration value="@id/textTime" />
             <xs:enumeration value="@id/textTime1" />
+            <xs:enumeration value="@id/textVenuAddress" />
             <xs:enumeration value="@id/textVenue" />
             <xs:enumeration value="@id/textVenueAddress" />
             <xs:enumeration value="@id/textVenueName" />
             <xs:enumeration value="@id/textVenuePhone" />
+            <xs:enumeration value="@id/textVenuPhone" />
             <xs:enumeration value="@id/timeButton" />
             <xs:enumeration value="@id/timeButton2" />
             <xs:enumeration value="@id/timePicker1" />
@@ -23129,6 +23310,9 @@
             <xs:enumeration value="@id/txtOr" />
             <xs:enumeration value="@id/upcomingeventButton" />
             <xs:enumeration value="@id/username" />
+            <xs:enumeration value="@id/venueAddress" />
+            <xs:enumeration value="@id/venuePhone" />
+            <xs:enumeration value="@id/venuName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
@@ -23218,6 +23402,7 @@
             <xs:enumeration value="@id/createGroupButton" />
             <xs:enumeration value="@id/createInvite" />
             <xs:enumeration value="@id/createVenue" />
+            <xs:enumeration value="@id/createVenueButton" />
             <xs:enumeration value="@id/dateClose" />
             <xs:enumeration value="@id/datePicker1" />
             <xs:enumeration value="@id/editText1" />
@@ -23251,10 +23436,12 @@
             <xs:enumeration value="@id/textPassword" />
             <xs:enumeration value="@id/textTime" />
             <xs:enumeration value="@id/textTime1" />
+            <xs:enumeration value="@id/textVenuAddress" />
             <xs:enumeration value="@id/textVenue" />
             <xs:enumeration value="@id/textVenueAddress" />
             <xs:enumeration value="@id/textVenueName" />
             <xs:enumeration value="@id/textVenuePhone" />
+            <xs:enumeration value="@id/textVenuPhone" />
             <xs:enumeration value="@id/timeButton" />
             <xs:enumeration value="@id/timeButton2" />
             <xs:enumeration value="@id/timePicker1" />
@@ -23267,6 +23454,9 @@
             <xs:enumeration value="@id/txtOr" />
             <xs:enumeration value="@id/upcomingeventButton" />
             <xs:enumeration value="@id/username" />
+            <xs:enumeration value="@id/venueAddress" />
+            <xs:enumeration value="@id/venuePhone" />
+            <xs:enumeration value="@id/venuName" />
             <xs:enumeration value="@android:id/accessibilityActionContextClick" />
             <xs:enumeration value="@android:id/accessibilityActionScrollDown" />
             <xs:enumeration value="@android:id/accessibilityActionScrollLeft" />
@@ -23462,6 +23652,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -23835,6 +24027,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -24860,6 +25054,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -25122,6 +25318,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -25419,6 +25617,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -25709,6 +25909,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -25959,6 +26161,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -26209,6 +26413,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -26459,6 +26665,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -26709,6 +26917,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -27446,6 +27656,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -27714,6 +27926,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -28044,6 +28258,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -28802,6 +29018,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -29171,6 +29389,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -29610,6 +29830,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -29972,6 +30194,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -30222,6 +30446,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -31024,6 +31250,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -31274,6 +31502,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -31524,6 +31754,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -31774,6 +32006,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -32204,6 +32438,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -32454,6 +32690,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -32874,6 +33112,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -33125,6 +33365,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -33454,6 +33696,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -34156,6 +34400,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -34701,6 +34947,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -35088,6 +35336,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -36306,6 +36556,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -36603,6 +36855,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -36946,6 +37200,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -37276,6 +37532,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -37526,6 +37784,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -37816,6 +38076,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -38066,6 +38328,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -38475,6 +38739,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -38726,6 +38992,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -39056,6 +39324,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -39386,6 +39656,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -39716,6 +39988,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -40045,6 +40319,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -40321,6 +40597,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -40571,6 +40849,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -40821,6 +41101,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -41071,6 +41353,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -41321,6 +41605,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -41571,6 +41857,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -41821,6 +42109,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -42257,6 +42547,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -42507,6 +42799,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -42757,6 +43051,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -43955,6 +44251,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -44390,6 +44688,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -45166,6 +45466,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -45589,6 +45891,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -46365,6 +46669,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -46842,6 +47148,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -47108,6 +47416,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -47358,6 +47668,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -47609,6 +47921,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -47939,6 +48253,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:color/background_dark" />
             <xs:enumeration value="@android:color/background_light" />
             <xs:enumeration value="@android:color/black" />
@@ -48320,6 +48636,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />
@@ -48570,6 +48888,8 @@
             <xs:enumeration value="@drawable/logo" />
             <xs:enumeration value="@drawable/logo3" />
             <xs:enumeration value="@drawable/progressbarstyle" />
+            <xs:enumeration value="@drawable/venue" />
+            <xs:enumeration value="@drawable/venue1" />
             <xs:enumeration value="@android:drawable/alert_dark_frame" />
             <xs:enumeration value="@android:drawable/alert_light_frame" />
             <xs:enumeration value="@android:drawable/arrow_down_float" />

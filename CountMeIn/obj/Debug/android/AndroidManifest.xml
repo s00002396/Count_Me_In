@@ -10,20 +10,20 @@
     <activity android:label="Add Venue" android:name="md50b100ff02de193c8ada20d64db42ab1f.AddVenueActivity" />
     <activity android:label="Create Account" android:name="md50b100ff02de193c8ada20d64db42ab1f.CreateAccountActivity" />
     <activity android:label="Create an Event" android:name="md50b100ff02de193c8ada20d64db42ab1f.CreateEventActivity" />
-    <activity android:label="Create Group" android:name="md50b100ff02de193c8ada20d64db42ab1f.CreateGroupActivity" />
+    <activity android:label="Create Venue" android:name="md50b100ff02de193c8ada20d64db42ab1f.CreateGroupActivity" />
     <activity android:label="Event Details" android:name="md50b100ff02de193c8ada20d64db42ab1f.EventDetailsActivity" />
     <activity android:label="Group Details" android:name="md50b100ff02de193c8ada20d64db42ab1f.GroupDetailsActivity" />
     <activity android:label="Invite Guests" android:name="md50b100ff02de193c8ada20d64db42ab1f.GuestInviteActivity" />
     <activity android:label="Choose Venue" android:name="md50b100ff02de193c8ada20d64db42ab1f.InviteGuestActivity" />
-    <activity android:icon="@drawable/logo" android:label="Login" android:name="md50b100ff02de193c8ada20d64db42ab1f.LoginActivity">
+    <activity android:icon="@drawable/logo" android:label="Login" android:name="md50b100ff02de193c8ada20d64db42ab1f.LoginActivity" />
+    <activity android:icon="@drawable/logo" android:label="Count-Me-In" android:name="md50b100ff02de193c8ada20d64db42ab1f.LoginSignUPActivity" />
+    <activity android:icon="@drawable/icon" android:label="CountMeIn" android:name="md50b100ff02de193c8ada20d64db42ab1f.MainActivity" />
+    <activity android:label="Main Menu" android:name="md50b100ff02de193c8ada20d64db42ab1f.MainMenuActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:icon="@drawable/logo" android:label="Count-Me-In" android:name="md50b100ff02de193c8ada20d64db42ab1f.LoginSignUPActivity" />
-    <activity android:icon="@drawable/icon" android:label="CountMeIn" android:name="md50b100ff02de193c8ada20d64db42ab1f.MainActivity" />
-    <activity android:label="Main Menu" android:name="md50b100ff02de193c8ada20d64db42ab1f.MainMenuActivity" />
     <activity android:label="Pending Invites" android:name="md50b100ff02de193c8ada20d64db42ab1f.PendingEventActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
