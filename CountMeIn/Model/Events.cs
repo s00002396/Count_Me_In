@@ -44,6 +44,7 @@ namespace CountMeIn.Model
     {
         public static string myPhoneNumber;
         public static SqlConnection sqlconn;
+        public static int myID;
         public static string connsqlstring = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
     }
 }

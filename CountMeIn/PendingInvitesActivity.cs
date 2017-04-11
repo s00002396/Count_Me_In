@@ -16,7 +16,7 @@ using CountMeIn.Adapters;
 
 namespace CountMeIn
 {
-    [Activity(Label = "Pending Invites")]
+    [Activity(Label = "Invite Details", MainLauncher = true)]
     public class PendingInvitesActivity : Activity
     {
         //SqlConnection sqlconn;
@@ -34,7 +34,6 @@ namespace CountMeIn
             base.OnCreate(savedInstanceState);
 
             #region sql Connection
-            //string connsqlstring = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
             Globals.sqlconn = new System.Data.SqlClient.SqlConnection(Globals.connsqlstring);
             #endregion
             SetContentView(Resource.Layout.PendingInvites);
@@ -44,17 +43,14 @@ namespace CountMeIn
             //eventID = Intent.GetStringExtra("Event_Id") ?? "Data not available";
             //Toast.MakeText(this, "No Pending Invites ", ToastLength.Long).Show();
             FindViews();
-
+            var test = Globals.myID;
             mItems = new List<Member>();
             HandleEvents();
             GuestInviteAdapter adapter = new GuestInviteAdapter(this, mItems);
             guestListView.Adapter = adapter;
 
             txtEventDate.Text = eventDate;
-            txtEventName.Text = eventName;
-            var test = eventID;
-            var rr = 7;
-            //update the Event_Member_Table Going field
+            txtEventName.Text = eventName;            
         }
 
         private void FindViews()
@@ -73,13 +69,10 @@ namespace CountMeIn
 
                 SqlDataReader reader;
                 SqlCommand cmd = new SqlCommand();
-
-                //cmd.CommandText = "SELECT Username,PhoneNo,Password FROM Member_Table";
-                /*"select * from Event_Table inner join Event_Member_Table  on Event_Table.Event_Id like Event_Member_Table.Event_Id where Event_Member_Table.Member_Id like @M_ID and Event_Member_Table.Going like 1";*/
+                
                 cmd.CommandText = "SELECT * FROM Member_Table inner join Event_Member_Table on Member_Table.Member_Id like Event_Member_Table.Member_Id where Event_Member_Table.Event_Id like @M_ID and Event_Member_Table.Going like 1";
 
-                cmd.Parameters.AddWithValue("@M_ID", eventID);//poker kings
-                // cmd.Parameters.AddWithValue("@M_ID", Globals.s_Name);
+                cmd.Parameters.AddWithValue("@M_ID", eventID);
 
                 cmd.CommandType = CommandType.Text;
                 cmd.Connection = Globals.sqlconn;
@@ -107,9 +100,7 @@ namespace CountMeIn
                 Globals.sqlconn.Close();
             }
             sendInvite.Click += SendInvite_Click;
-
         }
-
         private void SendInvite_Click(object sender, EventArgs e)
         {
             try
@@ -118,7 +109,7 @@ namespace CountMeIn
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = Globals.sqlconn;
                 cmd.CommandText = "UPDATE Event_Member_Table SET Going=@Going where Event_Member_Table.Member_Id like 101 and Event_Member_Table.Event_Id like @E_ID ";
-                cmd.Parameters.AddWithValue("@E_ID", eventID);//get this from eventID
+                cmd.Parameters.AddWithValue("@E_ID", eventID);
                 cmd.Parameters.AddWithValue("@Going", 1);
                 cmd.ExecuteNonQuery();
             }

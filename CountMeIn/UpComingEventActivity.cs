@@ -22,19 +22,15 @@ namespace CountMeIn
     public class UpComingEventActivity : Activity
     {
         private ListView eventListView;
-        //string FirstName = "Bobby";
         private List<Person> mItems;
-        //private ListView mListView;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
             SetContentView(Resource.Layout.UpComingEvent);
-
             FindViews();
             var m_ID = Globals.myPhoneNumber;
-
+            var test = Globals.myID;
             mItems = new List<Person>();
 
             HandleEvents();
@@ -90,9 +86,9 @@ namespace CountMeIn
                 //}
                 #endregion
 
-                cmd.CommandText = "select * from Event_Table inner join Event_Member_Table  on Event_Table.Event_Id like Event_Member_Table.Event_Id where Event_Member_Table.Member_Id like @M_ID and Event_Member_Table.Going like 1";
-                cmd.Parameters.AddWithValue("@M_ID", 101);
-                // cmd.Parameters.AddWithValue("@M_ID", Globals.s_Name);
+                cmd.CommandText = "select * from Event_Table inner join Event_Member_Table on Event_Table.Event_Id like Event_Member_Table.Event_Id where Event_Member_Table.Member_Id like @M_ID and Event_Member_Table.Going like 1";
+                //cmd.Parameters.AddWithValue("@M_ID", 101);
+                cmd.Parameters.AddWithValue("@M_ID", Globals.myID);
                 cmd.CommandType = CommandType.Text;
                 cmd.Connection = Globals.sqlconn;
 

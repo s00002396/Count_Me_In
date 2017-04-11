@@ -15,7 +15,7 @@ using CountMeIn.Model;
 
 namespace CountMeIn
 {
-    [Activity(Label = "Login", MainLauncher = false, Icon = "@drawable/logo")]
+    [Activity(Label = "Login", MainLauncher = true, Icon = "@drawable/logo")]
     public class LoginActivity : Activity
     {
         private Button btnLogIn;
@@ -64,6 +64,7 @@ namespace CountMeIn
                
                 while (reader.Read())
                 {
+                    Globals.myID = (int)reader["Member_Id"];
                     int memberId = (int)reader["Member_Id"];
                     string userName = (string)reader["Username"];
                     string phone = (string)reader["PhoneNo"];

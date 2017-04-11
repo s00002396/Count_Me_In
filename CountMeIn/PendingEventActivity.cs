@@ -86,8 +86,8 @@ namespace CountMeIn
                 SqlCommand cmd = new SqlCommand();
                 
                 cmd.CommandText = "select * from Event_Table inner join Event_Member_Table  on Event_Table.Event_Id like Event_Member_Table.Event_Id where Event_Member_Table.Member_Id like @M_ID and Event_Member_Table.Going like 0";
-                cmd.Parameters.AddWithValue("@M_ID", 101);
-                // cmd.Parameters.AddWithValue("@M_ID", Globals.s_Name);
+                //cmd.Parameters.AddWithValue("@M_ID", 101);
+                cmd.Parameters.AddWithValue("@M_ID", Globals.myID);
                 cmd.CommandType = CommandType.Text;
                 cmd.Connection = Globals.sqlconn;
 
