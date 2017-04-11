@@ -42,6 +42,7 @@ namespace CountMeIn
 
         private void HandleEvents()
         {
+            //btncreateEvent.Enabled = false;
             eventButton.Click += EventButton_Click;
             timeButton.Click += TimeButton_Click;
             eventButton2.Click += EventButton2_Click;
@@ -57,6 +58,7 @@ namespace CountMeIn
                 eventButton.Text = time.ToShortDateString();
             });
             frag.Show(FragmentManager, DatePickerFragment.TAG);
+            //btncreateEvent.Enabled = true;
         }
         //****************Event Time****************************
         private void TimeButton_Click(object sender, EventArgs e)

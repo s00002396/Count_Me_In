@@ -71,12 +71,16 @@ namespace CountMeIn
 
         private void HandleEvents()
         {
-            SqlConnection sqlconn;
-            string connsqlstring = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
-            sqlconn = new System.Data.SqlClient.SqlConnection(connsqlstring);
+            #region Remove
+            //SqlConnection sqlconn;
+            //string connsqlstring = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
+            //sqlconn = new System.Data.SqlClient.SqlConnection(connsqlstring);
+            #endregion
+
+            Globals.sqlconn = new System.Data.SqlClient.SqlConnection(Globals.connsqlstring);
             try
             {
-                sqlconn.Open();
+                Globals.sqlconn.Open();
 
                 SqlDataReader reader;
                 SqlCommand cmd = new SqlCommand();
@@ -85,7 +89,7 @@ namespace CountMeIn
                 cmd.Parameters.AddWithValue("@M_ID", 101);
                 // cmd.Parameters.AddWithValue("@M_ID", Globals.s_Name);
                 cmd.CommandType = CommandType.Text;
-                cmd.Connection = sqlconn;
+                cmd.Connection = Globals.sqlconn;
 
                 reader = cmd.ExecuteReader();
 
@@ -109,7 +113,7 @@ namespace CountMeIn
             }
             finally
             {
-                sqlconn.Close();
+                Globals.sqlconn.Close();
             }
         }
         private void FindViews()

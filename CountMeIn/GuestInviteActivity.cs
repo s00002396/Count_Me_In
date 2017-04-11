@@ -34,6 +34,7 @@ namespace CountMeIn
             #region sql Connection
             string connsqlstring = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
             sqlconn = new System.Data.SqlClient.SqlConnection(connsqlstring);
+            //sqlconn = new System.Data.SqlClient.SqlConnection(Globals.connsqlstring);
             #endregion
 
             new_ID = Intent.GetStringExtra("New_ID") ?? "Data not available";

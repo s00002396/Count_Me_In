@@ -19,7 +19,7 @@
     <Button
         android:layout_marginTop="55.0dp"
         android:layout_marginLeft="65.0dp"
-        android:drawableTop="@drawable/clock3"
+        android:drawableTop="@drawable/clock3"        
         android:text=""
         android:textColor="#3399CC"
         android:textStyle="italic"

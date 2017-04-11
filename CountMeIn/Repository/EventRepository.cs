@@ -122,14 +122,5 @@ namespace CountMeIn.Repository
             }
             return null;
         }
-        //public List<Event> GetFavoriteHotDogs()
-        //{
-        //    IEnumerable<Event> hotDogs =
-        //        from eventGroup in eventGroups
-        //        from evt in eventGroup.Events
-        //        where evt.IsFavorite
-        //        select evt;
-        //    return hotDogs.ToList<Event>();
-        //}
     }
 }

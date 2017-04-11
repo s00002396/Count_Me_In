@@ -35,10 +35,10 @@ namespace CountMeIn
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-            //SqlConnection sqlconn;
+            
             var connsqlstring = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
             sqlconn = new System.Data.SqlClient.SqlConnection(connsqlstring);
-
+            //sqlconn = new System.Data.SqlClient.SqlConnection(Globals.connsqlstring);
             date = Intent.GetStringExtra("Date") ?? "Data not available";
             time = Intent.GetStringExtra("Time") ?? "Data not available";
             closeDate = Intent.GetStringExtra("Close_Date") ?? "Data not available";
@@ -89,7 +89,7 @@ namespace CountMeIn
             }
             catch (Exception ex)
             {
-                string toast = string.Format("Somethinf went wrong  {0}", ex);
+                string toast = string.Format("Something went wrong  {0}", ex);
                 Toast.MakeText(this, toast, ToastLength.Long).Show();
             }
             finally
@@ -104,7 +104,7 @@ namespace CountMeIn
             venue = string.Format("{0}", spinner.GetItemAtPosition(e.Position));//get the selected venue            
         }
 
-        //****************Choose Guest SAVE???****************************
+        //****************Choose Guest Create Event On db****************************
         private void ChooseGuests_Click(object sender, EventArgs e)
         {            
             #region sql
@@ -130,7 +130,6 @@ namespace CountMeIn
                 SqlDataReader reader = cmd.ExecuteReader();
                 reader.Read();
                 insertedID = reader[0].ToString();
-
             }
             catch (Exception ex)
             {
@@ -139,7 +138,6 @@ namespace CountMeIn
             }
             finally
             {
-                //var dd = insertedID;
                 sqlconn.Close();
             }
             #endregion

@@ -11,6 +11,7 @@ using Android.Views;
 using Android.Widget;
 using System.Data.SqlClient;
 using System.Data;
+using CountMeIn.Model;
 
 namespace CountMeIn
 {
@@ -55,7 +56,8 @@ namespace CountMeIn
             SqlConnection sqlconn;
             
             string connsqlstring = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
-            sqlconn = new System.Data.SqlClient.SqlConnection(connsqlstring);
+            //sqlconn = new System.Data.SqlClient.SqlConnection(Globals.connsqlstring);
+            sqlconn = new System.Data.SqlClient.SqlConnection(Globals.connsqlstring);
             try
             {
                 sqlconn.Open();

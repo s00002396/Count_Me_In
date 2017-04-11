@@ -33,11 +33,6 @@ namespace CountMeIn.Service
             return eventRepository.GetEventsForGroup(eventGroupId);
         }
 
-        //public List<Event> GetFavoriteHotDogs()
-        //{
-        //    return eventRepository.GetFavoriteHotDogs();
-        //}
-
         public Event GetEventById(int eventId)
         {
             return eventRepository.GetEventById(eventId);

@@ -9,6 +9,8 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using System.Data.SqlClient;
+using System.Data;
 
 namespace CountMeIn.Model
 {
@@ -40,7 +42,8 @@ namespace CountMeIn.Model
     }
     public static class Globals
     {
-        public static int s_Name = 0; // Modifiable in Code
-        //public const int; // VALUE = 10; // Unmodifiable
+        public static int s_Name = 0;
+        public static SqlConnection sqlconn;
+        public static string connsqlstring = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
     }
 }

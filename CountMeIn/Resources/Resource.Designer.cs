@@ -143,8 +143,8 @@ namespace CountMeIn
 			// aapt resource value: 0x7f080034
 			public const int MyEditButton = 2131230772;
 			
-			// aapt resource value: 0x7f080039
-			public const int addVenue = 2131230777;
+			// aapt resource value: 0x7f08003a
+			public const int addVenue = 2131230778;
 			
 			// aapt resource value: 0x7f08002a
 			public const int btnLogIn = 2131230762;
@@ -200,8 +200,8 @@ namespace CountMeIn
 			// aapt resource value: 0x7f08001f
 			public const int eventDateView = 2131230751;
 			
-			// aapt resource value: 0x7f08003a
-			public const int eventListView = 2131230778;
+			// aapt resource value: 0x7f08003b
+			public const int eventListView = 2131230779;
 			
 			// aapt resource value: 0x7f080020
 			public const int eventNameView = 2131230752;
@@ -227,11 +227,11 @@ namespace CountMeIn
 			// aapt resource value: 0x7f080027
 			public const int logoImageView = 2131230759;
 			
-			// aapt resource value: 0x7f08003b
-			public const int mainScrollView = 2131230779;
-			
 			// aapt resource value: 0x7f080035
-			public const int pendingEventListView = 2131230773;
+			public const int mainScrollView = 2131230773;
+			
+			// aapt resource value: 0x7f080036
+			public const int pendingEventListView = 2131230774;
 			
 			// aapt resource value: 0x7f080031
 			public const int pendingInviteButton = 2131230769;
@@ -299,17 +299,17 @@ namespace CountMeIn
 			// aapt resource value: 0x7f08002b
 			public const int txtCreateAccount = 2131230763;
 			
-			// aapt resource value: 0x7f080037
-			public const int txtEventDate = 2131230775;
+			// aapt resource value: 0x7f080038
+			public const int txtEventDate = 2131230776;
 			
-			// aapt resource value: 0x7f080036
-			public const int txtEventDate1 = 2131230774;
+			// aapt resource value: 0x7f080037
+			public const int txtEventDate1 = 2131230775;
 			
 			// aapt resource value: 0x7f080025
 			public const int txtEventName = 2131230757;
 			
-			// aapt resource value: 0x7f080038
-			public const int txtEventName1 = 2131230776;
+			// aapt resource value: 0x7f080039
+			public const int txtEventName1 = 2131230777;
 			
 			// aapt resource value: 0x7f08002d
 			public const int txtOr = 2131230765;
