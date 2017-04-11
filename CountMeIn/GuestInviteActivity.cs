@@ -22,7 +22,6 @@ namespace CountMeIn
     {
         private ListView guestListView;
         private List<int> invitedGuestID;
-        SqlConnection sqlconn;
         private List<Member> mItems;
         private ListView mListView;
         string new_ID;
@@ -32,9 +31,8 @@ namespace CountMeIn
             base.OnCreate(savedInstanceState);
 
             #region sql Connection
-            string connsqlstring = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
-            sqlconn = new System.Data.SqlClient.SqlConnection(connsqlstring);
-            //sqlconn = new System.Data.SqlClient.SqlConnection(Globals.connsqlstring);
+            //string connsqlstring = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
+            Globals.sqlconn = new System.Data.SqlClient.SqlConnection(Globals.connsqlstring);
             #endregion
 
             new_ID = Intent.GetStringExtra("New_ID") ?? "Data not available";
@@ -53,8 +51,9 @@ namespace CountMeIn
         private void EventListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
             //add Member_Id to a list then use foreach in finish button to update Member_Event_Table in db.
-            var gg = mItems[e.Position].Member_Id;
-            Toast.MakeText(this, "User ID " + mItems[e.Position].Member_Id, ToastLength.Long).Show();
+            //var gg = mItems[e.Position];            
+            //Toast.MakeText(this, "User ID " + mItems[e.Position].Member_Id, ToastLength.Long).Show();
+            Toast.MakeText(this,mItems[e.Position].Member_Phone + " invited ", ToastLength.Long).Show();
             
             invitedGuestID.Add(mItems[e.Position].Member_Id);            
         }
@@ -69,7 +68,7 @@ namespace CountMeIn
         {
             try
             {
-                sqlconn.Open();
+                Globals.sqlconn.Open();
 
                 SqlDataReader reader;
                 SqlCommand cmd = new SqlCommand();
@@ -77,7 +76,7 @@ namespace CountMeIn
                 //cmd.CommandText = "SELECT Username,PhoneNo,Password FROM Member_Table";
                 cmd.CommandText = "SELECT * FROM Member_Table";
                 cmd.CommandType = CommandType.Text;
-                cmd.Connection = sqlconn;
+                cmd.Connection = Globals.sqlconn;
 
                 reader = cmd.ExecuteReader();
 
@@ -90,16 +89,16 @@ namespace CountMeIn
 
                     mListView = FindViewById<ListView>(Resource.Id.guestListView);
 
-                    mItems.Add(new Member() {Member_Id = eventId, Member_Name = "Details", Member_Phone = userName, GroupName = phone, UserName = "Invite" });
+                    mItems.Add(new Member() {Member_Id = eventId, Member_Name = "Guest Details", Member_Phone = userName, GroupName = phone, UserName = "+" });
                 }
             }
             catch (Exception ex)
             {
-                Toast.MakeText(this, "Error", ToastLength.Long).Show();
+                Toast.MakeText(this, "Error" + ex, ToastLength.Long).Show();
             }
             finally
             {
-                sqlconn.Close();
+                Globals.sqlconn.Close();
             }
             btnInvite.Click += BtnInvite_Click;
         }
@@ -107,7 +106,7 @@ namespace CountMeIn
         private void BtnInvite_Click(object sender, EventArgs e)
         {
             #region sql
-            sqlconn.Open();
+            Globals.sqlconn.Open();
             try
             {                
                 SqlCommand cmd = new SqlCommand();
@@ -116,7 +115,7 @@ namespace CountMeIn
                 foreach (var item in invitedGuestID)
                 {
                     
-                    cmd.Connection = sqlconn;
+                    cmd.Connection = Globals.sqlconn;
                     cmd.CommandText = "INSERT INTO Event_Member_Table(Member_Id, Event_Id, Going)   VALUES(@paramA" + i+ ",@paramB"+ i+",@paramC"+ i+")";
 
                     cmd.Parameters.AddWithValue("@paramA" + i, Convert.ToInt32(item));//MemberID
@@ -133,7 +132,7 @@ namespace CountMeIn
             }
             finally
             {
-                sqlconn.Close();
+                Globals.sqlconn.Close();
             }
             #endregion
 

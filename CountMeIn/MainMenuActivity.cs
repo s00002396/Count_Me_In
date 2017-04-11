@@ -14,6 +14,7 @@ namespace CountMeIn
         private Button btnPendingInvite;
         private Button btnCreateGroup;
         private Button btnCreateEvent;
+        private Button btnlogOut;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
@@ -28,14 +29,23 @@ namespace CountMeIn
             btnPendingInvite = FindViewById<Button>(Resource.Id.pendingInviteButton);
             btnCreateGroup = FindViewById<Button>(Resource.Id.createGroupButton);
             btnCreateEvent = FindViewById<Button>(Resource.Id.createEventButton);
+            btnlogOut = FindViewById<Button>(Resource.Id.logOut);
         }
         private void HandleEvents()
         {
             btnUpComingevent.Click += BtnUpComingevent_Click;            
             btnPendingInvite.Click += BtnPendingInvite_Click;
             btnCreateGroup.Click += BtnCreateGroup_Click;
-            btnCreateEvent.Click += BtnCreateEvent_Click;           
+            btnCreateEvent.Click += BtnCreateEvent_Click;
+            btnlogOut.Click += BtnlogOut_Click;          
         }
+
+        private void BtnlogOut_Click(object sender, EventArgs e)
+        {
+            var intent = new Intent(this, typeof(LoginActivity));
+            StartActivity(intent);
+        }
+
         private void BtnCreateEvent_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(CreateEventActivity));

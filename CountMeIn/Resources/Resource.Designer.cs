@@ -140,9 +140,6 @@ namespace CountMeIn
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f080034
-			public const int MyEditButton = 2131230772;
-			
 			// aapt resource value: 0x7f08003a
 			public const int addVenue = 2131230778;
 			
@@ -217,6 +214,9 @@ namespace CountMeIn
 			
 			// aapt resource value: 0x7f08001d
 			public const int guestListView = 2131230749;
+			
+			// aapt resource value: 0x7f080034
+			public const int logOut = 2131230772;
 			
 			// aapt resource value: 0x7f080029
 			public const int loginPassword = 2131230761;
@@ -373,31 +373,28 @@ namespace CountMeIn
 			public const int MainMenu = 2130903052;
 			
 			// aapt resource value: 0x7f03000d
-			public const int MyDate = 2130903053;
+			public const int PendingEventRow = 2130903053;
 			
 			// aapt resource value: 0x7f03000e
-			public const int PendingEventRow = 2130903054;
+			public const int PendingEventView = 2130903054;
 			
 			// aapt resource value: 0x7f03000f
-			public const int PendingEventView = 2130903055;
+			public const int PendingInvites = 2130903055;
 			
 			// aapt resource value: 0x7f030010
-			public const int PendingInvites = 2130903056;
+			public const int Test = 2130903056;
 			
 			// aapt resource value: 0x7f030011
-			public const int Test = 2130903057;
+			public const int TestCreateEvent = 2130903057;
 			
 			// aapt resource value: 0x7f030012
-			public const int TestCreateEvent = 2130903058;
+			public const int TestingMainMenu = 2130903058;
 			
 			// aapt resource value: 0x7f030013
-			public const int TestingMainMenu = 2130903059;
+			public const int UpComingEvent = 2130903059;
 			
 			// aapt resource value: 0x7f030014
-			public const int UpComingEvent = 2130903060;
-			
-			// aapt resource value: 0x7f030015
-			public const int UpComingEventRowView = 2130903061;
+			public const int UpComingEventRowView = 2130903060;
 			
 			static Layout()
 			{

@@ -50,10 +50,6 @@ CountMeIn.MainMenuActivity, CountMeIn;md50b100ff02de193c8ada20d64db42ab1f.MainMe
 CountMeIn.MainMenuActivity, CountMeIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50b100ff02de193c8ada20d64db42ab1f.MainMenuActivity
 CountMeIn.MainMenuActivity;md50b100ff02de193c8ada20d64db42ab1f.MainMenuActivity
 countmein.MainMenuActivity;md50b100ff02de193c8ada20d64db42ab1f.MainMenuActivity
-CountMeIn.MyDateActivity, CountMeIn;md50b100ff02de193c8ada20d64db42ab1f.MyDateActivity
-CountMeIn.MyDateActivity, CountMeIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50b100ff02de193c8ada20d64db42ab1f.MyDateActivity
-CountMeIn.MyDateActivity;md50b100ff02de193c8ada20d64db42ab1f.MyDateActivity
-countmein.MyDateActivity;md50b100ff02de193c8ada20d64db42ab1f.MyDateActivity
 CountMeIn.PendingEventActivity, CountMeIn;md50b100ff02de193c8ada20d64db42ab1f.PendingEventActivity
 CountMeIn.PendingEventActivity, CountMeIn, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md50b100ff02de193c8ada20d64db42ab1f.PendingEventActivity
 CountMeIn.PendingEventActivity;md50b100ff02de193c8ada20d64db42ab1f.PendingEventActivity

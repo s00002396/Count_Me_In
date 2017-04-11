@@ -36,7 +36,6 @@ public final class R {
         public static final int progressbarstyle=0x7f020010;
     }
     public static final class id {
-        public static final int MyEditButton=0x7f080034;
         public static final int addVenue=0x7f08003a;
         public static final int btnLogIn=0x7f08002a;
         public static final int btnSignIn=0x7f08002c;
@@ -62,6 +61,7 @@ public final class R {
         public static final int eventTime1=0x7f08000f;
         public static final int groupNameView=0x7f080021;
         public static final int guestListView=0x7f08001d;
+        public static final int logOut=0x7f080034;
         public static final int loginPassword=0x7f080029;
         public static final int loginUserName=0x7f080028;
         public static final int logoImageView=0x7f080027;
@@ -111,15 +111,14 @@ public final class R {
         public static final int loginsignup=0x7f03000a;
         public static final int main=0x7f03000b;
         public static final int mainmenu=0x7f03000c;
-        public static final int mydate=0x7f03000d;
-        public static final int pendingeventrow=0x7f03000e;
-        public static final int pendingeventview=0x7f03000f;
-        public static final int pendinginvites=0x7f030010;
-        public static final int test=0x7f030011;
-        public static final int testcreateevent=0x7f030012;
-        public static final int testingmainmenu=0x7f030013;
-        public static final int upcomingevent=0x7f030014;
-        public static final int upcomingeventrowview=0x7f030015;
+        public static final int pendingeventrow=0x7f03000d;
+        public static final int pendingeventview=0x7f03000e;
+        public static final int pendinginvites=0x7f03000f;
+        public static final int test=0x7f030010;
+        public static final int testcreateevent=0x7f030011;
+        public static final int testingmainmenu=0x7f030012;
+        public static final int upcomingevent=0x7f030013;
+        public static final int upcomingeventrowview=0x7f030014;
     }
     public static final class string {
         public static final int ApplicationName=0x7f040001;

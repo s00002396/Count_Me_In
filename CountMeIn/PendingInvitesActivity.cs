@@ -11,16 +11,21 @@ using Android.Views;
 using Android.Widget;
 using System.Data.SqlClient;
 using System.Data;
+using CountMeIn.Model;
+using CountMeIn.Adapters;
 
 namespace CountMeIn
 {
     [Activity(Label = "Pending Invites")]
     public class PendingInvitesActivity : Activity
     {
-        SqlConnection sqlconn;
+        //SqlConnection sqlconn;
         string eventDate;
         string eventName;
         string eventID;
+        private List<Member> mItems;
+        private ListView guestListView;
+        private ListView mListView;
         private TextView txtEventDate;
         private TextView txtEventName;
         private Button sendInvite;
@@ -29,8 +34,8 @@ namespace CountMeIn
             base.OnCreate(savedInstanceState);
 
             #region sql Connection
-            string connsqlstring = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
-            sqlconn = new System.Data.SqlClient.SqlConnection(connsqlstring);
+            //string connsqlstring = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
+            Globals.sqlconn = new System.Data.SqlClient.SqlConnection(Globals.connsqlstring);
             #endregion
             SetContentView(Resource.Layout.PendingInvites);
             eventID = Intent.GetStringExtra("Event_Id") ?? "Data not available";
@@ -40,12 +45,15 @@ namespace CountMeIn
             //Toast.MakeText(this, "No Pending Invites ", ToastLength.Long).Show();
             FindViews();
 
-            
+            mItems = new List<Member>();
             HandleEvents();
+            GuestInviteAdapter adapter = new GuestInviteAdapter(this, mItems);
+            guestListView.Adapter = adapter;
 
             txtEventDate.Text = eventDate;
             txtEventName.Text = eventName;
             var test = eventID;
+            var rr = 7;
             //update the Event_Member_Table Going field
         }
 
@@ -54,25 +62,41 @@ namespace CountMeIn
             txtEventDate = FindViewById<TextView>(Resource.Id.txtEventDate);
             txtEventName = FindViewById<TextView>(Resource.Id.txtEventName);
             sendInvite = FindViewById<Button>(Resource.Id.sendInvite);
+            guestListView = FindViewById<ListView>(Resource.Id.guestListView);
         }
 
         private void HandleEvents()
         {
-            sendInvite.Click += SendInvite_Click;
-        }
-
-        private void SendInvite_Click(object sender, EventArgs e)
-        {
             try
             {
-                sqlconn.Open();
+                Globals.sqlconn.Open();
+
+                SqlDataReader reader;
                 SqlCommand cmd = new SqlCommand();
-            cmd.Connection = sqlconn;
-            cmd.CommandText = "UPDATE Event_Member_Table SET Going=@Going where Event_Member_Table.Member_Id like 101 and Event_Member_Table.Event_Id like @E_ID ";
-            cmd.Parameters.AddWithValue("@E_ID", eventID);//get this from eventID
-            cmd.Parameters.AddWithValue("@Going", 1);
-            cmd.ExecuteNonQuery();
-            //sqlconn.Close();
+
+                //cmd.CommandText = "SELECT Username,PhoneNo,Password FROM Member_Table";
+                /*"select * from Event_Table inner join Event_Member_Table  on Event_Table.Event_Id like Event_Member_Table.Event_Id where Event_Member_Table.Member_Id like @M_ID and Event_Member_Table.Going like 1";*/
+                cmd.CommandText = "SELECT * FROM Member_Table inner join Event_Member_Table on Member_Table.Member_Id like Event_Member_Table.Member_Id where Event_Member_Table.Event_Id like @M_ID and Event_Member_Table.Going like 1";
+
+                cmd.Parameters.AddWithValue("@M_ID", eventID);//poker kings
+                // cmd.Parameters.AddWithValue("@M_ID", Globals.s_Name);
+
+                cmd.CommandType = CommandType.Text;
+                cmd.Connection = Globals.sqlconn;
+
+                reader = cmd.ExecuteReader();
+
+                while (reader.Read())
+                {
+                    int eventId = (int)reader["Member_Id"];
+                    string userName = (string)reader["Username"];
+                    string phone = (string)reader["PhoneNo"];
+                    string password = (string)reader["Password"];
+
+                    mListView = FindViewById<ListView>(Resource.Id.guestListView);
+
+                    mItems.Add(new Member() { Member_Id = eventId, Member_Name = "Guest Details", Member_Phone = userName, GroupName = phone, UserName = "" });
+                }
             }
             catch (Exception ex)
             {
@@ -80,7 +104,31 @@ namespace CountMeIn
             }
             finally
             {
-                sqlconn.Close();
+                Globals.sqlconn.Close();
+            }
+            sendInvite.Click += SendInvite_Click;
+
+        }
+
+        private void SendInvite_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Globals.sqlconn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = Globals.sqlconn;
+                cmd.CommandText = "UPDATE Event_Member_Table SET Going=@Going where Event_Member_Table.Member_Id like 101 and Event_Member_Table.Event_Id like @E_ID ";
+                cmd.Parameters.AddWithValue("@E_ID", eventID);//get this from eventID
+                cmd.Parameters.AddWithValue("@Going", 1);
+                cmd.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                Toast.MakeText(this, "Error" + ex, ToastLength.Long).Show();
+            }
+            finally
+            {
+                Globals.sqlconn.Close();
                 Toast.MakeText(this, "Invite accepted ", ToastLength.Long).Show();
                 var intent = new Intent(this, typeof(PendingEventActivity));
                 StartActivity(intent);

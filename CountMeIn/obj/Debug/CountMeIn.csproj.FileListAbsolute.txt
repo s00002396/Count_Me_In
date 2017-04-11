@@ -45,7 +45,6 @@ C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\layout\log
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\layout\createaccount.xml
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\layout\createevent.xml
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\layout\inviteguests.xml
-C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\layout\mydate.xml
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\values\theme.xml
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\bin\Debug\Mono.Data.Sqlite.dll.mdb
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\bin\Debug\Mono.Data.Tds.dll.mdb

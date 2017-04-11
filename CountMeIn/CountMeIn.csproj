@@ -74,7 +74,6 @@
     <Compile Include="MainMenuActivity.cs" />
     <Compile Include="Model\EventGroup.cs" />
     <Compile Include="Model\Events.cs" />
-    <Compile Include="MyDateActivity.cs" />
     <Compile Include="ORM\DBRepository.cs" />
     <Compile Include="PendingEventActivity.cs" />
     <Compile Include="PendingInvitesActivity.cs" />
@@ -111,9 +110,6 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\InviteGuests.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\MyDate.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\AddVenue.axml">
