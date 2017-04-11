@@ -4,7 +4,7 @@
     android:background="#FFFFFF"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-  <EditText
+    <EditText
         android:inputType="textVisiblePassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -17,7 +17,7 @@
         android:textColorHint="#3399CC"
         android:textColor="#3399CC" />
     <EditText
-        android:inputType="textVisiblePassword"
+        android:inputType="phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/phoneNo"

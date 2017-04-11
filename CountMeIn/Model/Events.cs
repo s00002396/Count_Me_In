@@ -42,7 +42,7 @@ namespace CountMeIn.Model
     }
     public static class Globals
     {
-        public static int s_Name = 0;
+        public static string myPhoneNumber;
         public static SqlConnection sqlconn;
         public static string connsqlstring = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
     }

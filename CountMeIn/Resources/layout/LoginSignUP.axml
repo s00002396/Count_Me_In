@@ -58,12 +58,5 @@
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_marginTop="0.0dp">
-    <!--<ProgressBar
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/progressBar1"
-            android:background="@drawable/progressbarstyle"
-            android:layout_centerInParent="true"
-            android:indeterminate="true" />-->
     </RelativeLayout>
 </LinearLayout>

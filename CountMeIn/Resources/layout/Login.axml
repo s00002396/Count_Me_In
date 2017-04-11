@@ -12,7 +12,7 @@
         android:layout_marginTop="20.0dp"
         android:layout_marginBottom="38.5dp" />
     <EditText
-        android:inputType="textVisiblePassword"
+        android:inputType="phone"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/loginUserName"

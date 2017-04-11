@@ -33,7 +33,7 @@ namespace CountMeIn
             SetContentView(Resource.Layout.UpComingEvent);
 
             FindViews();
-            var m_ID = Globals.s_Name;
+            var m_ID = Globals.myPhoneNumber;
 
             mItems = new List<Person>();
 
