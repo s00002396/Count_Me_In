@@ -8,10 +8,11 @@ using CountMeIn.Model;
 using System.Data.SqlClient;
 using System.Data;
 using ListViewEvents;
+using Android.Content.PM;
 
 namespace CountMeIn
 {
-    [Activity(Label = "UpComing Event", MainLauncher = false)]
+    [Activity(Label = "UpComing Event", MainLauncher = false, ScreenOrientation = ScreenOrientation.Portrait)]
     public class UpComingEventActivity : Activity
     {
         private ListView eventListView;

@@ -86,5 +86,6 @@ C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\p
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\unlock.png
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\phone3.png
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\logo_sml.png
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\user6.png
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\CountMeIn.dll.mdb
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\bin\Debug\CountMeIn.dll.mdb

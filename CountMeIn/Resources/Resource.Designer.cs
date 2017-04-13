@@ -140,10 +140,13 @@ namespace CountMeIn
 			public const int User = 2130837524;
 			
 			// aapt resource value: 0x7f020015
-			public const int venue = 2130837525;
+			public const int User6 = 2130837525;
 			
 			// aapt resource value: 0x7f020016
-			public const int venue1 = 2130837526;
+			public const int venue = 2130837526;
+			
+			// aapt resource value: 0x7f020017
+			public const int venue1 = 2130837527;
 			
 			static Drawable()
 			{

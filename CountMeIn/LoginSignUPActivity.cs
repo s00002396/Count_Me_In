@@ -3,10 +3,11 @@ using Android.App;
 using Android.Content;
 using Android.OS;
 using Android.Widget;
+using Android.Content.PM;
 
 namespace CountMeIn
 {
-    [Activity(Label = "Count-Me-In", MainLauncher = true, Icon = "@drawable/logo_sml")]
+    [Activity(Label = "Count-Me-In", MainLauncher = true, Icon = "@drawable/logo_sml", ScreenOrientation = ScreenOrientation.Portrait)]
     public class LoginSignUPActivity : Activity
     {
         private Button btnSignIn;

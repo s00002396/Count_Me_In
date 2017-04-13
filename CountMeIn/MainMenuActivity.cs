@@ -4,10 +4,11 @@ using Android.Content;
 using Android.OS;
 using Android.Widget;
 using System.Data.SqlClient;
+using Android.Content.PM;
 
 namespace CountMeIn
 {
-    [Activity(Label = "Main Menu", MainLauncher = true)]
+    [Activity(Label = "Main Menu", MainLauncher = false, ScreenOrientation = ScreenOrientation.Portrait)]
     public class MainMenuActivity : Activity
     {
         private Button btnUpComingevent;        
@@ -39,13 +40,11 @@ namespace CountMeIn
             btnCreateEvent.Click += BtnCreateEvent_Click;
             btnlogOut.Click += BtnlogOut_Click;          
         }
-
         private void BtnlogOut_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(LoginActivity));
             StartActivity(intent);
         }
-
         private void BtnCreateEvent_Click(object sender, EventArgs e)
         {
             var intent = new Intent(this, typeof(CreateEventActivity));

@@ -14,10 +14,11 @@ using System.Data.SqlClient;
 using System.Data;
 using ListViewEvents;
 using CountMeIn.Adapters;
+using Android.Content.PM;
 
 namespace CountMeIn
 {
-    [Activity(Label = "Invite Guests", MainLauncher = false)]
+    [Activity(Label = "Invite Guests", MainLauncher = false, ScreenOrientation = ScreenOrientation.Portrait)]
     public class GuestInviteActivity : Activity
     {
         private ListView guestListView;
@@ -130,7 +131,7 @@ namespace CountMeIn
             Notification.Builder builder = new Notification.Builder(this)
             .SetContentTitle("Count-Me-In")
             .SetContentText("You have a new invite")
-            .SetSmallIcon(Resource.Drawable.Icon);
+            .SetSmallIcon(Resource.Drawable.logo_sml);
 
             Notification notification = builder.Build();
             NotificationManager notificationManager = GetSystemService(Context.NotificationService) as NotificationManager;

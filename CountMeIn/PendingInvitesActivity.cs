@@ -13,10 +13,11 @@ using System.Data.SqlClient;
 using System.Data;
 using CountMeIn.Model;
 using CountMeIn.Adapters;
+using Android.Content.PM;
 
 namespace CountMeIn
 {
-    [Activity(Label = "Invite Details", MainLauncher = true)]
+    [Activity(Label = "Invite Details", MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait)]
     public class PendingInvitesActivity : Activity
     {
         string eventDate;

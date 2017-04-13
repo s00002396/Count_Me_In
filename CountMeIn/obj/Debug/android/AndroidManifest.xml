@@ -8,39 +8,34 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <application android:label="CountMeIn" android:name="android.app.Application" android:allowBackup="true" android:debuggable="true">
     <activity android:label="Add Venue" android:name="md50b100ff02de193c8ada20d64db42ab1f.AddVenueActivity" />
-    <activity android:label="Create Account" android:name="md50b100ff02de193c8ada20d64db42ab1f.CreateAccountActivity" />
-    <activity android:label="Create an Event" android:name="md50b100ff02de193c8ada20d64db42ab1f.CreateEventActivity" />
-    <activity android:label="Create Venue" android:name="md50b100ff02de193c8ada20d64db42ab1f.CreateGroupActivity" />
+    <activity android:label="Create Account" android:screenOrientation="portrait" android:name="md50b100ff02de193c8ada20d64db42ab1f.CreateAccountActivity" />
+    <activity android:label="Create an Event" android:screenOrientation="portrait" android:name="md50b100ff02de193c8ada20d64db42ab1f.CreateEventActivity" />
+    <activity android:label="Create Venue" android:screenOrientation="portrait" android:name="md50b100ff02de193c8ada20d64db42ab1f.CreateGroupActivity" />
     <activity android:label="Event Details" android:name="md50b100ff02de193c8ada20d64db42ab1f.EventDetailsActivity" />
     <activity android:label="Group Details" android:name="md50b100ff02de193c8ada20d64db42ab1f.GroupDetailsActivity" />
-    <activity android:label="Invite Guests" android:name="md50b100ff02de193c8ada20d64db42ab1f.GuestInviteActivity" />
-    <activity android:label="Choose Venue" android:name="md50b100ff02de193c8ada20d64db42ab1f.InviteGuestActivity" />
-    <activity android:icon="@drawable/logo" android:label="Login" android:name="md50b100ff02de193c8ada20d64db42ab1f.LoginActivity" />
-    <activity android:icon="@drawable/logo_sml" android:label="Count-Me-In" android:name="md50b100ff02de193c8ada20d64db42ab1f.LoginSignUPActivity">
+    <activity android:label="Invite Guests" android:screenOrientation="portrait" android:name="md50b100ff02de193c8ada20d64db42ab1f.GuestInviteActivity" />
+    <activity android:label="Choose Venue" android:screenOrientation="portrait" android:name="md50b100ff02de193c8ada20d64db42ab1f.InviteGuestActivity" />
+    <activity android:icon="@drawable/logo" android:label="Login" android:screenOrientation="portrait" android:name="md50b100ff02de193c8ada20d64db42ab1f.LoginActivity" />
+    <activity android:icon="@drawable/logo_sml" android:label="Count-Me-In" android:screenOrientation="portrait" android:name="md50b100ff02de193c8ada20d64db42ab1f.LoginSignUPActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:label="Main Menu" android:name="md50b100ff02de193c8ada20d64db42ab1f.MainMenuActivity">
+    <activity android:label="Main Menu" android:screenOrientation="portrait" android:name="md50b100ff02de193c8ada20d64db42ab1f.MainMenuActivity" />
+    <activity android:label="Pending Invites" android:screenOrientation="portrait" android:name="md50b100ff02de193c8ada20d64db42ab1f.PendingEventActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:label="Pending Invites" android:name="md50b100ff02de193c8ada20d64db42ab1f.PendingEventActivity">
+    <activity android:label="Invite Details" android:screenOrientation="portrait" android:name="md50b100ff02de193c8ada20d64db42ab1f.PendingInvitesActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
       </intent-filter>
     </activity>
-    <activity android:label="Invite Details" android:name="md50b100ff02de193c8ada20d64db42ab1f.PendingInvitesActivity">
-      <intent-filter>
-        <action android:name="android.intent.action.MAIN" />
-        <category android:name="android.intent.category.LAUNCHER" />
-      </intent-filter>
-    </activity>
-    <activity android:label="UpComing Event" android:name="md50b100ff02de193c8ada20d64db42ab1f.UpComingEventActivity" />
+    <activity android:label="UpComing Event" android:screenOrientation="portrait" android:name="md50b100ff02de193c8ada20d64db42ab1f.UpComingEventActivity" />
     <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="2147483647" android:authorities="CountMeIn.CountMeIn.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">

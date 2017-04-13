@@ -15,10 +15,11 @@ using System.Data.SqlClient;
 using System.Data;
 using ListViewEvents;
 using CountMeIn.Adapters;
+using Android.Content.PM;
 
 namespace CountMeIn
 {
-    [Activity(Label = "Pending Invites", MainLauncher = true)]
+    [Activity(Label = "Pending Invites", MainLauncher = true, ScreenOrientation = ScreenOrientation.Portrait)]
     public class PendingEventActivity : Activity
     {
         private ListView pendingEventListView;

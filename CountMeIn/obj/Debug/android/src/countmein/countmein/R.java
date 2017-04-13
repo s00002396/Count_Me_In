@@ -38,8 +38,9 @@ public final class R {
         public static final int progressbarstyle=0x7f020012;
         public static final int unlock=0x7f020013;
         public static final int user=0x7f020014;
-        public static final int venue=0x7f020015;
-        public static final int venue1=0x7f020016;
+        public static final int user6=0x7f020015;
+        public static final int venue=0x7f020016;
+        public static final int venue1=0x7f020017;
     }
     public static final class id {
         public static final int btnLogIn=0x7f08002f;

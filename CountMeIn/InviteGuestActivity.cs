@@ -12,10 +12,11 @@ using Android.Widget;
 using System.Data.SqlClient;
 using System.Data;
 using CountMeIn.Model;
+using Android.Content.PM;
 
 namespace CountMeIn
 {
-    [Activity(Label = "Choose Venue", MainLauncher = false)]
+    [Activity(Label = "Choose Venue", MainLauncher = false, ScreenOrientation = ScreenOrientation.Portrait)]
     public class InviteGuestActivity : Activity
     {
         private TextView txtDate;

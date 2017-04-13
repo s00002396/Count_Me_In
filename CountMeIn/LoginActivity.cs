@@ -12,10 +12,11 @@ using Android.Widget;
 using System.Data.SqlClient;
 using System.Data;
 using CountMeIn.Model;
+using Android.Content.PM;
 
 namespace CountMeIn
 {
-    [Activity(Label = "Login", MainLauncher = false, Icon = "@drawable/logo")]
+    [Activity(Label = "Login", MainLauncher = false, Icon = "@drawable/logo", ScreenOrientation = ScreenOrientation.Portrait)]
     public class LoginActivity : Activity
     {
         private Button btnLogIn;
