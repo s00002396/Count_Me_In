@@ -30,8 +30,7 @@ namespace CountMeIn
         {
             base.OnCreate(savedInstanceState);
 
-            #region sql Connection
-            //string connsqlstring = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
+            #region sql Connection            
             Globals.sqlconn = new System.Data.SqlClient.SqlConnection(Globals.connsqlstring);
             #endregion
 
@@ -50,14 +49,9 @@ namespace CountMeIn
 
         private void EventListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
-            //add Member_Id to a list then use foreach in finish button to update Member_Event_Table in db.
-            //var gg = mItems[e.Position];            
-            //Toast.MakeText(this, "User ID " + mItems[e.Position].Member_Id, ToastLength.Long).Show();
-            Toast.MakeText(this,mItems[e.Position].Member_Phone + " invited ", ToastLength.Long).Show();
-            
+            Toast.MakeText(this,mItems[e.Position].Member_Phone + " invited ", ToastLength.Long).Show();            
             invitedGuestID.Add(mItems[e.Position].Member_Id);            
         }
-
         private void FindViews()
         {
             btnInvite = FindViewById<Button>(Resource.Id.createInvite);
@@ -72,8 +66,7 @@ namespace CountMeIn
 
                 SqlDataReader reader;
                 SqlCommand cmd = new SqlCommand();
-
-                //cmd.CommandText = "SELECT Username,PhoneNo,Password FROM Member_Table";
+                
                 cmd.CommandText = "SELECT * FROM Member_Table";
                 cmd.CommandType = CommandType.Text;
                 cmd.Connection = Globals.sqlconn;
@@ -102,7 +95,6 @@ namespace CountMeIn
             }
             btnInvite.Click += BtnInvite_Click;
         }
-
         private void BtnInvite_Click(object sender, EventArgs e)
         {
             #region sql
@@ -113,8 +105,7 @@ namespace CountMeIn
                 
                 int i = 20;
                 foreach (var item in invitedGuestID)
-                {
-                    
+                {                    
                     cmd.Connection = Globals.sqlconn;
                     cmd.CommandText = "INSERT INTO Event_Member_Table(Member_Id, Event_Id, Going)   VALUES(@paramA" + i+ ",@paramB"+ i+",@paramC"+ i+")";
 

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:background="#FFFFFF"
+    android:background="#FCFCFC"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <ImageView
@@ -22,7 +22,9 @@
         android:layout_marginRight="45.0dp"
         android:layout_marginBottom="30.0dp"
         android:textColor="#3399CC"
-        android:textColorHint="#3399CC" />
+        android:textColorHint="#3399CC"
+        android:drawablePadding="23.0dp"
+        android:drawableLeft="@drawable/phone3" />
     <EditText
         android:inputType="textPassword"
         android:layout_width="match_parent"
@@ -33,7 +35,9 @@
         android:layout_marginLeft="45.0dp"
         android:layout_marginRight="45.0dp"
         android:textColorHint="#3399CC"
-        android:textColor="#3399CC" />
+        android:textColor="#3399CC"
+        android:drawablePadding="12.0dp"
+        android:drawableLeft="@drawable/unlock" />
     <Button
         android:text="Login"
         android:layout_width="match_parent"

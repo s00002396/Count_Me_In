@@ -19,7 +19,6 @@ namespace CountMeIn
     [Activity(Label = "Invite Details", MainLauncher = true)]
     public class PendingInvitesActivity : Activity
     {
-        //SqlConnection sqlconn;
         string eventDate;
         string eventName;
         string eventID;

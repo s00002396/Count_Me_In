@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:background="#FFFFFF"
+    android:background="#FCFCFC"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
     <EditText
@@ -15,7 +15,9 @@
         android:layout_marginRight="45.0dp"
         android:layout_marginBottom="30.0dp"
         android:textColorHint="#3399CC"
-        android:textColor="#3399CC" />
+        android:textColor="#3399CC"
+        android:drawablePadding="10.0dp"
+        android:drawableLeft="@drawable/user" />
     <EditText
         android:inputType="phone"
         android:layout_width="match_parent"
@@ -27,7 +29,9 @@
         android:layout_marginRight="45.0dp"
         android:layout_marginBottom="30.0dp"
         android:textColorHint="#3399CC"
-        android:textColor="#3399CC" />
+        android:textColor="#3399CC"
+        android:drawablePadding="22.0dp"
+        android:drawableLeft="@drawable/phone3" />
     <EditText
         android:inputType="textPassword"
         android:layout_width="match_parent"
@@ -39,7 +43,9 @@
         android:layout_marginRight="45.0dp"
         android:layout_marginBottom="30.dp"
         android:textColorHint="#3399CC"
-        android:textColor="#3399CC" />
+        android:textColor="#3399CC"
+        android:drawableLeft="@drawable/lock"
+        android:drawablePadding="15.0dp" />
     <EditText
         android:inputType="textPassword"
         android:layout_width="match_parent"
@@ -51,7 +57,9 @@
         android:layout_marginRight="45.0dp"
         android:layout_marginBottom="30.0dp"
         android:textColorHint="#3399CC"
-        android:textColor="#3399CC" />
+        android:textColor="#3399CC"
+        android:drawablePadding="15.0dp"
+        android:drawableLeft="@drawable/lock" />
     <Button
         android:text="Sign Up"
         android:layout_width="match_parent"

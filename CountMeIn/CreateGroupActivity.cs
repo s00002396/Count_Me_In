@@ -27,11 +27,8 @@ namespace CountMeIn
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
            SetContentView(Resource.Layout.CreateGroup);
-
             FindViews();
-
             HandleEvents();
         }
         private void FindViews()
@@ -43,12 +40,10 @@ namespace CountMeIn
             textVenuAddress = FindViewById<EditText>(Resource.Id.textVenuAddress);
             textVenuPhone = FindViewById<EditText>(Resource.Id.textVenuPhone);
         }
-
         private void HandleEvents()
         {
             btnCreateGroup.Click += BtnCreateGroup_Click;
         }
-
         private void BtnCreateGroup_Click(object sender, EventArgs e)
         {
             Globals.sqlconn = new System.Data.SqlClient.SqlConnection(Globals.connsqlstring);
@@ -78,8 +73,7 @@ namespace CountMeIn
                     else if (textVenuAddress.Text == "")
                     {
                         Toast.MakeText(this, "Enter venue address", ToastLength.Long).Show();
-                    }
-                    
+                    }                    
                 }
             }
             catch (Exception ex)
@@ -88,12 +82,8 @@ namespace CountMeIn
             }
             finally
             {
-                Globals.sqlconn.Close();
-                
+                Globals.sqlconn.Close();                
             }
-            //Toast.MakeText(this, "Group Created", ToastLength.Long).Show();
-            //var intent = new Intent(this, typeof(MainMenuActivity));
-            //StartActivity(intent);
         }
     }
 }

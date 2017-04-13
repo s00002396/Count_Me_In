@@ -6,7 +6,6 @@ C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\CountMeIn.cspr
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\CountMeIn.dll
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\CountMeIn.pdb
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\android\bin\CountMeIn.CountMeIn.apk
-C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\layout\main.xml
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\values\strings.xml
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\icon.png
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\R.cs.flag
@@ -65,12 +64,8 @@ C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\layout\cre
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\layout\upcomingevent.xml
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\layout\test.xml
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\button_round.xml
-C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\layout\testcreateevent.xml
-C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\calendar.png
-C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\clock2.png
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\edittextborder.xml
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\logo3.png
-C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\layout\testingmainmenu.xml
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\event.png
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\group2.png
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\createevebts.png
@@ -85,5 +80,11 @@ C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\layout\gue
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\border_shadow.xml
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\venue.png
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\venue1.png
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\user.png
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\lock.png
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\phone.png
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\unlock.png
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\phone3.png
+C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\res\drawable\logo_sml.png
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\obj\Debug\CountMeIn.dll.mdb
 C:\Users\Dominic\Desktop\Colm_PartB\CountMeIn\CountMeIn\bin\Debug\CountMeIn.dll.mdb

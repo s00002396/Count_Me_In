@@ -30,7 +30,6 @@ namespace CountMeIn
             FindViews();
             HandleEvents();
         }
-
         private void FindViews()
         {
             btncreateEvent = FindViewById<Button>(Resource.Id.createEvent);
@@ -39,17 +38,14 @@ namespace CountMeIn
             eventButton2 = FindViewById<Button>(Resource.Id.eventButton2);
             timeButton2 = FindViewById<Button>(Resource.Id.timeButton2);
         }
-
         private void HandleEvents()
         {
-            //btncreateEvent.Enabled = false;
             eventButton.Click += EventButton_Click;
             timeButton.Click += TimeButton_Click;
             eventButton2.Click += EventButton2_Click;
             timeButton2.Click += TimeButton2_Click;
             btncreateEvent.Click += BtncreateEvent_Click;
         }
-
         //****************Event Date****************************
         private void EventButton_Click(object sender, EventArgs e)
         {
@@ -90,12 +86,26 @@ namespace CountMeIn
         //****************Create Event****************************
         private void BtncreateEvent_Click(object sender, EventArgs e)
         {
-            var intent = new Intent(this, typeof(InviteGuestActivity));
-            intent.PutExtra("Date", eventButton.Text);
-            intent.PutExtra("Time", timeButton.Text);
-            intent.PutExtra("Close_Date", eventButton2.Text);
-            intent.PutExtra("Close_Time", timeButton2.Text);
-            StartActivity(intent);
+            if (eventButton.Text != "" && timeButton.Text != "")
+            {
+                var intent = new Intent(this, typeof(InviteGuestActivity));
+                intent.PutExtra("Date", eventButton.Text);
+                intent.PutExtra("Time", timeButton.Text);
+                intent.PutExtra("Close_Date", eventButton2.Text);
+                intent.PutExtra("Close_Time", timeButton2.Text);
+                StartActivity(intent);
+            }
+            else
+            {
+                if (eventButton.Text == "")
+                {
+                    Toast.MakeText(this, "Please choose event date", ToastLength.Long).Show();
+                }
+                else if(timeButton.Text == "")
+                {
+                    Toast.MakeText(this, "Please choose event time", ToastLength.Long).Show();
+                }
+            }           
         }
     }
 }

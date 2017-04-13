@@ -23,23 +23,18 @@ namespace CountMeIn
         private EditText txtEventName;
         private Spinner spinner;
         private Button chooseGuests;
-        //private Button btnSendInvite;
-        //SqlConnection sqlconn;
         string venue;
         string date;
         string time;
         string closeDate;
         string closeTime;
-        //string newID;
         string insertedID;
 
         protected override void OnCreate(Bundle savedInstanceState)
         {
             base.OnCreate(savedInstanceState);
-
-            //var connsqlstring = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
             Globals.sqlconn = new System.Data.SqlClient.SqlConnection(Globals.connsqlstring);
-            //sqlconn = new System.Data.SqlClient.SqlConnection(Globals.connsqlstring);
+            
             date = Intent.GetStringExtra("Date") ?? "Data not available";
             time = Intent.GetStringExtra("Time") ?? "Data not available";
             closeDate = Intent.GetStringExtra("Close_Date") ?? "Data not available";
@@ -65,7 +60,6 @@ namespace CountMeIn
         private void HandleEvents()
         {
             chooseGuests.Click += ChooseGuests_Click;
-            //btnSendInvite.Click += SendInvite_Click;
             spinner.ItemSelected += Spinner_ItemSelected;
 
             #region SqlConnection (Get the Venue)            
@@ -104,13 +98,12 @@ namespace CountMeIn
         {
             venue = string.Format("{0}", spinner.GetItemAtPosition(e.Position));//get the selected venue            
         }
-
         //****************Choose Guest Create Event On db****************************
         private void ChooseGuests_Click(object sender, EventArgs e)
         {
             #region Create the event on the db
             if (venue != "Select Venue" && txtEventName.Text != "")
-            {               
+            {
                 Globals.sqlconn.Open();
                 try
                 {
@@ -121,7 +114,7 @@ namespace CountMeIn
 
                     cmd.Parameters.AddWithValue("@param1", txtEventName.Text);
                     cmd.Parameters.AddWithValue("@param2", date);//Venue Name  
-                    cmd.Parameters.AddWithValue("@param3", time);//Group Name Dont Have yet
+                    cmd.Parameters.AddWithValue("@param3", time);
                     cmd.Parameters.AddWithValue("@param4", venue);//Time
                     cmd.Parameters.AddWithValue("@param5", closeDate);//Not going by default
                     cmd.Parameters.AddWithValue("@param6", closeTime);
@@ -160,13 +153,8 @@ namespace CountMeIn
                 {
                     Toast.MakeText(this, "Need to name event", ToastLength.Long).Show();
                 }
-                //Toast.MakeText(this, "Need to fill in all details", ToastLength.Long).Show();
-            }            
+            }
             #endregion
-
-            //var intent = new Intent(this, typeof(GuestInviteActivity));
-            //intent.PutExtra("New_ID", insertedID);
-            //StartActivity(intent);
         }
     }
 }

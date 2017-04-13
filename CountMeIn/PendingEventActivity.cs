@@ -11,7 +11,6 @@ using Android.Views;
 using Android.Widget;
 using CountMeIn.Model;
 using CountMeIn.Service;
-//using CountMeIn.Adapters;
 using System.Data.SqlClient;
 using System.Data;
 using ListViewEvents;
@@ -37,57 +36,41 @@ namespace CountMeIn
             Android.Telephony.TelephonyManager tMgr = (Android.Telephony.TelephonyManager)this.GetSystemService(Android.Content.Context.TelephonyService);
             string mPhoneNumber = tMgr.Line1Number;
             /****************************************/
-            mItems = new List<Person>();            
-
+            mItems = new List<Person>(); 
             HandleEvents();
-
             MyPendingEventListAdapter adapter = new MyPendingEventListAdapter(this, mItems);
-
             pendingEventListView.Adapter = adapter;
-
             pendingEventListView.ItemLongClick += EventListView_ItemLongClick;
             pendingEventListView.ItemClick += PendingEventListView_ItemClick;
         }
 
         private void PendingEventListView_ItemClick(object sender, AdapterView.ItemClickEventArgs e)
         {
-            //Toast.MakeText(this, "User ID " + mItems[e.Position].EventId, ToastLength.Long).Show();
             var intent = new Intent(this, typeof(PendingInvitesActivity));
-
             intent.PutExtra("Event Date", mItems[e.Position].EventDate);
             intent.PutExtra("Event Venue", mItems[e.Position].EventName);
             intent.PutExtra("Event_Id", mItems[e.Position].EventId.ToString());
-            //intent.PutExtra("Member_Id", mItems[e.Position].mem.ToString());
-            //intent.PutExtra("Close_Time", timeButton2.Text);
-
             StartActivity(intent);
-            //Console.WriteLine(mItems[e.Position].EventDate);
         }
-
         private void EventListView_ItemLongClick(object sender, AdapterView.ItemLongClickEventArgs e)
         {
             System.Console.WriteLine(mItems[e.Position].EventDate);
         }
-
         private void HandleEvents()
         {
-            #region Remove
-            //SqlConnection sqlconn;
-            //string connsqlstring = string.Format("Server=tcp:dominicbrennan.database.windows.net,1433;Initial Catalog=CountMeIn;Persist Security Info=False;User ID=dominicbrennan;Password=Fld118yi;MultipleActiveResultSets=False;Trusted_Connection=false;Encrypt=false;Connection Timeout=30;");
-            //sqlconn = new System.Data.SqlClient.SqlConnection(connsqlstring);
-            #endregion
-
             Globals.sqlconn = new System.Data.SqlClient.SqlConnection(Globals.connsqlstring);
             try
             {
                 Globals.sqlconn.Open();
-
                 SqlDataReader reader;
                 SqlCommand cmd = new SqlCommand();
                 
                 cmd.CommandText = "select * from Event_Table inner join Event_Member_Table  on Event_Table.Event_Id like Event_Member_Table.Event_Id where Event_Member_Table.Member_Id like @M_ID and Event_Member_Table.Going like 0";
-                //cmd.Parameters.AddWithValue("@M_ID", 101);
-                cmd.Parameters.AddWithValue("@M_ID", Globals.myID);
+
+                /************for testing*********************/
+                cmd.Parameters.AddWithValue("@M_ID", 101);
+                //cmd.Parameters.AddWithValue("@M_ID", Globals.myID);
+                /*******************************************/
                 cmd.CommandType = CommandType.Text;
                 cmd.Connection = Globals.sqlconn;
 
@@ -96,7 +79,6 @@ namespace CountMeIn
                 while (reader.Read())
                 {
                     int eventId = (int)reader["Event_Id"];
-                    //int memberId = (int)reader["Member_Id"];
                     string inviteDate = (string)reader["Event_Date"];
                     string venueName = (string)reader["Event_Name"];
                     string groupName = (string)reader["Venue_Name"];

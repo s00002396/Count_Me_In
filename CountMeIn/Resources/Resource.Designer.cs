@@ -89,49 +89,61 @@ namespace CountMeIn
 			public const int ButtonSignUpStyle = 2130837507;
 			
 			// aapt resource value: 0x7f020004
-			public const int Calendar = 2130837508;
+			public const int calendar3 = 2130837508;
 			
 			// aapt resource value: 0x7f020005
-			public const int calendar3 = 2130837509;
+			public const int clock3 = 2130837509;
 			
 			// aapt resource value: 0x7f020006
-			public const int clock2 = 2130837510;
+			public const int createEvebts = 2130837510;
 			
 			// aapt resource value: 0x7f020007
-			public const int clock3 = 2130837511;
+			public const int EditTextBorder = 2130837511;
 			
 			// aapt resource value: 0x7f020008
-			public const int createEvebts = 2130837512;
+			public const int @event = 2130837512;
 			
 			// aapt resource value: 0x7f020009
-			public const int EditTextBorder = 2130837513;
+			public const int group2 = 2130837513;
 			
 			// aapt resource value: 0x7f02000a
-			public const int @event = 2130837514;
+			public const int Icon = 2130837514;
 			
 			// aapt resource value: 0x7f02000b
-			public const int group2 = 2130837515;
+			public const int invite = 2130837515;
 			
 			// aapt resource value: 0x7f02000c
-			public const int Icon = 2130837516;
+			public const int @lock = 2130837516;
 			
 			// aapt resource value: 0x7f02000d
-			public const int invite = 2130837517;
+			public const int logo = 2130837517;
 			
 			// aapt resource value: 0x7f02000e
-			public const int logo = 2130837518;
+			public const int logo3 = 2130837518;
 			
 			// aapt resource value: 0x7f02000f
-			public const int logo3 = 2130837519;
+			public const int logo_sml = 2130837519;
 			
 			// aapt resource value: 0x7f020010
-			public const int ProgressBarStyle = 2130837520;
+			public const int phone = 2130837520;
 			
 			// aapt resource value: 0x7f020011
-			public const int venue = 2130837521;
+			public const int phone3 = 2130837521;
 			
 			// aapt resource value: 0x7f020012
-			public const int venue1 = 2130837522;
+			public const int ProgressBarStyle = 2130837522;
+			
+			// aapt resource value: 0x7f020013
+			public const int unlock = 2130837523;
+			
+			// aapt resource value: 0x7f020014
+			public const int User = 2130837524;
+			
+			// aapt resource value: 0x7f020015
+			public const int venue = 2130837525;
+			
+			// aapt resource value: 0x7f020016
+			public const int venue1 = 2130837526;
 			
 			static Drawable()
 			{
@@ -145,9 +157,6 @@ namespace CountMeIn
 		
 		public partial class Id
 		{
-			
-			// aapt resource value: 0x7f08003f
-			public const int addVenue = 2131230783;
 			
 			// aapt resource value: 0x7f08002f
 			public const int btnLogIn = 2131230767;
@@ -164,14 +173,11 @@ namespace CountMeIn
 			// aapt resource value: 0x7f080016
 			public const int createEvent = 2131230742;
 			
-			// aapt resource value: 0x7f080038
-			public const int createEventButton = 2131230776;
+			// aapt resource value: 0x7f080036
+			public const int createEventButton = 2131230774;
 			
 			// aapt resource value: 0x7f08001c
 			public const int createGroup = 2131230748;
-			
-			// aapt resource value: 0x7f080040
-			public const int createGroupButton = 2131230784;
 			
 			// aapt resource value: 0x7f080023
 			public const int createInvite = 2131230755;
@@ -179,14 +185,11 @@ namespace CountMeIn
 			// aapt resource value: 0x7f080006
 			public const int createVenue = 2131230726;
 			
-			// aapt resource value: 0x7f080037
-			public const int createVenueButton = 2131230775;
+			// aapt resource value: 0x7f080035
+			public const int createVenueButton = 2131230773;
 			
 			// aapt resource value: 0x7f080014
 			public const int dateClose = 2131230740;
-			
-			// aapt resource value: 0x7f080033
-			public const int datePicker1 = 2131230771;
 			
 			// aapt resource value: 0x7f080004
 			public const int editText1 = 2131230724;
@@ -206,8 +209,8 @@ namespace CountMeIn
 			// aapt resource value: 0x7f080024
 			public const int eventDateView = 2131230756;
 			
-			// aapt resource value: 0x7f080041
-			public const int eventListView = 2131230785;
+			// aapt resource value: 0x7f08003d
+			public const int eventListView = 2131230781;
 			
 			// aapt resource value: 0x7f080025
 			public const int eventNameView = 2131230757;
@@ -224,8 +227,8 @@ namespace CountMeIn
 			// aapt resource value: 0x7f080022
 			public const int guestListView = 2131230754;
 			
-			// aapt resource value: 0x7f080039
-			public const int logOut = 2131230777;
+			// aapt resource value: 0x7f080037
+			public const int logOut = 2131230775;
 			
 			// aapt resource value: 0x7f08002e
 			public const int loginPassword = 2131230766;
@@ -236,14 +239,14 @@ namespace CountMeIn
 			// aapt resource value: 0x7f08002c
 			public const int logoImageView = 2131230764;
 			
-			// aapt resource value: 0x7f08003a
-			public const int mainScrollView = 2131230778;
+			// aapt resource value: 0x7f080038
+			public const int mainScrollView = 2131230776;
 			
-			// aapt resource value: 0x7f08003b
-			public const int pendingEventListView = 2131230779;
+			// aapt resource value: 0x7f080039
+			public const int pendingEventListView = 2131230777;
 			
-			// aapt resource value: 0x7f080036
-			public const int pendingInviteButton = 2131230774;
+			// aapt resource value: 0x7f080034
+			public const int pendingInviteButton = 2131230772;
 			
 			// aapt resource value: 0x7f080008
 			public const int phoneNo = 2131230728;
@@ -305,32 +308,29 @@ namespace CountMeIn
 			// aapt resource value: 0x7f080013
 			public const int timeButton2 = 2131230739;
 			
-			// aapt resource value: 0x7f080034
-			public const int timePicker1 = 2131230772;
-			
 			// aapt resource value: 0x7f080027
 			public const int timeView = 2131230759;
 			
 			// aapt resource value: 0x7f080030
 			public const int txtCreateAccount = 2131230768;
 			
-			// aapt resource value: 0x7f08003d
-			public const int txtEventDate = 2131230781;
+			// aapt resource value: 0x7f08003b
+			public const int txtEventDate = 2131230779;
 			
-			// aapt resource value: 0x7f08003c
-			public const int txtEventDate1 = 2131230780;
+			// aapt resource value: 0x7f08003a
+			public const int txtEventDate1 = 2131230778;
 			
 			// aapt resource value: 0x7f08002a
 			public const int txtEventName = 2131230762;
 			
-			// aapt resource value: 0x7f08003e
-			public const int txtEventName1 = 2131230782;
+			// aapt resource value: 0x7f08003c
+			public const int txtEventName1 = 2131230780;
 			
 			// aapt resource value: 0x7f080032
 			public const int txtOr = 2131230770;
 			
-			// aapt resource value: 0x7f080035
-			public const int upcomingeventButton = 2131230773;
+			// aapt resource value: 0x7f080033
+			public const int upcomingeventButton = 2131230771;
 			
 			// aapt resource value: 0x7f080007
 			public const int username = 2131230727;
@@ -391,34 +391,25 @@ namespace CountMeIn
 			public const int LoginSignUP = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int Main = 2130903051;
+			public const int MainMenu = 2130903051;
 			
 			// aapt resource value: 0x7f03000c
-			public const int MainMenu = 2130903052;
+			public const int PendingEventRow = 2130903052;
 			
 			// aapt resource value: 0x7f03000d
-			public const int PendingEventRow = 2130903053;
+			public const int PendingEventView = 2130903053;
 			
 			// aapt resource value: 0x7f03000e
-			public const int PendingEventView = 2130903054;
+			public const int PendingInvites = 2130903054;
 			
 			// aapt resource value: 0x7f03000f
-			public const int PendingInvites = 2130903055;
+			public const int Test = 2130903055;
 			
 			// aapt resource value: 0x7f030010
-			public const int Test = 2130903056;
+			public const int UpComingEvent = 2130903056;
 			
 			// aapt resource value: 0x7f030011
-			public const int TestCreateEvent = 2130903057;
-			
-			// aapt resource value: 0x7f030012
-			public const int TestingMainMenu = 2130903058;
-			
-			// aapt resource value: 0x7f030013
-			public const int UpComingEvent = 2130903059;
-			
-			// aapt resource value: 0x7f030014
-			public const int UpComingEventRowView = 2130903060;
+			public const int UpComingEventRowView = 2130903057;
 			
 			static Layout()
 			{

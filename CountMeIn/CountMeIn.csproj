@@ -70,7 +70,6 @@
     <Compile Include="InviteGuestActivity.cs" />
     <Compile Include="LoginActivity.cs" />
     <Compile Include="LoginSignUPActivity.cs" />
-    <Compile Include="MainActivity.cs" />
     <Compile Include="MainMenuActivity.cs" />
     <Compile Include="Model\EventGroup.cs" />
     <Compile Include="Model\Events.cs" />
@@ -83,11 +82,8 @@
     <Compile Include="ORM\SQLite.cs" />
     <Compile Include="ORM\SQLiteAsync.cs" />
     <Compile Include="Service\EventDataService.cs" />
-    <Compile Include="TestCreateEventActivity.cs" />
-    <Compile Include="TestingMainMenuActivity.cs" />
     <Compile Include="TimePickerFragment.cs" />
     <Compile Include="UpComingEventActivity.cs" />
-    <Compile Include="UpComingRowActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="GettingStarted.Xamarin" />
@@ -133,12 +129,6 @@
     <AndroidResource Include="Resources\layout\Test.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\TestCreateEvent.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-    <AndroidResource Include="Resources\layout\TestingMainMenu.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
     <AndroidResource Include="Resources\layout\UpComingEventRowView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
@@ -152,11 +142,6 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\GuestInviteRow.axml">
-      <SubType>Designer</SubType>
-    </AndroidResource>
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\layout\Main.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
@@ -190,12 +175,6 @@
     <AndroidResource Include="Resources\drawable\button_round.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\Calendar.PNG" />
-  </ItemGroup>
-  <ItemGroup>
-    <AndroidResource Include="Resources\drawable\clock2.PNG" />
-  </ItemGroup>
-  <ItemGroup>
     <AndroidResource Include="Resources\drawable\EditTextBorder.xml" />
   </ItemGroup>
   <ItemGroup>
@@ -227,6 +206,24 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\venue1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\User.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\lock.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\phone.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\unlock.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\phone3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\logo_sml.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

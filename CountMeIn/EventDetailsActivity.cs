@@ -19,7 +19,7 @@ namespace CountMeIn
         {
             base.OnCreate(savedInstanceState);
 
-            SetContentView(Resource.Layout.EventDetails);
+            //SetContentView(Resource.Layout.EventDetails);
         }
     }
 }
